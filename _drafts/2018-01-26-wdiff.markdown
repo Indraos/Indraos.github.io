@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Correcting student texts handed in via e-mail"
+date:   2018-01-26 00:26:05 +0100
+categories: wdiff language mail 
+---
+## Problem Statement
+You have students that all own a smartphone but do not have access to a computer. You collect homework in a way that allows students to send text in a realistic fashion: via e-mail. How to efficiently correct the texts and give them feedback via e-mail?
+<!--more-->
+## Solution
+This solution made for a unix shell. If you do not know how to open one, this is probably not for you. Except for that, I do not assume prior knowledge and give you steps to follow along. 
+### Version Control
+Create a new directory `homeworks` and start a git repository by 
+```
+git init
+```
+Git is a version control system that allows you to store past versions of files. We will use it to store corrections of the texts.
+### Fetching the Mails at a Certain time
+First install with your package manager the command line programs `at` and `mailfetch` and `wdiff` (the latter we will need later). `at` is a program that allows to automatise the execution of certain actions.
+
+Commit to your changes by putting 
+```
+commit -m "Homework 1 raw texts"
+```
+### Correcting the text. 
+Let us start at the end: You have a directory `homework1` -- the first homework you handed out, with text files `[email-address-of-student]`.
+### Getting a version of changes
+Commit the changes again:
+```
+
+```

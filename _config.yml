@@ -1,0 +1,31 @@
+title: Indraos
+email: a.haupt@me.com
+description: >-
+  Andreas Haupt's Webpage
+baseurl: ""
+url: ""
+markdown: redcarpet
+
+# Setup
+title:               Andreas Haupt
+tagline:             'learn, teach, decide'
+paginate:            5
+excerpt_separator: <!--more-->
+
+# About/contact
+author:
+name:              Andreas Haupt
+url:               https://twitter.com/indraos1
+email:             a.haupt@me.com
+
+
+twitter_username: indraos1
+github_username:  indraos
+permalink:        pretty
+
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

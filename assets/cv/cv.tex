@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\usepackage[utf8]{inputenc}
+\moderncvstyle{classic}
+\usepackage{inputenc}
+\moderncvcolor{grey}
+\usepackage[scale=0.82]{geometry}
+\usepackage[backend=biber]{biblatex}
+\usepackage{nth}
+\bibliography{cv.bib}
+\social[linkedin][https://de.linkedin.com/in/andreas-haupt-273794b4]{andreas-haupt}
+\social[github][https://github.com/Indraos]{indraos}
+\name{Andreas}{Haupt}
+\email{a.haupt@me.com}
+\homepage{indraos.github.io}
+\photo[70pt][0.4pt]{picture_lowres}
+\usepackage{babel}
+\usepackage{csquotes}
+\newcommand{\lang}[3]{%
+    	\iflanguage{ngerman}{#1}{%
+        \iflanguage{english}{#2}{%
+        \iflanguage{french}{#3}{%
+}}}}%
+\ifdefined\isresume
+  \newcommand\noresumeentry[6]{}
+  \newcommand\noresumeitem[2]{}
+  \renewcommand\subsection[1]{}
+\else
+  \newcommand{\noresumeentry}[6]{\cventry{#1}{#2}{#3}{#4}{#5}{#6}}
+  \newcommand\noresumeitem[2]{\cvitem{#1}{#2}}
+\fi
+
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname}
+\def\FileSubject{\lang{Lebenslauf}{CV}{Resumé}}
+\def\FileKeyWords{\firstname \familyname, Lebenslauf, CV, Resumé}
+\quote{Docendo discimus}
+\begin{document}
+\makecvtitle
+\section{\lang{Bildung}{Education}{Éducation}}
+\noresumeentry{2015}{BSc Informatik}{Goethe-Universität}{Frankfurt}{90/180 Credits}{\lang{Mein Schwerpunkt ist das maschinelle Lernen.}{I specialise in machine learning.}{Je specialise en apprentissage automatique.}}
+\cventry{2015-}{MSc Economics}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{\lang{Bisherige Note:}{Grade:}{Note:} 1,3, 90/120 Credits}{\lang{Meine Abschlussarbeit wird voraussichtlich Wahlsysteme mit begrenzter Information untersuchen, in denen Wähler* nur eine begrenzte Anzahl an möglichen Wahlmöglichkeiten haben.}{Likely, I will look at voting systems with a limited message space for voters.}{Probablement, ma thèse serait sur la théorie des elections avec information limité}}
+\cventry{2015-2017}{MSc Mathematics}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{\lang{Abschlussnote:}{Grade:}{Note:} 1,2}{\lang{Meine Abschlussarbeit wandelte im Grenzbereich von Statistik und Graphentheorie: Ich wendete die Theorie zufälliger Graphen auf Klassifikation von Netzwerken in der Neuromedizin an.}{My thesis studied classification of graphs theoretically using the theory of graphons and applied it to neuroscience data.}{Ma thèse est sur la classification des graphs et utilise la théorie des graphons.}  \cite{DBLP:journals/corr/abs-1710-08878} \lang{ist ein Arbeitspapier mit Ergebnissen aus der Arbeit.}{contains results from the thesis.}{contiens des resultats de la thèse.}}
+\noresumeentry{2013-2014}{MSc Mathematik}{EPFL}{Lausanne}{\lang{Ohne Abschluss}{Without degree}{Sans Diplôme}}{\lang{Ich habe ein Forschungsprojekt in Diskreter Optimierung am Lehrstuhl von Prof. Eisenbrand zu schwach submodularen Funktionen durchgeführt. Das Ergebnis ist}{I undertook a research project in discrete optimisation at Prof. Eisenbrands chair: I studied weakly submodular functions. The results can be found}{J'ai fait un projet de recherche sur des fonctions faiblement submodulaire. Voulez trouver des resultats} \href{https://github.com/Indraos/weaklysubmodular}{\lang{hier}{here}{ici}}.}
+\cventry{2012-2014}{BSc Mathematik}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{\lang{Abschlussnote:}{Grade:}{Note:} 1,7}{\lang{Meine Abschlussarbeit ging über die Integrality Gap des Subtour-Elimination-Polytops für das Traveling-Salesperson-Problem im Spezialfall des euklidischen Travelling-Salesperson-Problems.}{My thesis studied the integrality gap of the Subtour Elimination Polytope for the special case of the Euclidean Travelling Salesperson Problem.}{Ma thése était sur le polytope d'elimination des randonnes partielles, particulièrement en cas du Travelling Salesperson Problem Euclidean.}}
+\section{\lang{Arbeit}{Work}{Travail}}
+\cventry{2017-2019}{Fellow}{Teach First Deutschland Berlin gGmbH}{Groß-Gerau}{\lang{an den}{at}{à} Berufliche\lang{n}{}{ }Schulen Groß-Gerau}{\lang{Ich unterrichte Berufsfachschülerinnen*, Fachinformatiker* und etabliere AGs an der Schule (Debattieren, Model United Nations). Unter anderem habe ich einen \emph{Github Classroom} in der Schule eingeführt. Eine öffentliche Einführung zu git für Schülerinnen* finden Sie}{I teach apprentices and junior high students and establish new working groups at the school (Debating, Model United Nations). Among others, I installed a \emph{Github Classroom} for apprentices. I wrote a (German) introduction to Git for my students}{J'instruis des apprentices et des étudiants en college et j'etablis des groups d'interet (club de débat, simulation des Nations Unies). Avec des étudiant.e.s, j'ai installé un classroom Github. Veuillez trouver une introduction de git que j'ai écrit pour mes étudiant.e.s}
+\href{https://github.com/bschulengg/intro_to_git}{\lang{hier}{here}{ici}. \lang{Ich unterrichte Programmierung in C\#}{I teach programming in C\#}{J'instruis programmation en C\#}.}}
+\noresumeentry{3-9/2017}{\lang{Wissenschaftliche Hilfskraft}{Scientific Assistant}{Assistance Scientifique}}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{}{\lang{Für den Lehrstuhl für Stochastische Analysis (Prof. Eberle) habe ich Skripe vereinheitlicht und Erstellung von Bildern automatisiert. Die aktualisierten Skripte finden Sie}{For the chair of stochastic analysis (Prof. Eberle), I unified templates for lecture notes and automatised the creation of images. Please find an example of the revamped notes}{Pour le chair d'analyse stochastique de Prof. Eberle, j'ai unifié des notes et créé un procès automatique pour la création des images. Veuillez trouver des notes que j'ai unifié} \href{https://wt.iam.uni-bonn.de/eberle/teaching/}{\lang{hier}{here}{ici}}.}
+\cventry{2-3/2017}{\lang{Praktikant Wissenschaftliche Mitarbeit}{Internship Scientific Assistance}{Stage Assistance Scientifique}}{\href{https://www.marian-wendt.de/}{\lang{MdB Marian Wendt}{Delegate in German Bundestag Marian Wendt}{Delegué de Bundestag Allemand Marian Wendt}}}{Berlin}{\lang{Inneres, Digitales}{Inner, Digital}{Interieur, Digital}, NSA}{\lang{Ich bearbeitete Rechercheaufgaben zu innenpolitischen Themen, und bereitete Ausschusssitzungen vor.}{I conducted research on subjects of politics of the inner and prepared meetings.}{J'ai recherché sur des thémes de l'interieur et preparé des meetings.}}
+\section{\lang{Stipendien, Zertifikate und Auszeichnungen}{Stipends and certificates}{Bourses et Certificats}}
+\subsection{Stipendien}
+\noresumeentry{12/2017-10/2018}{\lang{Stipendium}{Scholarship}{Bourse}}{\href{http://www.evangelische-akademie.de/junge-akademie-frankfurt/junge-akademie-2018/}{Junge Akademie}}{Frankfurt}{}{\lang{Die Junge Akademie unterstützt mich bei der Entwicklung eines Projekts zur Demokratieförderung.}{The Young Academy supports me in the development of a social project}{La Jeune Academie patronne un projet social.}}
+\cventry{4/2013-9/2017}{\lang{Stipendium}{Scholarship}{Bourse}}{\href{https://www.evstudienwerk.de/}{Evangelisches Studienwerk}}{Villigst}{}{\lang{Das Evangelische Studienwerk ist eines der 13 Begabtenförderwerke in Deutschland.}{Evangelisches Studienwerk is one of the 13 institutions that grants federal scholarships to students.}{Evangelisches Studienwerk est une de 13 institutions qui distribuent des bourses féférales.}}
+\subsection{\lang{Zertifikate}{Certificates}{Certificats}}
+\cvitem{10/2017}{\enquote{Neural Networks and Deep Learning}, \enquote{Improving Neural Networks: Hyperparameter tuning, Regularisation and Optimization}, \enquote{Structuring Machine Learning Projects} (\href{http://coursera.com/}{Coursera}, deeplearning.ai).}
+\noresumeitem{9/2017}{\enquote{Machine Learning} (\href{http://coursera.com/}{Coursera}, Stanford University).}
+\noresumeitem{11/2017}{\enquote{\lang{Zufrieden und erfolgreich - die Kunst, als Lehrer Schüler zu begeistern}{Satisfied and Successful -- the art to fascinate students as a teacher.}{Content et Prospère -- l'Art de donner fascination aux étudiants comme ensegnieur}} (Her{\ae}us-Bildungsstiftung)}
+\subsection{\lang{Auszeichnungen}{Awards}{Distinctions}}
+\noresumeentry{3/2017}{Honorable Mention Delegation}{\href{https://www.nmun.org/}{National Model United Nations}}{New York, USA}{}{\lang{Dies ist eine Auszeichnung für die 50\% besten Delegationen. Hier für die von mir geführte Delegation \enquote{MUNICH} (20 Personen).}{This is awarded to the 50\% of the best delegations at NMUN.}{Ce distinction est distribué pour la meilleur moitié des delegations à NMUN}}
+\noresumeentry{1/2017}{Diplomacy Award}{\href{http://www.worldmun-hd.de/cms/front_content.php?idart=582}{National Model United Nations}}{Heidelberg}{}{\lang{Dies ist eine Auszeichnung für die etwa 15\% besten Delegierten in der Simulation. Hier in der Rolle Chinas in der Weltbank.}{This is an award for the 15\% best delegates at the simulation. Here, in the role of China in World Bank.}{C'est pour les meilleures 15\% des delegués à la simulation.}}
+\cventry{3/2016-3/2017}{Mathematisch-Naturwissenschaftliches Kolleg}{Studienstiftung des Deutschen Volkes}{Bad Honnef, Wittenberg, Nürnberg}{}{\lang{Die drei Kollegwochen gingen über theoretische Informatik, Logik und mathematischen Rätsel.}{In three seminar weeks we tackled problems from theoretical computer science, logics and mathematical puzzles.}{Dans 3 semaines de seminaires nous avons exploré des puzzles en informatique théoretique, logique et mathématique.}}
+\section{\lang{Sprachen}{Languages}{Langues}} 
+\lang{Englisch}{English}{Anglais} (C2), \lang{Französisch}{French}{Français} (B2)
+\section{\lang{Digitales}{Digital}{Digitale}}
+{\LaTeX} (\lang{Experte}{expert}{expert}), \texttt{python}, \texttt{pandas}, \texttt{tensorflow} (\lang{Fortgeschritten}{advanced}{avancé}), \lang{Versionskontrolle}{Version Control}{Contrôle de version} (Git, Mercurial), C\# (\lang{Gut}{good}{bien}), Photoshop, InDesign (\lang{Gut}{good}{bien}), Matlab (\lang{Gut}{good}{bien})
+\section{\lang{Extracurricular}{Extracurricular}{Extracurriculaire}}
+\noresumeentry{4/2017-10/2018}{\lang{Layouter}{Layout}{Mise en page}}{Brühwürfel}{Villigst}{}{\lang{Ich habe ein stipendiatisches Magazins des Evangelischen Studienwerks gelayoutet. Da das Magazin nur intern veröffentlicht ist, melden Sie sich bitte und ich lasse ihnen eine von mir gesetzte Ausgabe zukommen.}{Ich did the layout of a magazine of Evangelisches Studienwerk. As it was published internally, please contact me, I will send you a version.}{J'ai mise en page un magazin d'Evangelisches Studienwerk. Puisque il est distribué internement, veuillez me contacter pour obtenir une version que j'ai mise en page.}}
+\noresumeentry{11/2017--08/2018}{\lang{Delegationsleitung}{Head Delegate}{Chef de Delegation}}{SPECQUE sf}{Saarbrücken-Frankfurt}{}{\lang{Ich ko-leite eine Delegation zur frankophonen Simulation des europäischen Parlaments }{I am co-head delegate of a delegation to the French speaking simulation of the European parliament \href{http://specque.org/}{SPECQUE}}{Je suis co-chef de delegation pour la simulation francophone du parlement Européen.}}
+\cventry{7/2017-6/2018}{\lang{Logistikplanung}{Event Logistics}{Logistique}}{\href{bildungsfestival.de}{Bildungsfestival}}{Essen}{}{\lang{Ich koordiniere Material und sorge für das leibliche Wohl auf Vorbereitungstreffen.}{I coordinate material logistics for the event an organise meals for the preparatory meetings/weekends.}{Je suis coordinateur logistique et organise des repas pour les rencontres préparatoires.}}
+\noresumeentry{9/2017-3/2018}{PR}{\lang{Lernferien}{Learning Holidays}{Vacances de l'enseignements} \href{https://www.whgs-lerncamp.de/}{Work Hard Get Smart}}{Baden-Württemberg}{}{\lang{Ich habe Werbematerial in InDesign erstellt.}{I created avertising material for the holidays in InDesign.}{Je composé materiel de publicité dans InDesign.}}
+\noresumeentry{09/2015-11/2016}{\lang{Programmausschussmitglied}{Participant in Programme Commitee}{Participant dans le commité du programme}}{\href{https://www.evstudienwerk.de/}{Evangelisches Studienwerk}}{Villigst}{}{\lang{Für die Villigster Sommeruniversität habe ich die Seminare \enquote{Synkretismen}, \enquote{Es muss nicht immer der Elitepartner sein: Eine Einführung in Matchingalgorithmen} und \enquote{Textstatistik} akquiriert.}{For the summer university of Villigst, I did the correspondence for seminars on syncretism, matching algorithms and text statistics}{Pour l'université d'été de Villigst, j'ai fait la correspondence avec des docent de seminaires sur synretismes, algorithmes de matching et statistique des textes.}}
+\cventry{3/2015-3/2016}{\lang{Editor}{Editor}{Éditeur}}{\href{https://www.bje.uni-bonn.de/}{Bonn Journal of Economics}}{Bonn}{}{\lang{Ich habe Autoren* beim Kürzen ihrer Abschlussarbeit unterstützt und ein neues {\LaTeX}-Template für das Journal erstellt.}{I helped authors in creating an extended abstract of their thesis for the journal. Furthermore, I created a new {\LaTeX} template for it.}{J'ai aidé des auteurs à créer und abstract de leur thèse.} \href{https://www.bje.uni-bonn.de/download-the-latest-issue-1/volume-v-2-december-2016}{\lang{Hier}{Here}{Ici}} \lang{finden Sie eine von mir gesetzte Ausgabe.}{you find an issue I typeset.}{vous trouvez un édition que j'ai mise en page.}}
+\printbibliography
+\section{\lang{Veranstaltungseinladungen}{Invited talks}{Présentations invités}}
+\noresumeentry{10/2017}{Panelist}{\href{http://www.bundesbank.de/Redaktion/DE/Themen/2016/2016_10_20_weidmann_knot_buchmesse.html}{Jens Weidmann and Klaas Knot Meet Students}}{Frankfurt}{}{\lang{Ich war Panelist bei einer Diskussion zur zu Geldpolitik auf der Frankfurter Buchmesse.}{I participated in a panel discussion with Jens Weidman and Klaas Knot.}{J'ai participé dans une discussion panel avec Jens Weidmann et Klaas Knot.}}
+\cventry{9/2017}{\lang{Sprecher}{Speaker}{Conférencier}}{Workshop \emph{\lang{Intelligente Maschinen}{Intelligent Machines}{Machines intelligentes}}}{Schwerte}{}{\lang{Ich habe einen Workshop zu Recommender Systems gehalten.}{I lead a workshop on recommender systems.}{J'ai guidé un workshop sur les systemes de recommendation.}}
+\vfill\makecvfoot{Frankfurt,~\today}
+\end{document}
