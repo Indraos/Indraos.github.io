@@ -1,5 +1,5 @@
 #!/bin/bash
-
+PATH=/Library/TeX/Root/bin/x86_64-darwin:$PATH
 for LANG in ngerman english french; 
 	do for TYPE in resume cv; 
 		do JOBNAME="$LANG"_"$TYPE" \
@@ -9,5 +9,3 @@ for LANG in ngerman english french;
 		&& rm $JOBNAME.aux $JOBNAME.bbl $JOBNAME.bcf $JOBNAME.blg $JOBNAME.log $JOBNAME.out $JOBNAME.run.xml
 	done 
 done
-
-# PATH=/usr/local/texlive/2017/bin/x86_64-darwin:$PATH
