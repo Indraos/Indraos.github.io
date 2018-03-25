@@ -13,8 +13,8 @@ Graph Kernels are heavily used in network classification. This is a short commen
 ### via graph kernels
  - doi:101007/978354045167911 shows that the complete kernel is NP-hard to compute, presents the walk kernel as efficient kernel (that is spectrally computed).
  - issn:1532-4435 shows that many graph kernels can be computed efficiently using spectral methods. They give a very general overview of graph kernels.
- - AISTATS: "Efficient graphlet kernels for large graph comparison": This is homomorphism densities of small graphs as features. 
- - NIPS: "Fast subtree kernels on graphs": This uses trees. 
+ - [This](http://proceedings.mlr.press/v5/shervashidze09a.html) uses homomorphism densities of small graphs as features. 
+ - [This](http://papers.nips.cc/paper/3813-fast-subtree-kernels-on-graphs.pdf) uses trees. 
  - issn:1532-4435 studies Graph kernels using tree homomorphism densities with additional information on node labels.
  - doi:101007/978364233460330 is the first approach I found that tries to leverage ideas that work for unweighted graphs to weighted graphs. 
  - doi:101145/10140521014072 gives a graph kernel that is unfortunately not efficiently computable.
