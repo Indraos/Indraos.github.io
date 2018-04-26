@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "References with Comments: Graph Kernels and Graphons"
-date:   2018-01-26 00:26:05 +0100
+title:  "Commented References: Graph Kernels and Graphons"
+date:   2018-03-25 08:00:00 +0100
 categories: learn
 ---
 Graph Kernels are heavily used in network classification. This is a short commented literature review.

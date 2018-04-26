@@ -1,18 +1,17 @@
 ---
 layout: post
-title:  "Grundlagen Kryptographie"
-date:   2018-03-11 00:26:05 +0100
+title:  "Kryptographie"
+date:   2018-04-25 08:00:00 +0100
 categories: teach
 ---
+This is a short German introduction to cryptography and blockchain that has been presented to apprentices.
+<!--more-->
 
 ## Grundlagen
 **Ziele**
-
  - Können den Unterschied von Typ und Objekt erklären
  - Können `using` auf zwei Weisen anwenden
  - Kennt die Bedeutung des Disposing für die Kryptographie
-
-<!--more-->
 ### Typen
 Typen sind die „Arten“ von Objekten in Programmiersprachen. Beispiele sind `int`, `string`, `uint` und `byte`. Standardmäßig sind Typen in Visual Studio (VS) blau eingefärbt und stehen vor Funktions- und Variablennamen. 
 > a. Schreibe dir in einem Programm, welches du bisher geschrieben hast, alle Typennamen heraus und mache eine Strichliste, wie oft jeder Typ vorkommt.
@@ -93,3 +92,40 @@ Hier wird ausgegeben, wie sich `a` zu `3` verhält.
 Ein Encoding ist eine Übersetzung von Bit-Arrays auf Zeichen. Es gibt hier sehr viele. In der Kryptographie wird das Encoding zumeist außen vor gelassen und direkt mit Bit- oder Byte-Arrays gearbeitet. 
 
 > Fertige aus dem Internet eine Liste mit verschiedenen Encodings an. 
+
+## Hashing
+**Ziele**
+ - Ihr könnt definieren, was ein Hash-Algorithmus ist und Beispiele geben
+ - Ihr könnt in einer Modul-Dokumentation nachlesen. 
+ - Ihr könnt in C# einen Hash eines Dateinhaltes berechnen
+
+### Anwendungen
+Hashing bedeutet, eine Verschlüsselte Version von Daten abzulegen, die man gar nicht entschlüsseln möchte. Hashing hat hauptsächlich zwei Anwendungsbereiche: 
+
+1. Integritätscheck (ist mein Download richtig?)
+2. Prüfung von Passwörtern (ich kann Passwörter nicht im Klartext in einer Datenbank ablegen. 
+
+> Google: Wie mache ich in Linux einen Integritäts-Check mit Berechnung einer MD5-Checksumme.[^Checksumme soll hier nichts anderes bedeuten als Hashwert]
+
+### Ein einfacher Hash-Algorithmus
+Ein Beispiel für einen Hash-Algorithmus ist der folgende: Wir wählen eine große Zahl $x$. Um einen Hash eines Werts $y$ zu bekommen, nehmen wir die beiden Zahlen mal und geben das Ergebnis zurück. Diese Operation ist schnell, aber schwer zu invertieren. 
+
+> Implementiere den obigen Hash-Algorithmus als Funktion `string -> byte[]`. Benutze immer Blöcke von 32 Bit Länge.
+
+### Liste von Hashing-Algorithmen
+Hierfür gibt es verschiedene Hashing-Algorithmen. MD5 ist ein schwacher, stärker sind die SHAXXX-Algorithmen, wobei XXX eine dreistellige Zahl ist. Wollen wir einen Hash berechnen, so können wir das wie folgt machen:
+
+```cs
+byte[] data = Encoding.UTF8.GetBytes("stRhong%pword");
+byte[] hash = SHA256.Create().ComputeHash(data);
+Console.WriteLine(Encoding.UTF8.GetString(hash));
+```
+
+> Probiere den obigen Code aus. Ändere den Hash-Algorithmus. Probiere ein anderes Encoding.
+
+### Angriffe auf Hash-Algorithmen
+Ein großes Problem entsteht für viele der Anwendungen, die wir oben genannt haben, wenn zwei Datenpakete auf denselben Hashwert zeigen können: Dann kann man sich entweder mit einem falschen Passwort anmelden oder eine falsche Datei einschleusen. Zwei Werte, die auf denselben Wert gehasst werden, nennt man eine *Kollision*. Es ist ein maßgebliches Qualitätskriterium von Hash-Algorithmen, wie lange es dauert, eine Kollision zu berechnen.
+
+> Recherchiere auf Google, wie lange es theoretisch dauert, in SHA256 eine Kollision zu berechnen.
+
+> Arbeitet zu zweit. Erstellt eine Datei „test.txt“ und eine Datei „test2.txt“ mit zuerst gleichem Inhalt. Ihr könnt sie öffnen mit `using (IOStream stream = File.OpenRead(„test.txt“))`. Erstellt ein Programm, welches die beiden Programme öffnet und deren Hashes vergleicht. (Tipp: `.ComputeHash()` akzeptiert auch einen Stream als Input).
