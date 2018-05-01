@@ -129,3 +129,52 @@ Ein großes Problem entsteht für viele der Anwendungen, die wir oben genannt ha
 > Recherchiere auf Google, wie lange es theoretisch dauert, in SHA256 eine Kollision zu berechnen.
 
 > Arbeitet zu zweit. Erstellt eine Datei „test.txt“ und eine Datei „test2.txt“ mit zuerst gleichem Inhalt. Ihr könnt sie öffnen mit `using (IOStream stream = File.OpenRead(„test.txt“))`. Erstellt ein Programm, welches die beiden Programme öffnet und deren Hashes vergleicht. (Tipp: `.ComputeHash()` akzeptiert auch einen Stream als Input).
+
+## Symmetrische Verschlüsselung
+Symmetrische Verschlüsselung ver- und entschlüsselt Daten mit demselben Geheimnis. Dieses Geheimnis wird auch Schlüssel genannt.
+> Was ist der Schlüssel bei Caesar, was bei Vigénère?
+
+Ein symmetrisches Verschlüsselungssystem besteht für uns aus zwei Funktionen, die jeweils zwei Argumente nehmen: Eine Funktion „Encrypt“, die menschenlesbaren Test und einen Schlüssel nimmt und verschlüsselten Text zurückgibt. Die zweite Funktion „Decrypt“ nimmt den Schlüssel und den verschlüsselten Text und gibt wieder den Klartext zurück.
+> Welche Funktionssignaturen haben diese Funktionen in C#, also: Welche Eingabetypen haben sie, welche Ausgabetypen haben sie?
+
+Es muss schwer sein, die Funktion Decrypt zu berechnen, ohne den Schlüssel zu kennen. Attacken werden erschwert, indem bei jeder Übermittlung ein sogenannter „Initialisation Vector“ mitgeschickt wird. Dieser wirkt komplex auf die Funktionen Encrypt und Decrypt.
+
+> Eine sogenannte *Dictionary Attack* wird hierdurch erschwert. Was könnte diese bedeuten?
+
+Wir haben schon symmetrische Verschlüsselungsverfahren kennengelernt: Caesar und das Vigénère-Quadrat sind Beispiele für symmetrische Verschlüsselungs-Verfahren. Komplexere Verschlüsselungsverfahren sind in C# implementiert. Eine ältere moderne Verschlüsselung ist der Digital Encryption Standard (DES). Ein neuerer ist der Advanced Encryption Standard (AES). Beide permutieren und verschieben blockweise und führen logische Operationen (OR, AND, XOR) mit festgelegten Konstanten durch.
+
+Symmetrische Verschlüsselung geht in C# wie folgt. Definieren wir zuerst den Schlüssel, den Initialisierungsvektor und unseren Klartext:
+
+```cs
+byte[] key = {145,12,32,245,98,132,98,214,6,77,131,44,221,3,9,50};
+byte[] iv  = {15,122,132,5,93,198,44,31,9,39,241,49,250,188,80,7};
+byte[] data = { 1, 2, 3, 4, 5 };
+```
+
+Nun geht Verschlüsselung wie folgt:
+
+```cs
+using (SymmetricAlgorithm algorithm = Aes.Create()) // Aes bekommt wird erstellt. 
+using (ICryptoTransform encryptor = algorithm.CreateEncryptor(key, iv))
+using (Stream f = File.Create("encrypted.bin"))
+using (Stream c = new CryptoStream(f, encryptor, CryptoStreamMode.Write))
+  c.Write(data, 0, data.Length);
+```
+
+Entschlüsselung geht auf ähnliche Weise:
+
+```cs
+using (SymmetricAlgorithm algorithm = Aes.Create())
+using (ICryptoTransform decryptor = algorithm.CreateDecryptor (key, iv))
+using (Stream f = File.OpenRead("encrypted.bin"))
+using (Stream c = new CryptoStream(f, decryptor, CryptoStreamMode.Read))
+  for (int b; (b = c.ReadByte()) > -1;)
+    Console.Write (b + " "); 
+```
+
+> a. Tippe diesen Code bei dir ein. Ändere AES zu DES. Verwende eine andere Dateiänderung als `.bin`. Ändert das etwas? b. Was genau machen die letzten beiden Zeilen? 
+
+### Ein einfacher symmetrischer Verschlüsselungsalgorithmus
+Wir wählen eine Zahl $x$ als Schlüssel und multiplizieren mit einer Zahl $y$, um das Ergebnis zu erhalten.
+ 
+> Implementiere hier Funktionen `Encrypt` und `Decrypt` mit Signaturen `(string, byte[], byte[]) -> byte[]` bzw. `(byte[],  byte[], byte[]) -> string`. 

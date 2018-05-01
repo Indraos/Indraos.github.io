@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Correcting Texts Using `wdiff`"
+title:  "Correcting Texts Using wdiff"
 date:   2018-02-28 08:00:00 +0100
 categories: learn
 ---
