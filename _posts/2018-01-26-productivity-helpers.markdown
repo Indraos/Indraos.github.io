@@ -27,7 +27,7 @@ I mention features of two todo apps I use: [Todoist](https://todoist.com/) and [
  - Assigning it to a project: Projects are collections of tasks that are related. These allow you to have an overview of all tasks (no matter when they are due) that are related to something in your life.
  - Assigning tags: Sometimes, you want to have tags, e.g. @5min for a short task, @mail for one that involves writing an e-mail or @important and @urgent to classify with the [Eisenhower Method](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method). This latter feature is to my best knowledge only supported by Todoist, but might be included in the future.
 
-In addition, attaching files to todos is possible. 
+In addition, attaching files to todos is possible. Unfortunately, this is as well a pro feature.
 
 ### One example
 Let us go through an example in Todoist. You note that you have to do homework for tomorrow and you assume its short. You already have a project "school" with subproject "maths". The homework is due tomorrow and you assume it to be short. You were sent the worksheet via e-mail. Then you just need to hit the `+`-icon and write
