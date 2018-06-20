@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Selbstorganisation"
+title:  „Probleme, die Bitcoin löst“
 date:   2018-04-25 08:00:00 +0100
 categories: teach
 ---
@@ -47,6 +47,8 @@ Zwei Personen wollen sich etwas überweisen. Sie haben leider beide keinen Konta
 --- 
 --- 
 
+
+
 ## Expertengruppe 2: Eine Attacke durch Modifikation
 Zwei Personen wollen sich etwas überweisen. Sie haben leider beide keinen Kontakt zu einer Bank, da die Bank gehackt wurde. Daher machen alle Menschen eine gemeinsame Liste aller Transaktionen, die getätigt wurden. Eine Person schreibt sich eigene Transaktionen in die Liste, die aber gar nicht stattgefunden haben. Dies ist eine **Attacke durch Modifikation**.  Denke dir zwei Möglichkeiten aus, wie diese Gruppe wieder einen funktionierenden Geldverkehr herstellen könnte — zuerst für dich alleine (und kurz) und danach in deiner Expertengruppe.
 
@@ -60,6 +62,7 @@ Zwei Personen wollen sich etwas überweisen. Sie haben leider beide keinen Konta
 ---
 --- 
 --- 
+
 
 
 ## Expertengruppe 3: Eine Attacke durch Neuschreiben
