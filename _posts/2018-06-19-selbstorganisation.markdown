@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Selbstorganisation"
-date:   2018-04-25 08:00:00 +0100
+date:   2018-06-19 08:00:00 +0100
 categories: teach
 ---
-# Selbstorganisation
 Nach einem erläuternden Text findet ihr jeweils die Aufgabe zu diesem Abschnitt. Die Aufgaben sind jeweils kursiv und zentriert.
+<!--more-->
 ## Aufgaben notieren und Todos aufschreiben
 ### SMART — Aufgaben notieren
 Eine Aufgabe, die man gezielt abschließen kann, sollte ein paar Bedingungen erfüllen. Bekannt hierfür ist SMART:

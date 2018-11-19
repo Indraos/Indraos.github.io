@@ -1,0 +1,126 @@
+\documentclass[10pt,a4paper,sans,utf8]{moderncv}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\moderncvstyle{classic}
+\moderncvcolor{grey}
+\usepackage[scale=0.82]{geometry}
+\usepackage[backend=biber]{biblatex}
+\usepackage{nth}
+\bibliography{cv.bib}
+\social[linkedin][https://de.linkedin.com/in/andreas-haupt-273794b4]{andreas-haupt}
+\social[github][https://github.com/indraos]{indraos}
+\name{Andreas}{Haupt}
+\email{a.haupt@me.com}
+\homepage{indraos.github.io}
+\photo[70pt][0.4pt]{picture_lowres}
+\usepackage{babel}
+\usepackage{csquotes}
+\newcommand{\lang}[2]{%
+    	\iflanguage{ngerman}{#1}{%
+        \iflanguage{english}{#2}{%
+        \iflanguage{french}{#3}{%
+}}}}%
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname}
+\def\FileSubject{\lang{Lebenslauf}{CV}{Resumé}}
+\def\FileKeyWords{\firstname \familyname, Lebenslauf, CV, Resumé}
+%\quote{\lang{Ich möchte (Un-)Möglichkeiten des Daten-Bändigens erforschen.}{I want to help shaping a society that is more and more dependent on data to be more democratic and more inclusive. I hope to find this working as a data scientist.}{}}
+\begin{document}
+\makecvtitle
+\section{\lang{Bildung}{Education}{Éducation}}
+\cventry{10/15-08/18}{MSc Economics}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{\lang{Note:}{GPA}{Note:} \lang{1,3}{3.9}{1.3}}{\lang{Meine Abschlussarbeit \enquote{Voting with Restricted Communication} betrachtete Wahlsysteme (im Sinne der Sozialwahltheorie) mit begrenzter Information. Wählerinnen* können nur eine begrenzte Anzahl an unterschiedlichen Signalen übermitteln, auch wenn ihre Präferenzen komplexer sind. Die Arbeit wird seit Ende August begutachtet.}{I study welfare properties of voting systems with restricted communication. Please find an exposé \href{https://indraos.github.io/decide/2018/04/25/information-constrained-mechanisms/}{here}.}{Ma thèse "Élections avec communication restreinte" portait sur les systèmes électoraux (au sens de la théorie du choix social) avec des informations limitées. Les électeurs ne peuvent transmettre qu'un nombre limité de signaux différents, même si leurs préférences sont plus complexes. Les travaux ont été passés en revue depuis fin août.}}
+\cventry{10/12-06/17}{MSc Mathematics}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{\lang{Abschlussnote:}{GPA}{Note:} \lang{1,2}{3.9}{1.2}}{\lang{Meine Abschlussarbeit \enquote{A Data Application of Graphon Theory} bewegte sich im Grenzbereich von Statistik und Graphentheorie: Ich wandte die Theorie austauschbar zufälliger Graphen auf Klassifikation von Netzwerken in der Neuromedizin an \cite{DBLP:journals/corr/abs-1710-08878}.}{I studied classification of weighted graphs theoretically using graphon theory and applied it to neuroscience data }{Ma thèse "Une application aux données de la théorie des graphons" était à l'interface de la statistique et de la théorie des graphes: j'ai appliqué la théorie des graphes aléatoires interchangeables à la classification des réseaux en neuromédecine.}} 
+%\cventry{13-14}{MSc Mathematik}{EPFL}{Lausanne}{\lang{Ohne Abschluss}{Without degree}{Sans Diplôme}}{\lang{Ich führte ein Forschungsprojekt in Diskreter Optimierung am Lehrstuhl von Prof. Eisenbrand zu schwach submodularen Funktionen durch. Das Ergebnis finden Sie}{I undertook a research project in discrete optimisation at Prof. Eisenbrands chair: I studied weakly submodular functions. The results can be found}{J'ai fait un projet de recherche sur des fonctions faiblement submodulaire. Voulez trouver des resultats} \href{https://github.com/Indraos/weaklysubmodular}{\lang{hier}{here}{ici}}.}
+%\cventry{12-14}{BSc Mathematik}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{Abschlussnote: 1,7}{\lang{Meine Abschlussarbeit \enquote{Die Integrality Gap des Subtour-Eliminations-Polytops} betrachtete untere Schranken für die Integrality Gap des Subtour-Elimination-Polytops für das Traveling-Salesperson-Problem im euklidischen Spezialfall.}{My thesis studied the integrality gap of the Subtour Elimination Polytope for the special case of the Euclidean Travelling Salesperson Problem.}{Ma thése était sur le polytope d'elimination des randonnes partielles, particulièrement en cas du Travelling Salesperson Problem Euclidean.}}
+%\cventry{06/12}{Allgemeine Hochschulreife}{Helmholtzschule}{Frankfurt}{Abschlussnote: 1,0}{Schulbegleitend absolvierte ich ein Schülerstudium an der Goethe-Universität Frankfurt. Meine Leistungskurse waren Mathematik und Chemie.}
+\section{\lang{Arbeit}{Work}{Travail}}
+\cventry{17-19}{Fellow}{Teach First Deutschland Berlin gGmbH}{Gro{\ss}-Gerau}{}{\lang{Ich unterrichte Berufsfachschüler* und Fachinformatiker* und etabliere AGs an der Schule mit 24 Schülerinnen*-Kontaktstunden und bezahlt.}{I teach middle school students in match, computer science and German as well as IT apprentices and establish afternoon activities (debating, model united nations).}{J'enseigne aux élèves des écoles professionnelles et aux informaticiens et j'établis des AG avec 24 heures de contact et une rémunération.}}
+%\cventry{03-09/17}{\lang{Wissenschaftliche Hilfskraft}{Scientific Assistant}{Assistance Scientifique}}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{Referenz: Prof. Andreas Eberle}{\lang{Für den Lehrstuhl für Stochastische Analysis (Prof. Eberle) habe ich Skripe vereinheitlicht und Erstellung von Bildern automatisiert. Die aktualisierten Skripte finden Sie}{For the chair of stochastic analysis (Prof. Eberle), I unified templates for lecture notes and automatised the creation of images. Please find an example of the revamped notes}{Pour le chair d'analyse stochastique de Prof. Eberle, j'ai unifié des notes et créé un procès automatique pour la création des images. Veuillez trouver des notes que j'ai unifié} \href{https://wt.iam.uni-bonn.de/eberle/teaching/}{\lang{hier}{here}{ici}}.}
+\cventry{02-03/17}{\lang{Praktikant Wissenschaftliche Mitarbeit}{Intern Scientific Assistance}{Stage Assistance Scientifique}}{\href{https://www.marian-wendt.de/}{\lang{MdB Marian Wendt}{Member of German Parliament M. Wendt}{Delegué de Bundestag Allemand Marian Wendt}}}{Berlin}{\lang{Digitales}{Digital}{Digital}, NSA}{\lang{Ich bearbeitete Rechercheaufgaben zu innenpolitischen Themen und bereitete Ausschusssitzungen vor.}{I conducted research on subjects of politics of the inner and prepared meetings.}{J'ai recherché sur des thémes nationaux et preparé des réunions de comité.}}
+
+\section{\lang{Auszeichnungen, Zertifikate, Stipendien}{Awards, Scholarships, Certificates}{Distinctions, Certificats}}
+\textbf{\lang{Zertifikate -- Machine Learning (Coursera)}{Certificates (Coursera)}{Certificats (Coursera)}} \enquote{Deep Learning Specialisation} (deeplearning.ai), \enquote{Probabilistic Graphical Models: Representation}, \enquote{Machine Learning}  (Stanford University), \enquote{Neural Networks and Machine Learning} (U~Toronto).
+\\[5pt]
+\textbf{\lang{Zertifikate -- Unterrichten}{Certificates -- Teaching}{Certificats -- Enseignement}} \enquote{\lang{Zufrieden und erfolgreich - die Kunst, als Lehrer Schüler zu begeistern}{Satisfied and successful - the art to fascinate students as a teacher}{Satisfait et réussi - l'art d'inspirer les étudiants en tant qu'enseignant} (\lang{Her{\ae}us-Bildungsstiftung}{Her{\ae}us Education foundation}{fondation d'éducation Her{\ae}us}), \enquote{Twitter einfach erklärt}{Twitter made easy}{Twitter simplement expliqué}}, \enquote{\lang{Programmieren Lernen mit Scratch}{Learning Programming with Scratch}{Apprenez à programmer avec Scratch}}, \enquote{\lang{Lernvideos im Unterricht}{Learning videos in the classroom}{vidéos éducatives en classe}}, \\\enquote{\lang{Greenscreen-Videos im Unterricht}{Greenscreen videos in the classroom}{vidéos d'écran vert en classe}} (Fobizz).
+\\[5pt]
+\textbf{\lang{Scheine -- Jura (Universität Erfurt)}{Certificats -- Law (University of Erfurt)}{Certificats en droit (Université d'Erfurt)}} \enquote{\lang{Staatsorganisationsrecht}{Constitutional Law}{Droit Constitutionnel}}, \enquote{\lang{Grundrechte}{fundamental rights}{droits fondamentaux}}, \enquote{\lang{Fallbearbeitung Öffentliches Recht}{Practice in public law}{gestion des cas en droit public}}, \enquote{\lang{Allgemeines Verwaltungsrecht}{droit d'administration generale}}, \enquote{\lang{Europäisches Organisationsrecht}{European law}{Droit européen}}.
+\\[5pt]
+\cventry{06/18}{\lang{Zertifikat für internationale Kompetenz⁄}{Certificate for international competence}{Certificat competence international}}{Rheinische Friedrich-Wilhelms-Universität}{Bonn}{}{\lang{Nachweis über Sprachkurse und Teilnahme an Veranstaltungen mit internationalem Bezug.}{Certificate for studies abroad, visit of several events with international focus and participation in language courses}{Preuve de cours de langue et participation à des événements universitaires sur des thèmes internationaux.}}
+%\cventry{04/13-09/17}{\lang{Studienförderung/Stipendium}{Scholarship}{Bourse}}{\href{https://www.evstudienwerk.de/}{Evangelisches Studienwerk}}{Villigst}{}{\lang{Das Evangelische Studienwerk ist eines der 13 vom Bundesministerium für Bildung und Forschung geförderten Begabtenförderwerke.}{Evangelisches Studienwerk is one of the 13 institutions that grants federal scholarships to students.}{Evangelisches Studienwerk est une de 13 institutions qui distribuent des bourses féférales.}}
+\cventry{03/17}{Honorable Mention Delegation}{\href{https://www.nmun.org/}{National Model United Nations}}{New York, USA}{}{\lang{Dies ist eine Auszeichnung für die besten 50\% aller Delegationen zum internationalen Planspiel. Ich erhielt die Auszeichnung in Vertretung für die von mir geleitete Delegation \enquote{MUNICH} (20 Personen).}{This is awarded to the better half of head delegates (each leading 20 persons).}{Ce distinction est distribué pour la meilleur moitié des delegations à NMUN}.}
+
+%\cventry{3/16-3/17}{Mathematisch-Naturwissenschaftliches Kolleg}{Studienstiftung des Deutschen Volkes}{Bad Honnef, Wittenberg, Nürnberg}{}{\lang{In drei Kollegwochen behandelten wir Themen aus theoretischer Informatik, Logik und mathematische Rätsel.}{In three seminar weeks we tackled problems from theoretical computer science, logics and mathematical puzzles.}{Dans 3 semaines de seminaires nous avons exploré des puzzles en informatique théoretique, logique et mathématique.}}
+%\section{\lang{Veranstaltungseinladungen}{Invited talks}{Présentations invités}}
+%\cventry{04/18}{Contributed Talk}{\href{https://www.mathematik.uni-muenchen.de/~hirsch/neuroConf/program2.html}{Random Structures in Biology and Neuroscience}}{Herrsching}{}{\lang{Ich präsentierte Ergebnisse aus}{I presented the results of}{} \cite{DBLP:journals/corr/abs-1710-08878}.}
+%\cventry{04/18}{\lang{Workshop-Leiter}{Speaker}{Conférencier}}{Digitale Beteiligungsformate in der Erwachsenenbildung}{Schwerte}{}{\lang{Ich stellte digitale Partizipationswerkzeuge vor Professionellen in der Erwachsenenbildung vor.}{I gave a workshop on digital participation tools (Polleverywhere, Plickers, Kahoot, Twitter in Presentations).}{J'ai guidé un workshop sur des utils de participation numerique (Polleverywhere, Plickers, Kahoot, Twitter en seminaires).}}
+\cventry{11/17}{Organisation}{\href{https://mlworkshopvilligst.wordpress.com/}{MLworkshopVilligst}}{Tübingen}{}{\lang{Ich organisierte einen Workshop zu Theorie und Anwendungen maschinellen Lernens für Studentinnen*.}{I organised a national student workshop on the theory and practice of machine learning at Tübingen.}{J'ai organisé un workshop sur théorie et applications de l'apprentissage automatique à Tubinque.}}
+\cventry{10/17}{Panelist}{\href{http://www.bundesbank.de/Redaktion/DE/Themen/2016/2016_10_20_weidmann_knot_buchmesse.html}{Jens Weidmann and Klaas Knot Meet Students}}{Frankfurt}{}{\lang{Nach einem Auswahlverfahren auf Grundlage eines Essays war ich Panelist bei einer Diskussion zur zu Geldpolitik auf der Frankfurter Buchmesse.}{After a selection process, I participated in a panel discussion with Jens Weidman and Klaas Knot.}{Aprés un processus de selection, j'ai participé dans une discussion panel avec Jens Weidmann et Klaas Knot.}}
+%\cventry{09/17}{\lang{Sprecher}{Speaker}{Conférencier}}{Workshop \emph{\lang{Intelligente Maschinen}{Intelligent Machines}{Machines intelligentes}}}{Schwerte}{}{\lang{Ich hielt einen Workshop zu Recommender Systems.}{I lead a workshop on recommender systems.}{J'ai guidé un workshop sur les systemes de recommendation.}}
+%\section{\lang{Professionelle Aktivitäten}{Professional Activities}{Activités Professionels}}
+%\cventry{03/16-03/17}{\lang{Editor}{Editor}{Éditeur}}{\href{https://www.bje.uni-bonn.de/}{Bonn Journal of Economics}}{Bonn}{}{\lang{Ich unterstützte Autoren* beim Kürzen ihrer Abschlussarbeit und erstellte ein neues {\LaTeX}-Template.}{I helped authors in creating an extended abstract of their thesis for the journal. Furthermore, I created a new {\LaTeX} template for it.}{J'ai aidé des auteurs à créer und abstract de leur thèse.} \href{https://www.bje.uni-bonn.de/download-the-latest-issue-1/volume-v-2-december-2016}{\lang{Hier}{Here}{Ici}} \lang{finden Sie eine von mir gesetzte Ausgabe.}{you find an issue I typeset.}{vous trouvez un édition que j'ai mise en page.}}
+
+%\section{Sprachen} 
+%\lang{Englisch}{English}{Anglais} (C2), \lang{Französisch}{French}{Français} (B2)
+%\section{\lang{Digitales}{Digital}{Digitale}}
+%\texttt{python} (\lang{Experte}{expert}{expert})%
+%, \texttt{pandas}%
+%, \texttt{keras} 
+%, C++/C\#(\lang{Fortgeschritten}{advanced}{avancé})%
+%, \lang{Versionskontrolle}{Version Control}{Contrôle de version} (Git, Mercurial),  Matlab, R (\lang{Gut}{good}{bien})
+
+%\printbibliography
+
+
+\section{\lang{Projekte}{Extracurricular}{Extracurriculaire}}
+\cventry{11/17-08/18}{\lang{Delegationsleitung}{Head Delegate}{Chef de Delegation}}{SPECQUE}{Montréal, Canada}{}{\lang{Ich ko-leitete eine achtköpfige Delegation zur frankophonen Simulation des europäischen Parlaments in Montréal und war Parlamentarier in der Kommission \enquote{Richtlinie zur Verantwortlichmachung von Internetplattformen für Fake News und illegale Inhalte}.}{I am co-head delegate of a delegation to the French speaking simulation of the European parliament \href{http://specque.org/}{SPECQUE}.}{J'était co-chef de delegation pour la simulation francophone du parlement Européen.}}
+\cventry{07/17-07/18}{\lang{Logistik}{Event Logistics}{Logistique}}{\href{bildungsfestival.de}{\lang{Bildungsfestival}{Education Festival}{Festival d'éducation}}}{Essen}{}{\lang{Das Bildungsfestival ermöglichte 100 Schüler*innen, ein Wochenende lang Workshops für andere Schüler*innen anzubieten. Ich organisierte Material und Technik.}{Bildungsfestival is the venue where 180 students give self-envisioned workshops for other students. I am admin of IT and project management infrastructure and do IT support at the venue.}{Bildungsfestival est un weekend où des étudiant.e.s peuvent guider des workshops. Je suis responsable de la logistique du materiel.}}
+\cventry{08/18-11/18}{Gestion de Projet}{\lang{Deine Bildung -- Dein Film}{Your Education -- Your Film}{Ton éducation -- ton film}}{Frankfurt}{}{"Your Education - Your Film" permet aux élèves de réaliser des vidéos pédagogiques sur des sujets liés à l'obtention du diplôme. Les enseignants qui les accompagnent bénéficient d’un soutien conceptuel, pédagogique et technique. La conception du contenu détermine les étudiants de manière indépendante.}
+
+\clearpage
+\recipient{Pole Recrutement SPECQUE}{Mélissa Dugas-Caron}
+\date{\today}
+\opening{Chers organisateurs et organisatrices de la SPECQUE 2019,}
+\closing{Je reste à votre disposition pour de plus amples informations et je vous prie d’agréer mes salutations distinguées.}
+\enclosure{Curriculum Vit\ae{}}
+\makelettertitle
+%%über ein Posting eines ehemaligen Kommilitonen, Umer Ayat-Adil, bin ich auf den \emph{d-fine Hackathon} aufmerksam geworden an dem ich gerne teilnehmen möchte und für den ich mich hiermit bewerbe.
+%über einen Newsletter von e-fellows.net bin ich auf die Veranstaltung \enquote{Tatendrang 2018} aufmerksam geworden. Ich möchte gerne im Oktober meinen Tatendrang gemeinsam mit anderen sinnvoll nutzen und bewerbe mich hiermit um eine Teilnahme an der Veranstaltung.
+%%%Hackathons geben die Möglichkeiten, sich in einem geschützten Umfeld intensiv über Probleme Gedanken zu machen -- dies aber ohne das sonst häufig anzutreffende \enquote{daran kann man auch nichts ändern}. Ich freue mich, bei einem langen Hackathon von 48 Stunden mich in ein Thema zu vertiefen, zu programmieren und nachzudenken.
+%Ich kann für mich noch nicht abschlie{\ss}end sagen, ob ich Berater sein möchte: Kommiliton*innen, die nun in die Beratung eingestiegen sind, schwärmen von der Abwechslung, berichten aber auch von sehr starkem Controlling. Ich möchte für mich herausfinden, ob der Beruf des Beraters mir langfristig Freude bereiten kann. Hierfür sehe ich in \enquote{Tatendrang 2018} eine großartige Möglichkeit.
+%
+%Derzeit arbeite ich als Fellow von Teach First Deutschland an den Beruflichen Schulen Gro{\ss}-Gerau. Dort begleite ich in Vollzeit Klassen aus der Berufsfachschule Elektrotechnik und an einem Tag in der Woche Auszubildende mit dem Berufsziel Fachinformatiker*in. Mein Fellowship endet Ende Juni 2019. Ich möchte dann in das Berufsleben starten mit einer Arbeit, die mir gute Möglichkeiten zur Weiterbildung eröffnet.
+%
+%%Ich habe Abschlüsse in Mathematik und Volkswirtschaftslehre und mich in verschiedenen Online-Kursen sowie Abschlussarbeiten mit Machine Learning beschäftigt. Ich finde gut pragmatische erste Lösungen und machffizient die Endredaktion von Reports und Präsentationen. Beides halte ich für Kompetenzen, die mich bei einem Hackathon voranbringen.
+%Ich interessiere mich für Massive Open Online Courses aus verschiedenen Perspektiven: Zum Einen organisiere ich ein Lernvideo-Projekt mit Schüler*innen von vier hessischen Schulen und beschäftige mich so mit der Produktionsseite von Online-Kursen. Zum anderen habe ich selbst mehrere Online-Kurse zu Machine Learning beim Udacity-Konkurrenten \emph{Coursera} mit Zertifikat belegt -- eine Kundensicht. Ich möchte Udacity beraten, da ich selbst hohes Interesse an der Weiterentwicklung von Online-Kursen habe: als Pädagoge wie als Teilnehmer.
+%
+%%D-Fine ist mir bereits aus einer Vorstellung, die ich als Mitglied der Deutschen Physikalischen Gesellschaft miterlebt habe, bekannt. Die guten Erfahrunguen, die ich dort gemacht haben, lassen mich eine interessante Veranstaltung erwarten. 
+%Mit McKinsey habe ich von einen ehemaligen McKinsey Fellow, der nun an der Bonn Graduate School of Economics promoviert, ein differenziertes Bild gezeichnet bekommen. Weiterhin habe ich in einem persönlichen Gespräch mit Kaija Landsberg, Geschäftsführerin der gemeinnützigen Hertie-Stiftung, erfahren, dass die Gründung von Teach First Deutschland ma{\ss}geblich durch McKinsey unterstützt wurde. Ich finde großartig, dass McKinsey Initiative von Mitarbeitern fördert und möchte herausfinden, ob das Unternehmen zu mir passt.
+%
+%%Gerne stehe ich Ihnen für Rückfragen zur Verfügung. Ich freue mich bereits auf den Hackathon!
+%Ich freue mich auf Ihre Rückmeldung -- und hoffe, mich bald in vier interessante und herausfordernde Tage gemeinsam mit Anderen und McKinsey in Berlin stürzen zu können.
+
+J’ai participé à la XXIème édition de la SPECQUE en 2018 à Montréal en tant qu’eurodéputé PPE dans la commission LIBE. Les expériences à Montréal m’ont donné l’idée de renouveler ma candidature cette année. Je suis prêt d’assumer les responsabilités du chef de la délégation Sarrebruck-Francfort 2019 et voudrais de nouveau recruter les membres de ma délégation dans les deux villes. J’ai gagné des expériences en tant que co-chef de délégation l’année dernière et connais donc les tâches d’un chef de délégation ainsi que le déroulement de la SPECQUE en général. Plus précisement, j'ai coordonné la préparation conjointe avec la délégation de Villigst, organisé un de deux week-ends de préparation et invité un expert sur l'UE. De plus, j’ai été chef de délégation au « National Model United Nations », conférence A, à New York en 2017. Je soutiens également la préparation d'un groupe de lycéens qui participera à la simulation des Nations Unies à Kiel, Allemagne, en Mars 2019.
+
+Je suis un jeune diplômé en mathématique appliquée et économie et actuellement inscrit dans les filières informatique et science sociale. C’était effectivement dans les cours en droit et relations internationales où j’ai appris les concepts principaux et fondamentaux du droit européen ainsi que le fonctionnement des institutions européennes. Pendant mes études en mathématiques, j’ai passé une année à Lausanne, Suisse, où j’ai pu approfondir mes compétences linguistiques en français. La SPECQUE 2019 serait pour moi une nouvelle opportunité de mettre en épreuves mon français et surtout d’approfondir mes aptitudes oratoires.
+
+A côté de mes études, je travaille d’ailleurs comme « Teach First Fellow » dans une école secondaire à Groß-Gerau. C’est surtout cette activité qui m’a permis de développer mes compétences de leadership. Je suis habitué à la préparation des cours pour les écoliers âgés de 15 à 18 ans, d’employer différentes méthodes pédagogiques et de gérer des groupes de 5 à 35 élèves. Je pourrais de nouveau appliquer ces compétences pendant la préparation de ma délégation. Ce qui concerne mes aptitudes organisatrices, avec 9 autres, j'ai organisé une école d'été interdisciplinaire pour étudiants durant l'année académique 2015-2016. De plus, j'ai contribué à la préparation logistique du \enquote{Festival de l'éducation} où plusieurs groupes d'étudiants dirigeaient des workshops pour écoliers. 
+
+Avec une nouvelle délégation Sarrebruck-Francfort à la XXIIème édition de la SPECQUE en 2019, nous pourrions continuer la tradition de la SPECQUE à Francfort et à Sarrebruck et encore amplifier la visibilité de la SPECQUE dans les deux villes.
+
+
+\makeletterclosing
+\end{document}
+
+%\cventry{4/17-10/18}{\lang{Layouter}{Layout}{Mise en page}}{Brühwürfel}{Villigst}{}{\lang{Ich habe ein stipendiatisches Magazins des Evangelischen Studienwerks gelayoutet. Da das Magazin nur intern veröffentlicht ist, kann ich Ihnen bei Interesse gerne eine von mir gesetzte Ausgabe zukommen lassen.}{Ich did the layout of a magazine of Evangelisches Studienwerk. As it was published internally, please contact me, I will send you a version.}{J'ai mise en page un magazin d'Evangelisches Studienwerk. Puisque il est distribué internement, veuillez me contacter pour obtenir une version que j'ai mise en page.}}
+
+
+%\cventry{02/18-04/19}{Organisator}{nachderschule.de}{Mannheim}{}{Ich ko-organisiere das Lerncamp für Abschlussklassen auf Werkreal-, Förder- und Berufsfachschulen.}
+%\cventry{01/18-04/19}{techn. Projektleitung}{Meet My Wahlkreis}{Heidelberg}{}{Das App-Projekt fördert den Austausch von Bewohnern* unterschiedlicher Regionen. Im Sommer findet eine Vereinsgründung statt.}
+
+
+\cventry{09/15-11/16}{\lang{Programmausschussmitglied}{Participant in Programme Commitee}{Participant dans le commité du programme}}{\href{https://www.evstudienwerk.de/}{Evangelisches Studienwerk}}{Villigst}{}{\lang{Für die Villigster Sommeruniversität habe ich die Seminare \enquote{Synkretismen}, \enquote{Es muss nicht immer der Elitepartner sein: Eine Einführung in Matchingalgorithmen} und \enquote{Textstatistik} akquiriert.}{For the summer university of Villigst, I did the correspondence for seminars on syncretism, matching algorithms and text statistics.}{Pour l'université d'été de Villigst, j'ai fait la correspondence avec des docent de seminaires sur synretismes, algorithmes de matching et statistique des textes.}}
+
+\cventry{01/17}{Diplomacy Award}{\href{http://www.worldmun-hd.de/cms/front_content.php?idart=582}{National Model United Nations}}{Heidelberg}{}{\lang{Dies ist eine Auszeichnung für die etwa 15\% besten Delegierten in der Simulation. Hier in der Rolle Chinas in der Weltbank.}{This is an award for the 15\% best delegates at the simulation. Here, in the role of China in World Bank.}{C'est pour les meilleures 15\% des delegués à la simulation.}}
+
+\cventry{17-19}{BSc Informatik (Teilzeit)}{Goethe-Universität}{Frankfurt}{107/180 ECTS}{}{}%{\lang{Gerade arbeite ich in einem Praktikum an }{Presently, I work with a group on the }{Maintenant, je travailles à la }\href{https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge}{Kaggles \enquote{Toxic Comment Classification Challenge}}.}

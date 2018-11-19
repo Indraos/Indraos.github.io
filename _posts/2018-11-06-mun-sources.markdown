@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  „MUN-Quellen“
+title:  "MUN-Quellen"
 date:   2018-11-06 08:00:00 +0100
 categories: teach
 ---
-# Quellen
 Wir wollen heute beispielhaft drei Fragen für ein Land für eine gegebene Frage beantworten. Wir nehmen an, wir vertreten die VR China im Wirtschafts- und Sozialrat (ECOSOC) zum Thema „Virtuelle Währungen“. Die Fragen wollen wir behandeln.
+
+<!--more-->
 
 1. In welchen größeren Kategorien liegt das Hauptinteresse unserer Nation: Sicherheitspolitik, Wirtschaft, Menschenrechte, soziale Rechte, Umwelt?
 2. Wer sind Verbündete und Feinde[^Wer ist regional eng verbunden, wer ist in ähnlichen Organisationen, wer hat ähnliche Probleme und Lösungen?]

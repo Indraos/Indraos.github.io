@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  „Probleme, die Bitcoin löst“
-date:   2018-04-25 08:00:00 +0100
+title:  "Probleme, die Bitcoin löst"
+date:   2018-06-20 08:00:00 +0100
 categories: teach
 ---
-# Cryptocurrencies
+
+Als Abschluss unserer Reihe zu Kryptographie, einmal etwas zu Bitcoin.
 <!--more-->
+# Cryptocurrencies
 ## Auswertung des Schecksimulation
 
 Eine Simulation mit Schecks bringt verschiedene Schwierigkeiten von Zahlungssystemen zutage: Geld muss immer durch die Zentrale Autorität ausgegeben werden! In einem ersten, unsicheren Modell sah die Zahlung wie folgt aus (Überweisung Alice an Bob): 

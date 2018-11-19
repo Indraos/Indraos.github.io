@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  „Arduino Projekt zu Internet of Things“
+title:  "Arduino Projekt zu Internet of Things"
 date:   2018-10-15 08:00:00 +0100
 categories: teach
 ---
-# IoT-Projekt I: Kennenlernen des Arduino
-Bevor wir mit IoT beginnen können, müssen wir zuerst einmal unsere Programmiersprache kennenlernen. Hierzu gibt es 19 Fragen, die ihr alle mit den (offline verfügbaren) Unterlagen — bis auf einen Link, der steht aber auch im folgenden — beantworten können solltet. Wir vergleichen nach 1 Stunde. Arbeitet mit einem Partner. Schreibt zu jeder Aufgabe ausreichend Stichpunkte auf, so dass ihr sie direkt beantworten könnt, wenn ich euch aufrufe.
 
+Bevor wir mit IoT beginnen können, müssen wir zuerst einmal unsere Programmiersprache kennenlernen. Hierzu gibt es 19 Fragen, die ihr alle mit den (offline verfügbaren) Unterlagen — bis auf einen Link, der steht aber auch im folgenden — beantworten können solltet. Wir vergleichen nach 1 Stunde. Arbeitet mit einem Partner. Schreibt zu jeder Aufgabe ausreichend Stichpunkte auf, so dass ihr sie direkt beantworten könnt, wenn ich euch aufrufe.
+<!--more-->
+# IoT-Projekt I: Kennenlernen des Arduino
 ## Einrichtung
 
 2. Lass dir die Zeilennummern anzeigen. Wie geht das?
