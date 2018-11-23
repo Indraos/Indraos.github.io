@@ -49,3 +49,13 @@ Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komite
 
 ### Wissenschaftliche Paper
  - [Google Scholar](https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=bitcoin+china&btnG=&oq=bitcoin+china)
+ - 
+### Offizielle Dokumente der MUN-Organisator\*innen
+ - [Programm und Ablauf der MUN-SH](https://www.mun-sh.de/MUNdi/pages/mun-sh/programm/)
+ - [Beschreibung der Rollen von NGOs, Staaten, Presse und Richter\*innen während der Simulation](https://www.mun-sh.de/MUNdi/pages/mun-sh/moeglichkeiten/)
+ - [FAQ zur Vorbereitung](https://www.mun-sh.de/MUNdi/pages/mun-sh/faq/#3)
+ - [FAQ zur Gremienarbeit](https://www.mun-sh.de/MUNdi/pages/mun-sh/faq/#5)
+ - [Liste der Delegationen](https://www.mun-sh.de/MUNdi/pages/meinmunsh/delegationen)
+ - [Liste der Gremien und Themen](https://www.mun-sh.de/MUNdi/pages/meinmunsh/gremien/)
+
+Wichtige Ressource: Das **[Handbuch](https://handbuch.dmun.de/)**
