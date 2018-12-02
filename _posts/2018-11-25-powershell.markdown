@@ -511,21 +511,80 @@ Ich gebe noch ein Beispiel für Gruppierung: Wenn ich ein System baue, in dem ic
 
 Aufgabe 2 Erweitere deine Klasse um eine Ausgabefunktionalität: Die Methode `print` soll eine Gruppierte `Format-Table`-Ausgabe machen.
 
-## Erweiterung der Powershell
+## Cmdlets und Module
+### Ziele
+ - Ihr könnt den Unterschied zwischen Cmdlets und Funktionen benennen.
+ - Ihr könnt Cmdlets schreiben
+ - ihr erstellt und nutzt ein Modul, um interessante Funktionen und erweiterte Funktionen zu exportieren.
 
-Lest den folgenden Text zusammen (10min)
+**Aufgabe 1** (25min, Plenum)
+Lest den [Blog-Eintrag](https://blogs.technet.microsoft.com/heyscriptingguy/2015/07/09/understanding-advanced-functions-in-powershell/) und beantwortet die folgenden Fragen im [Etherpad](etherpad.wikimedia.org/p/itmsys). Erläuterung: (1) Ein **Tag** wird einer Funktion vorangestellt und gibt weitere Informationen; ihr seht, wie diese angewendet werden, unten im Blogbeitrag. (2) Folgt bitte dem Blog-Beitrag bei der Erstellung eines neuen Cmdlets, tippt also den Code ab (3) `CmdletBinding` gibt weitere Features, mehr dazu nach dieser Aufgabe (4) „mandatory“ heißt verpflichtend.
 
-Heute soll es um Erweiterungen gehen. Dass wir gerne Funktionen aus einem bestimmten Bereich nutzen wollen, haben wir schon in Linux (Paket-Installation) und Kryptographie (Namespaces) gesehen. Zwei Gründe sprechen dafür, dass man immer etwas tun muss, um bestimmte Befehle nutzen zu können. 
+ 1. Wer ist BB?
+ 2. Was hat Microsoft Public Cloud Services: Setting up your business in the cloud mit dem Artikel zu tun?
+ 3. Welche Aufgabe hat der Teil zwischen `<#` und `#>`. 
+ 4. Schreibt den Code einer Funktion, die zwei `int`s addiert.
+ 5. Was bedeutet „Mandatory“? Was wäre ein Beispiel für einen nicht-mandatory Parameter?
+ 6. Was bedeutet Position?
+ 7. Warum ist dieser Blogeintrag nicht wirklich hilfreich? Welche Frage stellt ihr euch noch?
 
- 1. Alle Funktionen immer im kompilierten Code mit einzubauen bedeutet, dass der Code riesig und die Kompilierunug langsam ist und
- 2. vielleicht noch wichtiger: Es gäbe Namenskonflikte: eine Funktion namens „Print“ gibt es vermutlich in vielen Programmen. 
+Wenn ihr `CmdletBinding` weglasst, könnt ihr die Funktion weiterhin ausführen, solange ihr die `Parameter`-Attribute weiter angebt (sonst weiß euer Programm nicht, wie ihr `-a` und `-b` nennt). `CmdletBinding` ermöglicht aber einige Funktionalitäten, die ihr unbedingt wollt, wenn ihr Funktionen schreibt: 
 
-Daher installieren wir unterschiedliche Arten von weiterem Code. Das Ziel der heutigen Stunde ist, dass ihr euch drei historisch entwickelte Formen, weiteren Code einzubinden, zu zweit anschaut, und dann jeweils in eine Dreiergruppe geht, um gemeinsam ein paar Fragen zu beantworten.
+ - Pipeline-Input
+ - Hilfe/Erläuterungen zum Code
+ - Verbose-Output
+ - Testläufe (also testen, was gelöscht würde, und es nur angeben).
 
-Aufgabe 1 (25min) Teilt euch möglichst gleichmäßig in drei Gruppen auf. Gruppe 1 liest 
+Das schauen wir uns nicht weiter an, es ist aber wichtig, dass ihr wisst, dass diese Eigenschaften wichtige Stärken der Powershell sind.
 
-Wir können Module, Snapins, Assemblys installieren und neue Module mithilfe von Find-Module finden.
+**Aufgabe 2** (35min) Erstellt nach dem Muster wie im Blogeintrag selbst Cmdlets zu folgenden Aufgaben. Ergänzt auch die Kommentare nach `<#`; wenn ihr nicht weiter wisst, schaut in eure alten Skripte.
 
+1. Zwei Werte als Attribute einlesen (`int`) und `größerer Wert:` gefolgt von der größeren Zahl sowie `kleinerer Wert:` gefolgt von der kleineren Zahl ausgeben.
+3. Ein Float einlesen, `True` (also `bool`) zurückgeben, falls es größer ist als 1.
 
+Jetzt soll es um Erweiterungen der Befehlsmöglichkeiten in der Powershell gehen. Dass wir gerne unser System um bestimmte Funktionalitäten erweitern möchten, haben wir schon in Linux (Paket-Installation) und für Kryptographie in C# (**Namespaces**) kennengelernt. Dort war es zum Beispiel ein Paket, welches eine graphische Oberfläche ermöglicht (Paket `i3` in Arch Linux), ein Interpreter für Python (`ipython`) bzw. Datentypen für asymmetrische Verschlüsselung (Namespace `System.Security.Cryptography`).
 
-Als Abschluss folgt eine Remote-Wartung als Projekt.
+Zwei Gründe sprechen dafür, dass man immer aktiv als Programmierer\*in etwas tun muss, um bestimmte Befehle nutzen zu können.
+
+ 1. Alle Funktionen immer im kompilierten Code mit einzubauen bedeutet, dass der Code riesig und die Kompilierunug langsam ist und, vielleicht noch wichtiger:
+ 2. Es gäbe Namenskonflikte: eine Funktion namens `print` gibt es vermutlich in vielen Programmen. 
+
+Daher installieren wir unterschiedliche Arten von weiterem Code. Code installieren heißt, neue Funktionen und Datentypen zur Verfügung zu stellen, was uns die Arbeit erleichtert.
+
+In der ersten Version der Powershell gab es hierfür die Möglichkeit, **Snap-Ins** zu nutzen (das sind die Befehle, die ihr auf der Powershell eingebt, wie etwa `Read-Input`, `Write-Output` a.k.a. `echo`). Da diese installiert werden müssen, benötigen sie hohe Rechte von euch (da ihr Code laufen lassen müsst, bevor ihr die Befehle überhaupt benutzen könnt) und sind daher für Administration teilweise nicht gut geeignet. Sie werden weniger und weniger und auf Grund von Rückwärtskompatibilität gewährleistet. Wir werden keine *Snap-Ins* bearbeiten.
+
+**Aufgabe 3** (10min) Kopiert den Code des `Add-TwoNumbers`-Cmdlets in eine neue Datei uns speichert es als `MyModule.ps1m` `Meine Dokumente\WindowsPowerShell\Modules\MyModule`. Dann tippt
+```
+Import-Module MyModule
+Add-TwoNumbers 1 2
+```
+Was `3` zurück geben sollte. Falls es nicht klappt, nutzt google, um den richtigen Pfad für Module ausfindig zu machen.
+
+Befehle in der Powershell sollten immer aus einer Verb-Nomen-Kombination bestehen, zum Beispiel `Write-Output`, `Read-Input` oder alle Befehle, die keine Kurzformen waren, die ihr bisher genutzt habt.
+
+**Aufgabe 3** (10min) Schreibt für folgende Tasks eine gute Powershell-Beschreibung.
+
+ 1. Ihr fragt ab, welche Version eine Software hat
+ 2. Ihr brecht einen Druckbefehl ab
+ 3. Ihr Gebt den aktuellen Nutzer aus
+ 4. Ihr gebt den aktuellen Host aus
+ 5. Ihr lest Input ein.
+
+**Aufgabe 4** (5min) Kopiert nun alle bisher geschriebenen Cmdlets in eine Datei, die ihr `MyBigModule.ps1m` nennt. 
+
+Manchmal möchtet ihr gerne einen Alias setzen, also eine Kurzform, wie zum Beispiel `echo` für `Write-Output`. Das geht in eurem Skript, indem ihr hinzufügt (hier für die Beispiele `cd` und `echo`, die bereits in der Powershell definiert sind):
+  
+```
+Set-Alias echo Write-Output
+Set-Alias cd Set-Location
+```
+
+Wenn ihr spezifische Cmdlets/Funktionen/Aliasse exportieren wollt, so geht das so (wieder für das Beispiel von `cd` und `echo`) — beachtet: `-Function` gilt für Funktionen wie Cmdlets.
+
+```
+Export-ModuleMember -Function Write-Output
+Export-ModuleMember -Alias echo, cd
+```
+
+**Aufgabe 5** Wählt ein Cmdlet und für zwei Funktionen Aliasse, die ihr exportieren möchtet.
+

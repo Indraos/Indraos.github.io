@@ -24,14 +24,19 @@ Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komite
 ### Sekundärquellen zu China
  - [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/geos/ch.html)
  - [Wikipedia China](https://de.wikipedia.org/wiki/Volksrepublik_China)
+ - [Daten des Internationalen Währungsfonds](https://www.imf.org/en/Countries)
+ - [Infoplea]
 
 ### Berichterstattung
+ - [Übersicht von Zeitungen](http://www.zeitung.de/internationale-zeitungen/)
  - [Google News „China Bitcoin“](https://news.google.com/search?q=China%20Bitcoin&hl=de&gl=DE&ceid=DE%3Ade)
  - [Twitter „China Bitcoin“](https://twitter.com/search?src=typd&q=china%20bitcoin)
  - [BBC](http://www.bbc.com/), [Al Jazeera](https://www.aljazeera.com/), 
  - Thematische Berichterstattung: [Foreign Affairs](https://www.foreignaffairs.com/regions/china)
 
 ### Staatlich eingefärbte Berichterstattung
+ - [Deutsches Auswärtiges Amt](https://www.auswaertiges-amt.de/de/aussenpolitik/laender)
+ - [Australisches Außenministerium](https://dfat.gov.au/geo/pages/countries-and-regions.aspx)
  - [China Daily, staatliche Nachrichten VR China](http://www.chinadaily.com.cn/)
  - [Russia Today, staatliche Nachrichten Russland](https://deutsch.rt.com/)
 
