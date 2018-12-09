@@ -548,6 +548,108 @@ Export-ModuleMember -Alias echo, cd
 >Wählt ein Cmdlet und für zwei Funktionen Aliasse, die ihr exportieren möchtet.
 
 # Kompetenzliste bis hier hin
+ 1. [ ] Ich kann den Unterschied von Powershell unnd ISE erläutern.
+ 2. [ ] Ich kann aus einer Fehlermeldung herauslesen, welches Problem mit der ExecutionPolicy vorliegt.
+ 1. [ ] Ich kann Typen und Ergebnisse von Ausdrücken angeben (Operatoren von Zahlentypen, Strings, Booleans, Listen, Hashtables) ausgeben. 
+ 2. [ ] Ich kann entscheiden, ob ein Befehl einen Typfehler auslösen wird.
+ 3. [ ] Ich kann korrekt Variablen mit bestimmten Inhalten deklarieren und definieren
+ 4. [ ] Ich kann eine sprachliche Beschreibung einer Schleife in PS-Code übersetzen
+ 5. [ ] Ich kann eine begin-process-end-Struktur in eine foreach-Schleife übersetzen
+ 6. [ ] Ich kann zu einer Funktion eine Auswertung ausgibt, die keinen Fehler ausgibt
+ 7. [ ] Ich kann Pseudocode mit einer Beispieleingabe selbst durchlaufen
+ 8. [ ] Ich kann die folgenden Begriffe definieren: Objekt, OOP, Abstraktion, Attribut, Methode, Datentyp, Klasse, Instanz, Keyword, `class`, Konstruktor, non-terminating error, terminating error.
+ 9. [ ] Ich kann entscheiden, ob etwas eine Klasse oder eine Intanz ist.
+ 10. [ ] Ich kann den Kopf von Methoden und Attributen in einer Klasse ergänzen.
+ 11. [ ] Ich kann von einer vorgegebenen Klasse Methoden aufrufen und Attribute setzen und abrufen.
+ 12. [ ] Ich kann anhand eines Codes erklären, wie fehlende Fehlerbehandlung zur Löschung einer Datenbank führen kann.
+ 13. [ ] Ich kann einer Ausgabe zuordnen, ob sie `Format-Wide`, `Format-List` oder `Format-Table` ist.
+ 14. [ ] Ich kann erklären, was die Zeilen einer CMDlet-Definition bedeuten.
 
- - [ ] Ich kann den Typ 
- - [ ] asd
+## Beispielaufgaben
+ 1. Bitte oben nachlesen.
+ 2. Was sagt `.ps1 cannot be loaded because the execution of scripts is disabled on this system. Please see "get-help about_signing" for more details.`?
+ 3. Bitte gib den Typen und den Wert, den die Variable `$a` hat, nachdem die folgenden Befehle ausgeführt wurden. Gibt ERROR an, falls es unterwegs einen Fehler gibt: (a) `[HashTable]$b = {"Frankfurt": 25, "Darmstadt": 0}`, `$a = $b[Frankfurt]`. (b) `$b = 2`, `$a = 2*($b + 2)`, (c) `b = "Hallo"`, (d) `$a = " @(2*$b + 2)`, (e) `"4" -le "2"`, (f) `True -eq True`.
+ 4. Welcher der Folgenden Ausdrücke löst einen Typfehler aus? Gib kurz den Grund für den Fehler an. `[st] $a = "Hallo"`, `[Int]$a = 4,2`, `[Int]$a = 4.2`.
+ 5. Deklariere eine String-Variable mit dem Inhalt "Hallo".
+ 6. Eine While-Schleife soll fünfmal durchlaufen werden. Die Variable `$i` wird nicht in den sonstigen Berechnungen benötigt. Die Gleichung soll abgebrochen werden, falls eine Variable `$a` den Wert fünf hat. Füge am Beginn des Schleifenkörpers fünf Leerzeilen ein.
+ 7. (a) Übersetze den folgenden Code in eine `begin`-`process`-`end`-Struktur: 
+    ```
+    function funk1 {
+	    "Process Start"
+	    foreach ($obj in $args) { Write-Host Pipeline Object: $obj }
+	    "Process End"
+	}
+	```
+	(b) übersetze den folgenden Code in eine Struktur ohne `begin`-`process`-`end`: 
+	```
+	function funk2 {
+	    begin    { "Process Start" }
+	    process  { Write-Host Pipeline Object: $_ }
+	    end      { "Process End" }
+	}
+	```
+ 8. Gib eine Anwendung der folgenden Funktion an, die keinen Fehler gibt `function Square([int]$a){ return $a*$a }`.
+ 9. Werte den folgenden Pseudocode für die Eingabe $n=5$ aus: 
+     ```
+     function fun(n):
+      res = n; 
+      for n=1 to n-1 do:
+       res = res + n;
+      return res;
+     end function
+     ```
+ 10. Bitte oben nachlesen
+ 11. Gib an, ob die folgenden Datentypen oder Objekte sind, oder weder noch: Hallo, 2, Int, "Do".
+ 12. Füge zur folgenden Klasse den Kopf einer Methode `Update`, die einen Integer nimmt und einen String zurückgibt sowie ein Int-Attribut `Installed` vom Typ `DateTime`: 
+	 ```
+	 class MyClass
+	 {
+	  ________________
+	  ________________
+	  {
+	   ...
+	  }
+	  MyClass($Installed)
+	  {
+       $this.Computername = ___________
+	  }
+	 } 
+	 ```
+ 13. Rufe in der obigen Klasse `Update` mit dem Wert `5` auf, rufe den Wert von `Installed` ab und setze ihn auf `0`. Nimm an, dass zuvor `$a = [MyClass]::new()` ausgeführt wurde.
+ 14. Was kann in der Verwendung des folgenden Codes falsch laufen? 
+	 ```
+	 $AuthorizedUsers= Get-Content \\ FileServer\HRShare\UserList.txt
+	 $CurrentUsers=Get-ADGroupMember "Expenses Claimants"
+	 Foreach($User in $CurrentUsers)
+	 {
+	  If($AuthorizedUsers -notcontains $User)
+	  {
+	   Remove-ADGroupMember -Identity "Expenses Claimants" -User $User
+	  }
+	 }
+	 ```
+ 15. Ergebnis welchen Format-Befehls ist die folgende Ausgabe? 
+	 ```
+	 Id      : 2760
+	 Handles : 1242
+	 CPU     : 3.03125
+	 Name    : powershell
+	 Id      : 3448
+	 Handles : 328
+	 CPU     : 1.0625
+	 Name    : powershell
+	 ```
+ 16. Schreibe einen korrekten Aufruf (also einen, der keinen Fehler erzeugt) der Funktion `Write-LargerUnity`.
+	 ```
+	 function Write-LargerUnity
+	 {
+	  [CmdletBinding()]
+	  [OutputType([int])]
+	  Param([Parameter(Mandatory=$true, ValueFromPipelineByPropertyName=$true, Position=0)][int]$a)
+	  if($a -gt 1){
+	   return True
+	  } else{
+	  return False
+	  }
+	 }
+	 ```
