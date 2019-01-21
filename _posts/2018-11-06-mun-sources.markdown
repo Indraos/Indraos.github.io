@@ -25,7 +25,8 @@ Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komite
  - [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/geos/ch.html)
  - [Wikipedia China](https://de.wikipedia.org/wiki/Volksrepublik_China)
  - [Daten des Internationalen Währungsfonds](https://www.imf.org/en/Countries)
- - [Infoplea]
+ - [UN Global Human Development Indicators](http://hdr.undp.org/en/countries/)
+ - [MIT Media Atlas Country Reports](https://atlas.media.mit.edu/en/profile/country/)
 
 ### Berichterstattung
  - [Übersicht von Zeitungen](http://www.zeitung.de/internationale-zeitungen/)

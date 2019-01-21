@@ -9,7 +9,7 @@ markdown: redcarpet
 # Setup
 title:               Andreas Haupt
 tagline:             'learn, teach, decide'
-paginate:            5
+paginate:            3
 excerpt_separator: <!--more-->
 
 # About/contact
