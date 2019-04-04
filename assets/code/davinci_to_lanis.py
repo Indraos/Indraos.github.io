@@ -79,7 +79,7 @@ def weekstoab(x):
                            # angenommen, sonst als nicht existent.
     
 # load data
-with open('import.xls','rb') as infile:
+with open(sys.argv[1],'rb') as infile:
     df = pd.read_excel(infile)
     
 # manipulation
