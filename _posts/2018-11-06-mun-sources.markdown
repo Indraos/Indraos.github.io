@@ -4,19 +4,9 @@ title:  "MUN-Quellen"
 date:   2018-11-06 08:00:00 +0100
 categories: teach
 ---
-Wir wollen heute beispielhaft drei Fragen für ein Land für eine gegebene Frage beantworten. Wir nehmen an, wir vertreten die VR China im Wirtschafts- und Sozialrat (ECOSOC) zum Thema „Virtuelle Währungen“. Die Fragen wollen wir behandeln.
-
+Nachfolgend eine Liste an möglichen Quellen für die MUN-Vorbereitung in der Schule -- beispielhaft am Beispiel "Virtuelle Währungen" für Delegierte in der Rolle Chinas.
 <!--more-->
 
-1. In welchen größeren Kategorien liegt das Hauptinteresse unserer Nation: Sicherheitspolitik, Wirtschaft, Menschenrechte, soziale Rechte, Umwelt?
-2. Wer sind Verbündete und Feinde[^Wer ist regional eng verbunden, wer ist in ähnlichen Organisationen, wer hat ähnliche Probleme und Lösungen?]
-3. Was kann dieses Komitee im Rahmen seiner Aufgaben zu diesem Thema machen? Was waren Entscheidungen des Gremiums in einem ähnlichen Bereich?
-
-Teilt euch in drei Gruppen auf und bearbeitet je eine der Fragen. Erstellt dazu eine Liste von Primärquellen und einen Steckbrief mit relevanten Werten und Vergleichswerten.
-
-## Quellen
-### Der Hintergrund-Guide
-Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komitees wichtige Themen zusammen.
 ### UN-Quellen
  - [ECOSOC](https://www.un.org/ecosoc/en/home)
  - [UN-Charta](https://www.unric.org/html/german/pdf/charta.pdf), ggf. [Wikipedia ECOSOC](https://de.wikipedia.org/wiki/Wirtschafts-_und_Sozialrat_der_Vereinten_Nationen)
@@ -32,7 +22,7 @@ Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komite
  - [Übersicht von Zeitungen](http://www.zeitung.de/internationale-zeitungen/)
  - [Google News „China Bitcoin“](https://news.google.com/search?q=China%20Bitcoin&hl=de&gl=DE&ceid=DE%3Ade)
  - [Twitter „China Bitcoin“](https://twitter.com/search?src=typd&q=china%20bitcoin)
- - [BBC](http://www.bbc.com/), [Al Jazeera](https://www.aljazeera.com/), 
+ - [BBC](http://www.bbc.com/), [Al Jazeera](https://www.aljazeera.com/)
  - Thematische Berichterstattung: [Foreign Affairs](https://www.foreignaffairs.com/regions/china)
 
 ### Staatlich eingefärbte Berichterstattung
@@ -55,13 +45,3 @@ Dieser fasst das Thema zusammen und stellt die für die Leiter\*innen des Komite
 
 ### Wissenschaftliche Paper
  - [Google Scholar](https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=bitcoin+china&btnG=&oq=bitcoin+china)
- - 
-### Offizielle Dokumente der MUN-Organisator\*innen
- - [Programm und Ablauf der MUN-SH](https://www.mun-sh.de/MUNdi/pages/mun-sh/programm/)
- - [Beschreibung der Rollen von NGOs, Staaten, Presse und Richter\*innen während der Simulation](https://www.mun-sh.de/MUNdi/pages/mun-sh/moeglichkeiten/)
- - [FAQ zur Vorbereitung](https://www.mun-sh.de/MUNdi/pages/mun-sh/faq/#3)
- - [FAQ zur Gremienarbeit](https://www.mun-sh.de/MUNdi/pages/mun-sh/faq/#5)
- - [Liste der Delegationen](https://www.mun-sh.de/MUNdi/pages/meinmunsh/delegationen)
- - [Liste der Gremien und Themen](https://www.mun-sh.de/MUNdi/pages/meinmunsh/gremien/)
-
-Wichtige Ressource: Das **[Handbuch](https://handbuch.dmun.de/)**

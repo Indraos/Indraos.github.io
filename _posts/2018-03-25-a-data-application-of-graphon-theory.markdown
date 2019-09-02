@@ -4,7 +4,7 @@ title:  "Thesis on a Data Application of Graphon Theory: Literature"
 date:   2018-03-25 08:00:00 +0100
 categories: learn
 ---
-Graph Kernels are heavily used in network classification. This is a short commented literature review for the [thesis](/assets/2018-03-25-a-data-application-of-graphon-theory/thesis.pdf)
+Graph Kernels are heavily used in network classification. This is a short commented literature review for my [Master Thesis in Mathematics](/assets/papers/thesis_msc_math.pdf).
 <!--more-->
 ## Graph comparisons
 ### via embeddings

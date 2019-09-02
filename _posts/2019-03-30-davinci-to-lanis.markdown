@@ -19,7 +19,7 @@ pip3 install xlrd pandas numpy
 ```
 ## Schnittstelle
 ### Export aus Davinci
-Exportieren Sie vie Ansicht "Veranstaltungen" als `.xls`-Datei und speichern Sie die Datei im selben Ordner wie die Datei hinter diesem [Link](/assets/code/davinci_to_lanis.py). Merken Sie sich den Dateinamen der `.xls`-Datei. Nehmen wir etwa an, die Datei heiße `20190330.xls` (für das heutige Datum).
+Exportieren Sie vie Ansicht "Veranstaltungen" als `.xls`-Datei und speichern Sie die Datei im selben Ordner wie die Datei hinter diesem [Link](https://www.adafruit.com/product/2821). Merken Sie sich den Dateinamen der `.xls`-Datei. Nehmen wir etwa an, die Datei heiße `20190330.xls` (für das heutige Datum).
 ### Umwandlung
 Nun [öffnen Sie abermals eine Powershell](https://praxistipps.chip.de/windows-powershell-als-administrator-starten-so-gehts_99831) und geben ein
 ```
