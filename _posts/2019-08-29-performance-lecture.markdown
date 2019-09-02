@@ -4,9 +4,9 @@ title:  DIY Lecture Performance
 date:   2019-09-29 08:00:00 +0100
 categories: teach
 ---
-# DIY Lecture Performance: "Pedagogic Challenges in the digital Classroom"
-The digital classroom transforms some part of teaching -- classroom management will, nevertheless, be integral also in the future. This text introduces you to a performance lecture that I gave to a heterogenous group (including several teachers) of alumni of a scholarship foundation in summer 2019. Hopefully, the description is sufficient for you to replicate it.
 
+The digital classroom transforms some part of teaching -- classroom management will, nevertheless, be integral also in the future. This text introduces you to a performance lecture that I gave to a heterogenous group (including several teachers) of alumni of a scholarship foundation in summer 2019. Hopefully, the description is sufficient for you to replicate it.
+<!--more-->
 Broadly, the lecture culminates in three situations that last less than a minute each. When greeting the participants you can be transparent about this. It is important, however, to clearly have your participants in a role of learners. This naturally arises if you use a beamer and hand out QR codes to participants.
 
 The structure of the rest of this text is as follows: I start with the first part on trusted learning analytics and the validity of data, then continue with the part on cyber mobbing and continue with the final on power over data.

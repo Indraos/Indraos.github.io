@@ -51,5 +51,5 @@ schedule:
 ---
 
 Diese Stunde ist als "Sahnehäubchen" für eine Reihe zu Kryptographie gedacht. Daher wird die Erklärung der Blockchain (in einem Text) auch den SuS freigestellt. Die Stunde beginnt mit einer Simulation eines wirtschaftlichen Ablaufs. Dies sollte Schüler\innen aktivieren. Ein (für die Gruppe leichter) Lückentext ermöglicht die Erarbeitung, die Erstellung von Dialogen soll ebenfalls Spaß machen.
-
+<!--more-->
 Es ist auch sehr gut möglich, eine weitere Stunde zur Blockchain danach zu machen. Dann sollte der Text zur Blockchain unten auf der zweiten Seite des Arbeitsblatts vorentlastet werden.
