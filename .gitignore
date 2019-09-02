@@ -3,3 +3,5 @@ _site
 .sass-cache
 .jekyll-metadata
 .texpadtmp/
+_posts/_site
+assets/_site
