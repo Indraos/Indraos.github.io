@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <p>{{ page.abstract }}</p>
+  <h2 class="post-title">Kompetenzen</h2>
+  SuS sind in der Lage...
+  <ul>
+    {% for goal in page.goals %}
+    <li>
+      ...{{ goal }}
+    {% endfor %}
+  </ul>
+  <h2 class="post-title">Wichtige Begriffe</h2>
+  <ul>
+    {% for notion in page.notions %}
+    <li>
+      {{ notion }}
+    {% endfor %}
+  </ul>
+  <h2 class="post-title">Stundenverlauf</h2>
+  <table>
+    <tr>
+      <td>Zeit/Phase</td>
+      <td>Lehrkrafts-Aktion</td>
+      <td>SuS-Aktion</td>
+      <td>Material</td>
+    </tr>
+    {% for part in page.schedule %}
+    <tr>
+      <td>{{ part.time }}</td>
+      <td>{{ part.taction | markdownify }}</td>
+      <td>{{ part.saction | markdownify }}</td>
+      <td>{{ part.material | markdownify }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h2 class="post-title">Didaktisch-Methodischer Kommentar</h2>
+  {{ content }}
+</div>
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
