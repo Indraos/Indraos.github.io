@@ -1,1 +1,1 @@
-# Andreas Haupt's Webpage
+# Andreas Haupt's Personal Website
