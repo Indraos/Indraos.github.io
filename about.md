@@ -16,7 +16,7 @@ permalink: /papers/
    Andreas Haupt  
    Master Project in Economics  
    This project characterised voting rules in the presence of a severe restriction and highlights differences between results for single-peaked and single-crossing preference domains  
-   [\[Master Thesis\]](/assets/papers/thesis_msc_econ.pdf) 
+   [\[Master Thesis\]](/assets/papers/thesis_msc_econ.pdf)  
    [\[Exposé\]](/assets/papers/expose_msc_econ.pdf)  
    [\[Abridged version for student journal\]](/assets/papers/article_msc_econ.pdf)
  - **Technical Results on the epsilon-BIC Pareto Frontier**  
