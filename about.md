@@ -16,10 +16,10 @@ permalink: /papers/
    Andreas Haupt  
    Master Project in Economics  
    This project characterised voting rules in the presence of a severe restriction and highlights differences between results for single-peaked and single-crossing preference domains  
-   [\[Master Thesis\]](/assets/papers/thesis_msc_econ.pdf)\]  
+   [\[Master Thesis\]](/assets/papers/thesis_msc_econ.pdf) 
    [\[Exposé\]](/assets/papers/expose_msc_econ.pdf)  
-   [\[Abridged version for student journal\](/assets/papers/article_msc_econ.pdf)
- - **Technical Results on the $\varepsilon$-BIC Pareto Frontier**  
+   [\[Abridged version for student journal\]](/assets/papers/article_msc_econ.pdf)
+ - **Technical Results on the epsilon-BIC Pareto Frontier**  
    Andreas Haupt  
    Term Project for Topics in Microeconomic Theory (Benny Moldovanu)  
    This term paper proved structural results on Pareto frontiers from a paper from [Mennle and Seuken '15](https://arxiv.org/abs/1502.05883) and introduced a notion of convergence of Pareto frontiers.  
