@@ -5,10 +5,12 @@ permalink: /papers/
 ---
 ## Economics
  - **The Economics of Social Network Interoperability**  
+   Andreas Haupt  
    Recent Project for Economics of Information and Technology (@MIT Sloan)  
    We present variants of classical models of industrial organization and information economics adapted to questions of social network interoperability. We discuss predictions concerning the role of the value of second impressions for cross-side subsidies in two-sided markets, information sharing in platform competition, and the role of compatibility policies for innovation incentives.  
    [\[Term Paper\]](/assets/papers/term_economics_of_sni.pdf)
- - **Exploiting the Computational Burden**. 
+ - **Exploiting the Computational Burden**  
+   Andreas Haupt  
    Recent Project for Complexity and Simplicity in Economics (@Harvard Economics)  
    This model combines auction design with a search component. Auctioneers design a menu measure, from which agents repeatedly sample. We find that auctioneers have incentives to provide menu measures that correspond to non-optimal menus in a Myersonian benchmark. We relate the ability to exploit the sampling of agents to monotonicity properties in the model.  
    [\[Model\]](/assets/papers/term_burden.pdf)
