@@ -1,4 +1,4 @@
-*The following Essay was sent to a high-schooler class for a six-session "Why haven't we solved Climate Change yet?" class; It, like many other things, was canceled due to the COVID-19 health emergency*
+*The following Essay was sent to a high-schooler class for a six-session \"Why haven\'t we solved Climate Change yet?\" class; It, like many other things, was canceled due to the COVID-19 health emergency.*
 
 Dear class,
 
@@ -16,8 +16,8 @@ COVID-19.
 
 Ok, here is our model:
 
-If desirable actions are costly and provide a positive externality, then they will be underprovided
-===================================================================================================
+## If desirable actions are costly and provide a positive externality, then they will be underprovided
+
 
 Wow, that\'s a complicated sentence. Therefore, I reserved the next five
 paragraphs to parse it for you.
@@ -80,8 +80,7 @@ But, wait: Countries are spending like crazy on fighting COVID-19! Is
 our model *wrong*? Let\'s see what we might be missing and compare the
 fight against climate change and COVID-19.
 
-But wait: Countries are spending like crazy on fighting COVID-19. Is the model wrong?
-=====================================================================================
+## But wait: Countries are spending like crazy on fighting COVID-19. Is the model wrong?
 
 Let us first be sure that in both actions against climate change and
 COVID-19, we can apply our model. In both cases, action is costly --- if
