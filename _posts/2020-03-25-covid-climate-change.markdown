@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "COVID-19 and Climate Change: A Letter to High School Social Scientist"
+date:   2020-03-25 08:00:00 +0100
+categories: teach
+---
+
 *The following Essay was sent to a high-schooler class for a six-session \"Why haven\'t we solved Climate Change yet?\" class; It, like many other things, was canceled due to the COVID-19 health emergency.*
 
 Dear class,
@@ -130,5 +137,4 @@ prediction, there is a lot of action against COVID-19. As an Economist
 (Harrod) puts it: \"Economics is the Science of selecting models
 relevant to the contemporary world.\" We saw a model that fits one
 situation well and not another, and with that already have seen an
-essential part of what researching in (quantitative) social sciences is
-like: Selecting the right models.
+essential part of what researching in (quantitative) social sciences is like: Selecting the right models.
