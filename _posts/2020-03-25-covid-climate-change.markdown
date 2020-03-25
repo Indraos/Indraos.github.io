@@ -12,7 +12,7 @@ Dear class,
 two weeks and a revolutionary change of how our world feels and acts
 later, I continue what Lukas began with a second essay on \"Why haven\'t
 we solved climate change yet?\"
-
+<!--more-->
 Given the resources that many countries spend in the fight against
 COVID-19, it might seem that global action is possible now, also action
 against climate change. In the following, I show you a *model*, a
