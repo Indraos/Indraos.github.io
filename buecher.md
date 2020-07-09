@@ -4,6 +4,7 @@ title:  "Vorlese-Literatur"
 date:   2019-06-10 08:00:00 +0100
 categories: love
 ---
+Während der nächsten zwei Wochen werdet ihr immer wieder Nachrichten bekommen, welche der untenstehenden Bücher ihr vom Markt-24-Thalia mitnehmen könnt.
 ## E.T.A. Hoffmann: Der Sandmann
 sehr mysteriös, und ein etwa einstündiger Read. Kann ein guter Ersatz für einen Theaterbesuch sein.
 
@@ -17,5 +18,5 @@ Siddharta sucht, und ist sehr mutig. Andere folgen und finden ihren Platz -- ode
 ## Simone de Beauvoir: Alle Menschen sind Sterblich
 ich habe möglicherweise schon einmal erwähnt: mein Lieblingsbuch. Das Ende ist ein Sturm ineinander verfliessender Zeiten, und ich kam kaum hinterher mit der Geschwindigkeit der Gedanken und Erinnerungen Foscas gegen Ende. Hier gibt es sogar die französische Fassung (als Geburtstagsgeschenk für eine von euch).
 
-## Wir
+## Jewgeni Samjatin: Wir
 eine russische Utopie mit vielen Dystopie-Zutaten: Unterdrückte Reproduktion, grosse Technologie-Projekte, unüberwindbar scheinende Mauern. Dahinter ist ein Ende mit Ausbrechen, und eine feine Romanze.
