@@ -4,7 +4,7 @@ title:  "Vorlese-Literatur"
 date:   2019-06-10 08:00:00 +0100
 categories: love
 ---
-Während der nächsten zwei Wochen werdet ihr immer wieder Nachrichten bekommen, welche der untenstehenden Bücher ihr vom Markt-24-Thalia mitnehmen könnt.
+Während der nächsten zwei Wochen werdet ihr immer wieder Nachrichten erhalten, welche der untenstehenden Bücher ihr vom Markt-24-Thalia und der Buchhandlung Böttger abholen könnt. Sagt jeweils, ihr holtet für Andreas Haupt ein Buch ab -- auch wenn das nicht so ganz stimmt; das ist aber eine andere Geschichte.
 ## E.T.A. Hoffmann: Der Sandmann
 sehr mysteriös, und ein etwa einstündiger Read. Kann ein guter Ersatz für einen Theaterbesuch sein.
 
