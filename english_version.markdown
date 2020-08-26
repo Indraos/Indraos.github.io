@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Daten, Corona-Hotspots und strukturelle Gewalt"
+title:  "Data, Corona Hotspots and Structural Violence"
 date:   2020-08-26 08:00:00 +0100
 categories: decide
 ---
