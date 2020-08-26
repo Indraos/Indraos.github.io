@@ -5,13 +5,13 @@ date:   2020-08-26 08:00:00 +0100
 categories: decide
 ---
 The COVID-19 pandemic required and requires coordinated and strong cuts in our mobility. In addition to individual people who have a major influence on the spread of a disease, the focus is also on places, so-called "hotspots". In theory, extensive access to mobility data enables the effects of the closure of public spaces to be determined very precisely. I and my fellow researchers do just that. Despite major ethical challenges, we see ways in which the power of mobility data can be used for good.
-<! - more ->
+<!--more-->
 ## Close hotspots instead of denouncing super spreaders
 The passing on of infections to others is not evenly distributed. Pictures from the last few months often show people drunk spring breakers on crowded beaches, people demonstrating crowded, places of worship with a singing congregation of believers. People who have many such social contacts as sick people and those who do not adhere to rules, so-called super spreaders, or those who could be, play an important role in all of these examples.
 
 In the last global pandemic, the Spanish flu, which reached Europe in the early summer of 1918 at the end of World War I, understanding of the disease was far from a level at which superspreaders could have been identified. Daily newspapers described the disease as "mysterious", "puzzling" or "unknown". Mass events were not restricted. In the final phase of the war, newspapers were also censored as a communication and documentation medium except for the war-relevant part.
 
-! [Kölner Lokalanzeiger 30.05.2018, public domain] (/assets/img/covid_newspaper.png "A first mention of the Spanish flu in the Kölner Lokalanzeiger")
+![Kölner Lokalanzeiger 30.05.2018, public domain](/assets/img/covid_newspaper.png "A first mention of the Spanish flu in the Kölner Lokalanzeiger")
 
 However, people are often wronged with the new concept of the superspreader. Because places where people work and love can also play an important role in who becomes super spreaders, and this is often not voluntary. The last few months have brought examples of places where, at least at times, people involuntarily come together in a confined space: people on cruise ships (Diamond Princess), butchers in slaughterhouses (Gütersloh), or stewards on flights - whether out of physical limitations or economic necessity . Here it is places rather than people that lead to contamination of people.
 
@@ -23,7 +23,7 @@ A good example of the importance of places for infection is Mary Mallon from New
 
 As a result, capacity limits and closings of high risk locations have been some of the responses to COVID-19. Potential hotspots, such as restaurants, bars, and churches, were closed longer this spring and early summer. Such restrictions also allow individuals to worry less about how to adjust their behavior. You don't have to decide to turn down an invitation to church, for example, or refuse fellowship in order to receive fellowship in other ways. Closures and capacity constraints make it easier for people not to become super spreaders, even if they are not forced to do so by their physical or economic situation.
 
-! [Writing on Typhoid Mary, public domain] (/assets/img/covid_typhoid_mary.jpg "A writing about the super spreader Mary Mallon.")
+![Writing on Typhoid Mary, public domain](/assets/img/covid_typhoid_mary.jpg "A writing about the super spreader Mary Mallon.")
 
 ## Decide on data-driven closings
 
@@ -37,7 +37,7 @@ But it doesn't stop with mobility data. It is also possible to determine the num
 
 Data scientists with a great deal of self-confidence can use this data to write down a major optimization problem for which places should remain open and which should remain closed. The fact that the data is rich enough to also estimate the behavior of people in the event of closings enables not only large and well-resolved, but also authentic models to be written.
 
-! [Mobility graph, PNAS, 2009] (/assets/img/covid_mobility_graph.png "A mobility graph of the United States.")
+![Mobility graph, PNAS, 2009](/assets/img/covid_mobility_graph.png "A mobility graph of the United States.")
 
 Such a model, or at least a risk assessment that also includes people's reactions, is set up by my colleagues and I.
 
