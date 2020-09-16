@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data, Corona Hotspots and Structural Violence"
+title:  "Viewing Data-Enabled COVID Closure Policies Through Ethical Lenses"
 date:   2020-08-26 08:00:00 +0100
 categories: decide
 ---
