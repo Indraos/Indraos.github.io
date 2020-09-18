@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "COVID-19 and Climate Change: A Letter to High School Social Scientist"
+title:  "COVID-19 and Climate Change: A Letter to High School Social Scientists"
 date:   2020-03-25 08:00:00 +0100
 categories: teach
 ---
