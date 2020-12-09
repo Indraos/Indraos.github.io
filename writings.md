@@ -4,14 +4,19 @@ title: Papers and  Theses
 permalink: /papers/
 ---
 ## Economics
+ - **Selling a Prediction Algorithm**
+   Andreas Haupt
+   Term Paper for Market Design (@MTI Economics)
+   We reduce a model of design of prediction algorithms to a generalized multi-goods monopolist problem and relate it to a statistical learning theory problem.
+   [\[Term Paper\]](/assets/papers/Paper_NEWDIGS_Incentives.pdf) [\[Slides\]](/assets/papers/slides_newdigs_incentives2.pdf)
  - **The Economics of Social Network Interoperability**  
    Andreas Haupt  
-   Recent Project for Economics of Information and Technology (@MIT Sloan)  
+   Term Paper for Economics of Information and Technology (@MIT Sloan)  
    We present variants of classical models of industrial organization and information economics adapted to questions of social network interoperability. We discuss predictions concerning the role of the value of second impressions for cross-side subsidies in two-sided markets, information sharing in platform competition, and the role of compatibility policies for innovation incentives.  
    [\[Term Paper\]](/assets/papers/term_economics_of_sni.pdf)
  - **Exploiting the Computational Burden**  
    Andreas Haupt  
-   Recent Project for Complexity and Simplicity in Economics (@Harvard Economics)  
+   Term Paper for Complexity and Simplicity in Economics (@Harvard Economics)  
    This model combines auction design with a search component. Auctioneers design a menu measure, from which agents repeatedly sample. We find that auctioneers have incentives to provide menu measures that correspond to non-optimal menus in a Myersonian benchmark. We relate the ability to exploit the sampling of agents to monotonicity properties in the model.  
    [\[Model\]](/assets/papers/term_burden.pdf)
  - **Voting with Restricted Communication**  
