@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Papers and  Theses
-permalink: /papers/
+permalink: /writings/
 ---
 ## Economics
  - **Selling a Prediction Algorithm**

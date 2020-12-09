@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recent Discussions
-permalink: /papers/
+permalink: /discussions/
 ---
  - Ishihashi: Online Privacy and Disclosure by Consumers (doi:10.1257/aer.20181052)@ Harvard Theory Reading Group [\[Slides\]](/assets/discussions/consumer_data_disclosure.pdf)
  - Pyciak: Evaluating with Statistics@MIT Market Design Reading Group [\[Slides\]](/assets/discussions/discussion_pycia_statistics.pdf)

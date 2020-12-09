@@ -9,17 +9,17 @@ markdown: redcarpet
 # Setup
 title:               Andreas Haupt
 tagline:             'learn, teach, decide'
-paginate:            3
+paginate:            5
 excerpt_separator: <!--more-->
 
 # About/contact
 author:
 name:              Andreas Haupt
-url:               https://twitter.com/indraos1
+url:               https://twitter.com/andyahaupt
 email:             a.haupt@me.com
 
 
-twitter_username: indraos1
+twitter_username: andyahaupt
 github_username:  indraos
 permalink:        pretty
 
