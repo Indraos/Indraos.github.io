@@ -3,6 +3,7 @@ layout: page
 title: Recent Discussions
 permalink: /discussions/
 ---
+ - Goldberg, Hartline: Competitive Auctions and Digital Goods (SODA '01) @ Stanford Computer Science meets Game Theory [\[Slides\]](/assets/discussions/competitive_auctions.pdf)
  - Fainmesser, Galeotti: Pricing Network Effects: Competition (10.1257/mic.20170226) @ Harvard Theory Reading Group [\[Slides\]](/assets/discussions/influencers.pdf)
  - Ishihashi: Online Privacy and Disclosure by Consumers (doi:10.1257/aer.20181052) @ Harvard Theory Reading Group [\[Slides\]](/assets/discussions/consumer_data_disclosure.pdf)
  - Pyciak: Evaluating with Statistics @ MIT Market Design Reading Group [\[Slides\]](/assets/discussions/discussion_pycia_statistics.pdf)
