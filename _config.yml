@@ -1,20 +1,20 @@
 title: Indraos
-email: a.haupt@me.com
+email: haupt@mit.edu
 description: >-
-  Andreas Haupt's Webpage
+  Andy Haupt's Webpage
 baseurl: ""
 url: ""
 markdown: redcarpet
 
 # Setup
 title:               Andreas Haupt
-tagline:             'learn, teach, decide'
+tagline:             'Researching Economics and Artificial Intelligence'
 paginate:            5
 excerpt_separator: <!--more-->
 
 # About/contact
-author:
-name:              Andreas Haupt
+author:            Andy Haupt
+name:              Andy Haupt
 url:               https://twitter.com/andyahaupt
 email:             a.haupt@me.com
 
