@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](csail.mit.edu) and the [College of Computing](computing.mit.edu), [MIT](mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. My supervisors [Alessandro Bonatti](https://www.mit.edu/~bonatti/) and [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/) guide me through this adventure. I care about social and environmental sustainability, which influences my work.
+I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. My supervisors [Alessandro Bonatti](https://www.mit.edu/~bonatti/) and [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/) guide me through this adventure. I care about social and environmental sustainability, which influences my work.
 
-**Quick Links.** [CV](./assets/docs/CV.pdf) • [Email](mailto:haupt@mit.edu) • [Linkedin](linkedin.com/in/indraos)
+**Quick Links.** [CV](./assets/docs/CV.pdf) • [Email](mailto:haupt@mit.edu) • [Linkedin](linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
 
 **Experiences.** [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
