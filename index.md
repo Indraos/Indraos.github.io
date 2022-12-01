@@ -3,13 +3,13 @@ layout: default
 ---
 I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. My supervisors [Alessandro Bonatti](https://www.mit.edu/~bonatti/) and [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/) guide me through this adventure. I care about social and environmental sustainability, which influences my work.
 
-**Quick Links.** [CV](./assets/docs/CV.pdf) • [Email](mailto:haupt@mit.edu) • [Linkedin](linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
+**Quick Links.** [CV](./assets/docs/CV.pdf) • [Email](mailto:haupt@mit.edu) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
 
 **Experiences.** [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
-**Recent Leadership.** [Science Policy Initiative](https://mitspi.slack.com/) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
+**Recent Leadership.** [Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
-**Co-Organized Events.** [AI Audits in Economic Context](https://mitaiethics.github.io/algorithmic_audits/) • [Wastewater Surveillance](https://www.itgh.org/post/event-wastewater-surveillance-technology-ethical-legal-and-social-perspectives) • [COP27 Fireside Chat](https://calendar.google.com/calendar/u/0/r/month/2022/10/5?eid=MzBsNG10OG0xcXFwNXM2dTZpdDdrdGdiNTggY19iaWhvanNmNjVjYXQzampvYTZ2MWU0Ymtra0Bn&ctz=America/New_York) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc)
+**Co-Organized Events.** [AI Audits in Economic Context](https://mitaiethics.github.io/algorithmic_audits/) • [Wastewater Surveillance](https://www.itgh.org/post/event-wastewater-surveillance-technology-ethical-legal-and-social-perspectives) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc)
 
 **Selected Teachers.** [Erik Brynjolffson](http://web.mit.edu/15.575/575_syllabus.html) • [Jonathan Zittrain](https://cyber.harvard.edu/story/2021-07/design-democratic-discourse) • [Ash Carter](https://www.coursicle.com/harvard/courses/IGA/505/) • [Costis Daskalakis](http://people.csail.mit.edu/costis/6853fa2011/) • [Glenn Ellison](https://ocw.mit.edu/courses/14-271-industrial-organization-i-fall-2013/) • [Parag Pathak](http://docplayer.net/18504865-14-125-market-design.html) • [Mohammad Akbarpour and Shengwu Li](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=ECON+284%3A+Simplicity+and+Complexity+in+Economic+Theory&collapse=)
 
