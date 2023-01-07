@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. My supervisors [Alessandro Bonatti](https://www.mit.edu/~bonatti/) and [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/) guide me through this adventure. I care about social and environmental sustainability, which influences some parts of my work.
+I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. [Alessandro Bonatti](https://www.mit.edu/~bonatti/), [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/) and [Eric Maskin](https://scholar.harvard.edu/maskin/home) guide me through this adventure. I care about social and environmental sustainability, which influences some parts of my work.
 
 **Quick Links.** [CV](./assets/docs/CV.pdf) • [Email](mailto:haupt@mit.edu) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
 
