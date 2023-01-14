@@ -1,6 +1,9 @@
 title: Andreas Haupt
 logo: /assets/img/headshot.jpg
-description: Markets and Machine Learning
+description: "Markets and Machine Learning
+
+[📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
+"
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
