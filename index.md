@@ -3,6 +3,8 @@ layout: default
 ---
 I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu). I study **algorithmic accountability in economic context**, by combining real-world data with **economic** theory and **computation** to improve how algorithms interact with their users. [Alessandro Bonatti](https://www.mit.edu/~bonatti/), [Dylan Hadfield-Menell](https://engineering.mit.edu/faculty/dylan-hadfield-menell/), [Eric Maskin](https://scholar.harvard.edu/maskin/home) and [David Parkes](https://parkes.seas.harvard.edu/) guide me through this adventure. I care about social and environmental sustainability, which influences some parts of my work.
 
+[📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/)
+
 **Experiences.** [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
 **Recent Leadership.** [Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
