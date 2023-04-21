@@ -9,7 +9,7 @@ I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www
 
 **Recent Leadership.** [Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
-**Co-Organized Events.** [Algorithmic Audits in Economic Context](https://mitaiethics.github.io/algorithmic_audits/) • [Wastewater Surveillance](https://www.itgh.org/post/event-wastewater-surveillance-technology-ethical-legal-and-social-perspectives) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc)
+**Co-Organized Events.** [Technical Questions on the EU AI Act](https://mitaiethics.github.io/ai_act/) • [Algorithmic Audits in Economic Contexts](https://mitaiethics.github.io/algorithmic_audits/) • [Wastewater Surveillance](https://www.itgh.org/post/event-wastewater-surveillance-technology-ethical-legal-and-social-perspectives) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc)
 
 **Selected Teachers.** [Erik Brynjolffson](http://web.mit.edu/15.575/575_syllabus.html) • [Jonathan Zittrain](https://cyber.harvard.edu/story/2021-07/design-democratic-discourse) • [Ash Carter](https://www.coursicle.com/harvard/courses/IGA/505/) • [Costis Daskalakis](http://people.csail.mit.edu/costis/6853fa2011/) • [Glenn Ellison](https://ocw.mit.edu/courses/14-271-industrial-organization-i-fall-2013/) • [Parag Pathak](http://docplayer.net/18504865-14-125-market-design.html) • [Mohammad Akbarpour and Shengwu Li](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=ECON+284%3A+Simplicity+and+Complexity+in+Economic+Theory&collapse=)
 
