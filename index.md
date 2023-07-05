@@ -5,7 +5,7 @@ I am a fourth-year Ph.D. Candidate in [Engineering-Economic Systems](https://www
 
 [📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/) • [G Scholar](https://scholar.google.com/citations?user=O6NknDYAAAAJ&hl=de)
 
-**Experiences.** [Federal Trade Commission, upcoming!](https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs) • [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
+**Experiences.** [Federal Trade Commission](https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs) • [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
 **Recent Leadership.** [Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
