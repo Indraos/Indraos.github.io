@@ -19,6 +19,6 @@ I am a final-year Ph.D. Candidate in [Engineering-Economic Systems](https://www.
 
 **Work in Progress.** Optimal Preferencing Design • RegretBlocker • Game-Theoretic Network Decay • On Generation and Search
 
-**Coverage** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/)
+**Coverage.** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/)
 
 <!--- **Selected Teachers.** [Erik Brynjolffson](http://web.mit.edu/15.575/575_syllabus.html) • [Jonathan Zittrain](https://cyber.harvard.edu/story/2021-07/design-democratic-discourse) • [Ash Carter](https://www.coursicle.com/harvard/courses/IGA/505/) • [Costis Daskalakis](http://people.csail.mit.edu/costis/6853fa2011/) • [Glenn Ellison](https://ocw.mit.edu/courses/14-271-industrial-organization-i-fall-2013/) • [Parag Pathak](http://docplayer.net/18504865-14-125-market-design.html) • [Mohammad Akbarpour and Shengwu Li](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=ECON+284%3A+Simplicity+and+Complexity+in+Economic+Theory&collapse=) • [Leslie Kaelbling](https://sicp-s4.mit.edu/fall22) • [Victor Chernozhoukov](https://congress-files.s3.amazonaws.com/2022-09/Using%20Machine%20Learning%20for%20Causal%20Inference%20in%20Economics.pdf) -->
