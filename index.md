@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-I am a postdoctoral fellow at [Stanford](https://www.stanford.edu/)'s [Institute for Human-Centered AI](https://hai.stanford.edu/). I completed my PhD in [Engineering-Economic Systems](https://www.sciencedirect.com/science/article/pii/S1474667017602544) at the [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu), [MIT](https://mit.edu) in Fall 2024. I study how the design of Economic institutions that try to learn what participants want is affected by large-scale estimation.
+
+Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'s [Institute for Human-Centered AI](https://hai.stanford.edu/) and the [Digital Economy Lab](https://digitaleconomy.stanford.edu/). He earned his Ph.D. from [MIT](https://web.mit.edu/)'s [CS and AI Laboratory](https://www.csail.mit.edu) and the [College of Computing](https://computing.mit.edu) in Fall 2024. He holds master's degrees in Mathematics and Economics from the [University of Bonn](https://www.uni-bonn.de/de/startseite). Before his postdoc, he served at the [U.S. Federal Trade Commission](https://www.ftc.gov/), contributed to the [EU’s antitrust team for platform regulation](https://competition-policy.ec.europa.eu/index_en) and taught [high-school mathematics](https://www.bsgg.net/). His current research seeks to improve how human preferences are learned and represented in algorithmic systems, and seeks to make the use of large language models more transparent and legible.
 
 [📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/) • [G Scholar](https://scholar.google.com/citations?user=O6NknDYAAAAJ&hl=de) • [ORCID](https://orcid.org/0000-0002-2952-4188)
 
