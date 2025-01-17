@@ -10,7 +10,7 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 **Recent Leadership.** Stanford HAI Global AI Governance Affinity Group • [MIT Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [MIT GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
-**Co-Organized Events.** [Technical Questions on the EU AI Act](https://mitaiethics.github.io/ai_act/) • [Algorithmic Audits in Economic Contexts](https://mitaiethics.github.io/algorithmic_audits/) • [Wastewater Surveillance](https://www.itgh.org/post/event-wastewater-surveillance-technology-ethical-legal-and-social-perspectives) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc).
+**Co-Organized Events.** [Technical Questions on the EU AI Act](https://mitaiethics.github.io/ai_act/) • [Algorithmic Audits in Economic Contexts](https://mitaiethics.github.io/algorithmic_audits/) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc).
 
 ---
 
