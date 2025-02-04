@@ -8,7 +8,7 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 **Professional Experiences.** [Federal Trade Commission](https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs) • [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
-**Recent Leadership.** Stanford HAI Global AI Governance Affinity Group • [MIT Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [MIT GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
+**Recent Leadership.** [Stanford HAI Global AI Governance Affinity Group](https://docs.google.com/spreadsheets/d/1PiNkrq8rSfGrGhnQHD8BlD_GQ0detlI2Qw6lQPiTovI/edit?gid=0#gid=0) • [MIT Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [MIT GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
 **Co-Organized Events.** [Technical Questions on the EU AI Act](https://mitaiethics.github.io/ai_act/) • [Algorithmic Audits in Economic Contexts](https://mitaiethics.github.io/algorithmic_audits/) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc).
 
