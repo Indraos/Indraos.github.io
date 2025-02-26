@@ -20,7 +20,7 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 **Not Yet Online Writing.** RegretBlocker • Game-Theoretic Network Decay • Optimal Generation Design • Generation with an Acceptability Classifier • Centaur Benchmarks
 
-**Theses.** PhD in Engineering-Economic Systems • [MS in Economics](assets/papers/thesis_msc_econ.pdf) • [MS in Mathematics](assets/papers/thesis_msc_math.pdf) • [BS in Mathematics](assets/papers/thesis_bsc_math.pdf) • [BS in Computer Science](assets/papers/thesis_bsc_cs.pdf).
+**Theses.** [PhD in Engineering-Economic Systems](assets/papers/thesis_phd.pdf) • [MS in Economics](assets/papers/thesis_msc_econ.pdf) • [MS in Mathematics](assets/papers/thesis_msc_math.pdf) • [BS in Mathematics](assets/papers/thesis_bsc_math.pdf) • [BS in Computer Science](assets/papers/thesis_bsc_cs.pdf).
 
 **Coverage.** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/).
 
