@@ -6,7 +6,9 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 [📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/) • [G Scholar](https://scholar.google.com/citations?user=O6NknDYAAAAJ&hl=de) • [ORCID](https://orcid.org/0000-0002-2952-4188)
 
-**Affiliations.** [Stanford HAI](https://hai.stanford.edu/people/andy-haupt) • [S-DEL](https://digitaleconomy.stanford.edu/people/andreas-haupt/) • [STAIR](https://stairlab.stanford.edu/members/andy_haupt.html) • [Stanford Economics](https://economics.stanford.edu/)
+**Affiliations.** [Stanford Economics](https://economics.stanford.edu/) • [Stanford Computer Science](https://www.cs.stanford.edu/)
+
+[HAI](https://hai.stanford.edu/people/andy-haupt) • [DEL](https://digitaleconomy.stanford.edu/people/andreas-haupt/) • [SAIL](https://ai.stanford.edu/) • [CFRM](https://crfm.stanford.edu/)
 
 **Professional Experiences.** [Federal Trade Commission](https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs) • [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
