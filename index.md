@@ -12,8 +12,7 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 **Recent Leadership.** [Stanford HAI Global AI Governance Affinity Group](https://docs.google.com/spreadsheets/d/1PiNkrq8rSfGrGhnQHD8BlD_GQ0detlI2Qw6lQPiTovI/edit?gid=0#gid=0) • [MIT Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [MIT GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
-<!---
-**Co-Organized Events.** [Technical Questions on the EU AI Act](https://mitaiethics.github.io/ai_act/) • [Algorithmic Audits in Economic Contexts](https://mitaiethics.github.io/algorithmic_audits/) • [Data Externalities](https://www.youtube.com/watch?v=c0cVUlk9czc). -->
+**Coverage.** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/).
 
 ---
 
@@ -23,6 +22,6 @@ Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'
 
 **Theses.** [PhD in Engineering-Economic Systems](assets/papers/thesis_phd.pdf) • [MS in Economics](assets/papers/thesis_msc_econ.pdf) • [MS in Mathematics](assets/papers/thesis_msc_math.pdf) • [BS in Mathematics](assets/papers/thesis_bsc_math.pdf) • [BS in Computer Science](assets/papers/thesis_bsc_cs.pdf).
 
-**Coverage.** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/).
+---
 
-<!--- **Selected Teachers.** [Erik Brynjolffson](http://web.mit.edu/15.575/575_syllabus.html) • [Jonathan Zittrain](https://cyber.harvard.edu/story/2021-07/design-democratic-discourse) • [Ash Carter](https://www.coursicle.com/harvard/courses/IGA/505/) • [Costis Daskalakis](http://people.csail.mit.edu/costis/6853fa2011/) • [Glenn Ellison](https://ocw.mit.edu/courses/14-271-industrial-organization-i-fall-2013/) • [Parag Pathak](http://docplayer.net/18504865-14-125-market-design.html) • [Mohammad Akbarpour and Shengwu Li](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&q=ECON+284%3A+Simplicity+and+Complexity+in+Economic+Theory&collapse=) • [Leslie Kaelbling](https://sicp-s4.mit.edu/fall22) • [Victor Chernozhoukov](https://congress-files.s3.amazonaws.com/2022-09/Using%20Machine%20Learning%20for%20Causal%20Inference%20in%20Economics.pdf) -->
+**Assets.** [Panorama](/assets/img/panorama.jpg) • [Headshot](/assets/img/square_informal.jpg) • [Formal Headshot](/assets/img/square_formal.jpg) • [Informal Headshot](/assets/img/square_very_informal.jpg) • [Banner](/assets/img/banner.png)
