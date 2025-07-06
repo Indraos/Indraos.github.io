@@ -2,6 +2,7 @@
 
 html{font-size:62.5%;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0;font-size:1.5rem;line-height:1.6;font-family: 'Lato', sans-serif;font-weight:400;color:#222}
+@media (prefers-color-scheme: dark){body {background: #121212;color:#e0e0e0;}.header img {border: 2px solid #e0e0e0;}}
 a{background-color:transparent;color:#8C1515;text-decoration:none}
 a:hover,a:active{color:#a31f1f;outline:0}
 strong,b{font-weight:700}
