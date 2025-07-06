@@ -7,17 +7,24 @@ Andreas Haupt is a Human-Centered AI Postdoctoral Fellow jointly appointed in [S
 
 He earned a Ph.D. in Engineering-Economic Systems from MIT in February 2025. Prior to that, he completed two master degrees at the University of Bonn--first in Mathematics (2017) and then in Economics (2017). Throughout his graduate studies, he bridged Economics and Artificial intelligence, p
 
-Before embarking on his doctoral 
-
-
+Before embarking on his doctoral journey, he 
 
 <details>
-  <summary>280-character bio</summary>This is the text that shows up when you click “Read more…”
+  <summary>280-character bio</summary>
+
 </details>
 <details>
-  <summary>Tagline</summary>Andreas Haupt is 
+  <summary>Tagline</summary>
+
 </details>
-<a class="button" href="/assets/media/">MEDIA ASSETS<a>
+<details>
+  <summary>Media Assets</summary>
+  {% assign media_files = site.static_files | where: "media", true %}
+  {% for file in media_files %}
+    <a class="button" href="{{ file.path }}" target="_blank">{{ file.basename | replace: "_", " " | upcase }}</a>
+  {% endfor %}
+</details>
+
 
 ## Selected Publications
 

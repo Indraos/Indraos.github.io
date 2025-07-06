@@ -7,6 +7,11 @@ description: |
   Personal website of Andy Haupt.
 baseurl: "/"
 url: "https://andyhaupt.com/"
+defaults:
+  - scope:
+      path: "assets/media"
+    values:
+      media: true
 resume: "assets/portfolio/Resume.pdf"
 cv: "assets/portfolio/CV.pdf"
 email: "mailto:h4upt@stanford.edu"
