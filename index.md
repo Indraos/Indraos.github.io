@@ -1,27 +1,63 @@
 ---
 layout: default
+title: Andreas Haupt's Portfolio
 ---
 
-Andreas Haupt is a Postdoctoral Fellow at [Stanford](https://www.stanford.edu/)'s [Institute for Human-Centered AI](https://hai.stanford.edu/) and the [Digital Economy Lab](https://digitaleconomy.stanford.edu/). He earned his Ph.D. from [MIT](https://web.mit.edu/) in Fall 2024. He holds master's degrees in Economics and Mathematics from the [University of Bonn](https://www.uni-bonn.de/de/startseite). Before his postdoc, he served at the [U.S. Federal Trade Commission](https://www.ftc.gov/), contributed to the [EU’s antitrust team for platform regulation](https://competition-policy.ec.europa.eu/index_en) and taught [high-school mathematics](https://www.bsgg.net/). His current research seeks to improve expressions of human preference in human systems, and understand how AI is used productively.
+Andreas Haupt is a Human-Centered AI Postdoctoral Fellow jointly appointed in [Stanford](https://www.stanford.edu/)'s [Economics](https://economics.stanford.edu/) and [Computer Science](https://www.cs.stanford.edu/) Departments, advised by Erik Brynjolfsson and Sanmi Koyejo. 
 
-[📧](mailto:haupt@mit.edu) • [CV](./assets/docs/CV.pdf) • [Résumé](./assets/docs/Resume.pdf) • [Linkedin](https://www.linkedin.com/in/indraos) • [Github](https://github.com/indraos/) • [G Scholar](https://scholar.google.com/citations?user=O6NknDYAAAAJ) • [ORCID](https://orcid.org/0000-0002-2952-4188)
+He earned a Ph.D. in Engineering-Economic Systems from MIT in February 2025. Prior to that, he completed two master degrees at the University of Bonn--first in Mathematics (2017) and then in Economics (2017). Throughout his graduate studies, he bridged Economics and Artificial intelligence, p
 
-**Affiliations.** [Stanford Economics](https://economics.stanford.edu/) • [Stanford Computer Science](https://www.cs.stanford.edu/) • [Stanford HAI](https://hai.stanford.edu/people/andy-haupt) • [S-DEL](https://digitaleconomy.stanford.edu/people/andreas-haupt/) • [Stanford ML](http://statsml.stanford.edu/students.html) • [CFRM](https://crfm.stanford.edu/people.html#:~:text=Andreas%20Haupt,COMPUTER%20SCIENCE%2C%20ECONOMICS)
+Before embarking on his doctoral 
 
-**Professional Experiences.** [Federal Trade Commission](https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs) • [European Commission](https://ec.europa.eu/info/departments/competition_en) • [Bundestag](https://en.wikipedia.org/wiki/Nordsachsen_(electoral_district)) • [MITx](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to) • [Professional School Gross-Gerau](https://www.teachfirst.de/).
 
-**Recent Leadership.** [Stanford HAI Global AI Governance Affinity Group](https://docs.google.com/spreadsheets/d/1PiNkrq8rSfGrGhnQHD8BlD_GQ0detlI2Qw6lQPiTovI/edit?gid=0#gid=0) • [MIT Science Policy Initiative](http://mitspi.squarespace.com) • [MIT AI Ethics&Policy](https://mitaiethics.github.io/) • [MIT GSC Sustainability](https://calendar.mit.edu/event/gsc_sustainability_solveathon).
 
-**Coverage.** [MIT](https://idss.mit.edu/news/who-sees-what-online-and-why/)
+<details>
+  <summary>280-character bio</summary>This is the text that shows up when you click “Read more…”
+</details>
+<details>
+  <summary>Tagline</summary>Andreas Haupt is 
+</details>
+<a class="button" href="/assets/media/">MEDIA ASSETS<a>
 
----
+## Selected Publications
 
-**Selected Publications.** (Full List on [G Scholar](https://scholar.google.com/citations?user=O6NknDYAAAAJ)) [Risk Aversion of Learning Algorithms (Games and Economic Behavior)](https://arxiv.org/abs/2205.04619) • [Contextual Privacy (ACM EC '22, R&R at AER)](https://dl.acm.org/doi/10.1145/3490486.3538259) • [Towards Psychologically Plausible Dynamic Preference Models (ACM RecSys '22)](https://dl.acm.org/doi/fullHtml/10.1145/3523227.3546778) • [Optimal Equilibria via Zero-Sum Games (Neurips '23)](https://arxiv.org/abs/2306.05216) • [Certification Design for a Competitive Market (ACM EC '24)](http://arxiv.org/abs/2301.13449) • [Recommending to Strategic Users (FORC '23)](https://arxiv.org/abs/2302.06559) • [Formal Contracting for Multi-Agent Reinforcement Learning (Autonomous Agents and Multi-Agent Systems)](https://www.southampton.ac.uk/~eg/AAMAS2023/pdfs/p448.pdf) • [Auctions for Federated Learning (ICLR '21 DPFL)](https://arxiv.org/abs/2103.14375) • [Understanding Single- and Multi-Homing on Transportation Platforms (Transportation Research: Part C)](https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X?via%3Dihub) • [Opaque Mechanisms](http://arxiv.org/abs/2301.13404) • [Comment for Data Access Delegated Act of the European Union Digital Services Act: Experimental Data](https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13817-Delegated-Regulation-on-data-access-provided-for-in-the-Digital-Services-Act/F3423926_en) • [Steering No-Regret Learners (ACM EC '24)](https://arxiv.org/abs/2306.05221) • [The Economics of Social Network Interoperability (memo)](./assets/papers/term_economics_of_sni.pdf) • [Convex Markov Games (ICML '25)](https://arxiv.org/abs/2410.16600) • [Optimal Preferencing Design](https://hartzell.scholars.harvard.edu/sites/g/files/omnuum5151/files/2025-01/Platform_preferencing_i_statics.pdf) • [Centaur Evaluations (ICML '25 Position Paper)](https://www.andyhaupt.com/assets/papers/Centaur_Evaluations.pdf) • [Machine Learning from Human Preferences (Online Book)](https://mlhp.stanford.edu/)
+A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing.
 
-**Ongoing Projects.**  Game-Theoretic Network Decay • Controlled Generation in Compound Systems • Contextual Differential Privacy • A Language Context Manager • An Illustrated Guide to Self-Preferencing • Personalization-Induced Market Concentration • Community Notes are Centrist, not Consensus • Thick Models of Value
+{% for paper in site.papers %}
+<div class="paper">
+    <h3 class="title"><b>{{ paper.title }}</b></h3>
+    <p>{{ paper.authors }}</p>
+    <p><i>{{ paper.venue }}</i></p>
+    <div class="paper-buttons">
+    {% assign keys = 'pdf,slides,poster,video,code,data' | split: ',' %}
+    {% for item in paper %}
+        {% if keys contains item[0] %}
+            <a class="button" href="{{ item[1] }}" target="_blank">{{ item[0] | upcase }}</a>
+        {% endif %}
+    {% endfor %}
 
-**Theses.** [PhD in Engineering-Economic Systems](assets/papers/thesis_phd.pdf) • [MS in Economics](assets/papers/thesis_msc_econ.pdf) • [MS in Mathematics](assets/papers/thesis_msc_math.pdf) • [BS in Mathematics](assets/papers/thesis_bsc_math.pdf) • [BS in Computer Science](assets/papers/thesis_bsc_cs.pdf).
+    </div>
+</div>
+{% endfor %}
 
----
+## Vita
 
-**Assets.** [Panorama](/assets/img/panorama.jpg) • [Headshot](/assets/img/square_informal.jpg) • [Formal Headshot](/assets/img/square_formal.jpg) • [Informal Headshot](/assets/img/square_very_informal.jpg) • [Banner](/assets/img/banner.png)
+Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
+
+<ul class="timeline">
+{% for exp in site.experiences %}
+<li>
+    {% if exp.category == "work" %}
+    <div class="direction-l">
+    {% else %}
+    <div class="direction-r">
+    {% endif %}
+    <div class="flag-wrapper">
+        <span class="flag">{{ exp.place }}</span>
+        <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+    </div>
+    <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.description }}</div>
+    </div>
+</li>
+{% endfor %}
+</ul>

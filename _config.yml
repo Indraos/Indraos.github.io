@@ -1,6 +1,152 @@
 title: Andreas Haupt
-logo: /assets/img/panorama.jpg
-description: Markets and Intelligence
-show_downloads: false
-google_analytics:
-theme: jekyll-theme-minimal
+name: "Andreas Haupt"
+title: "Human-Centered AI Fellow"
+employer: "Stanford University"
+profile_pic: "assets/media/informal_headshot.jpg"
+description: |
+  Personal website of Andy Haupt.
+baseurl: "/"
+url: "https://andyhaupt.com/"
+resume: "/assets/portfolio/resume.pdf"
+cv: "/assets/portfolio/cv.pdf"
+email: "mailto:h4upt@stanford.edu"
+social:
+  twitter: "https://x.com/andreas_h0wpt"
+  github:  "https://www.github.com/indraos"
+  linkedin: "https://www.linkedin.com/in/indraos"
+  facebook: "https://www.facebook.com/indraos"
+  google: "https://scholar.google.com/citations?hl=en&user=O6NknDYAAAAJ"
+experiences:
+- place: "Stanford University"
+  time: "2024-current"
+  title: "Human-Centered AI Fellow"
+  description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM"
+  category: "work"
+- place: "MIT"
+  time: "2019-2024"
+  title: "Ph.D. Student"
+  description: |
+    Engineering-Economic Systems, Computer Science and AI Lab<br>Committee: A. Bonatti,D. Hadfield-Menell, E. Maskin, D. Parkes<br>Co-Chair of the AI Ethics and Policy Group<br>Vice-President of the Science Policy Initiative
+  category: "education"
+- place: "Federal Trade Commission"
+  time: "2023"
+  title: "Summer Fellow"
+  description: "Office of International Affairs<br>Bureau for Competition"
+  link: "https://www.ftc.gov/about-ftc/bureaus-offices/office-international-affairs"
+  category: "work"
+- place: "European Commission"
+  time: "Jan-May 2021"
+  title: "Atypical Trainee"
+  description: "Directorate-General for Competition"
+  category: "work"
+- place: "Berufliche Schulen Gross-Gerau"
+  time: "2017-19"
+  title: "Teach First Deutschland Fellow"
+  description: "Full-time high school teaching"
+  category: "work"
+- place: "University of Frankfurt"
+  time: "2017-19"
+  title: "B.S. Student"
+  description: "Computer Science Department"
+  category: "education"
+- place: "University of Bonn"
+  time: "2015-18"
+  title: "M.S. Student (distinction)"
+  description: "Economics Department<br>Supervisor: B. Moldovanu"
+  category: "education"
+- place: "University of Bonn"
+  time: "2014-17"
+  title: "M.S. Student"
+  description: Mathematics Department<br>Year 1 at EPF Lausanne<br>Years 2-3 at Bonn
+  category: "education"
+- place: "University of Bonn"
+  time: "2012-14"
+  title: "B.S. Student"
+  description: "Mathematics Department"
+  category: "education"
+papers:
+- title: "AI should not be an imitation game: Centaur evaluations"
+  authors: "<b>A. Haupt</b>, E. Brynjolfsson"
+  venue: "International Conference on Machine Learning (Position Paper), 2025."
+  pdf: "https://openreview.net/forum?id=LkdH35003E"
+
+- title: "Convex Markov Games: A Framework for Creativity, Imitation, Fairness, and Safety in Multiagent Learning"
+  authors: "I. Gemp, <b>A. Haupt</b>, L. Marris, S. Liu, G. Piliouras"
+  venue: "International Conference on Machine Learning, 2025."
+  pdf: "https://arxiv.org/pdf/2410.16600v1"
+
+- title: "Platform Preferencing and Price Competition I: Evidence from Amazon"
+  authors: "O. Hartzell<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>"
+  venue: "SSRN Preprint 5126918, 2025."
+  pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
+
+- title: "The Economic Engineering of Personalized Experiences"
+  authors: "<b>A. Haupt</b>"
+  venue: "Ph.D. Dissertation, Massachusetts Institute of Technology, 2025."
+  pdf: "https://dspace.mit.edu/handle/1721.1/159105"
+
+- title: "Formal Contracts Mitigate Social Dilemmas In Multi-Agent Reinforcement Learning"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, P. Christoffersen<sup>‡</sup>, M. Damani, D. Hadfield-Menell"
+  venue: "Autonomous Agents and Multi-Agent Systems 38 (2), p. 1-38, 2024."
+  pdf: "https://link.springer.com/article/10.1007/s10458-024-09682-5"
+  code: "https://github.com/Algorithmic-Alignment-Lab/contracts"
+
+- title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
+  authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
+  venue: "Advances in Neural Information Processing Systems, 2024."
+  pdf: "https://dl.acm.org/doi/10.5555/3666122.3666242"
+
+- title: "Risk preferences of learning algorithms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, A. Narayanan<sup>‡</sup>"
+  venue: "Games and Economic Behavior 148, p. 415-426, 2024."
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S089982562400143X"
+
+- title: "Steering no-regret learners to optimal equilibria"
+  authors: "B.H. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S.M. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
+  venue: "ACM Conference on Economics and Computation, 2023."
+  pdf: "https://openreview.net/forum?id=EsjoMaNeVo"
+
+- title: "Certification Design for a Competitive Market"
+  authors: "<b>A. Haupt</b>, N. Immorlica, B. Lucier"
+  venue: "ACM Conference on Economics and Computation, 2023."
+  pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
+
+- title: "Understanding Multi-Homing and Switching by Platform Drivers"
+  authors: "X. Guo<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, H. Wang, R. Qadri, J. Zhao"
+  venue: "Transportation Research Part C: Emerging Technologies 154, 2023."
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
+
+- title: "Towards Psychologically-Grounded Dynamic Preference Models"
+  authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"
+  venue: "ACM Conference on Recommender Systems, 2022."
+  pdf: "https://dl.acm.org/doi/10.1145/3523227.3546778"
+
+- title: "Contextually Private Mechanisms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
+  venue: "ACM Conference on Economics and Computation, 2022."
+  pdf: "https://arxiv.org/abs/2112.10812"
+
+- title: "The Optimality of Upgrade Pricing"
+  authors: "D. Bergemann<sup>‡</sup>, A. Bonatti<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, A. Smolin<sup>‡</sup>"
+  venue: "Web and Internet Economics, 2021."
+  pdf: "https://dl.acm.org/doi/10.1007/978-3-030-94676-0_3"
+
+- title: "Multi-Agent Influence Diagrams and Commitment"
+  authors: "<b>A. Haupt</b>"
+  venue: "B.S. Thesis, Goethe Universität Frankfurt, 2019."
+  pdf: "/assets/portfolio/thesis/thesis_bsc_cs.pdf"
+
+- title: "Voting with Restricted Communication"
+  authors: "<b>A. Haupt</b>"
+  venue: "M.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2018."
+  pdf: "/assets/portfolio/thesis/thesis_msc_econ.pdf"
+
+- title: "A Data Application of Graphon Theory"
+  authors: "<b>A. Haupt</b>"
+  venue: "M.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2017."
+  pdf: "/assets/portfolio/thesis/thesis_msc_math.pdf"
+
+- title: "Die Integrality Ratio der Subtour-Relaxierung"
+  authors: "<b>A. Haupt</b>"
+  venue: "B.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2014."
+  pdf: "/assets/portfolio/thesis/thesis_bsc_math.pdf"

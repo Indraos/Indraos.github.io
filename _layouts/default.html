@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <meta name="description" content=" {{ site.name }}">
+  <meta name="author" content="{{ site.name}}">
+  <meta property="og:title" content="{{ site.name }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content=" {{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:image" content="{{ site.baseurl }}{{ site.profile_pic }}" />
+  <meta property="og:description" content="{{ site.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  {% seo %}
-  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-  {% include head-custom.html %}
+  <link rel="canonical" href="{{ site.url }}" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href={{ "assets/css/timeline.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "assets/css/main.css" | prepend: site.baseurl }}>
+
 </head>
-
 <body>
-  <div class="wrapper">
-    <header>
-      <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
-      {% if site.logo %}
-      <img src="{{site.logo | relative_url}}" alt="Logo" />
-      {% endif %}
-
-      <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+  <div class="container">
+    <header class="header">
+      <div class="header-flex">
+        <div class="profile-image">
+          <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}{{ site.profile_pic }}" alt="Headshot of {{ site.name }}">
+          </a>
+        </div>
+        <div class="profile-text">
+          <h2>{{ site.name }}</h2>
+          <p>{{ site.title }}</p>
+          <p>{{ site.employer }}</p>
+          <p class="social-icons">
+            <a onclick="window.open('{{ site.email }}')" class="fa-solid fa-envelope fa-sm"></a>
+            {% for social in site.social %}
+              <a 
+                onclick="window.open('{{ social[1] }}')" 
+                class="fa-brands fa-{{ social[0] | replace: '@', '' | replace: '-', '' | replace: '_', '' | replace: ' ', '' | downcase }} fa-sm"
+              ></a>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
     </header>
-    <section>
 
-      {{ content }}
+    {{ content }}
 
-    </section>
-    <footer>
-      <p><small>Andy Haupt (2024)</a></small>
-    </footer>
+    <div class="footer">
+      <div class="footer-flex">
+        <div class="footer-left">
+          {{ site.name }}
+        </div>
+        <div class="footer-center">
+          {{ site.email | slice: 7, site.email.size }}
+        </div>
+        <div class="footer-right">
+          <span onclick="window.open('{{ site.email }}')" class="fa-solid fa-envelope fa-sm social-icon"></span>
+          {% for social in site.social %}
+            <span
+              onclick="window.open('{{ social[1] }}')"
+              class="fa-brands fa-{{ social[0] | replace: '@', '' | replace: '-', '' | replace: '_', '' | replace: ' ', '' | downcase }} social-icon"
+            ></span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </body>
-
 </html>
