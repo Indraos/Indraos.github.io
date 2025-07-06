@@ -7,8 +7,8 @@ description: |
   Personal website of Andy Haupt.
 baseurl: "/"
 url: "https://andyhaupt.com/"
-resume: "/assets/portfolio/resume.pdf"
-cv: "/assets/portfolio/cv.pdf"
+resume: "assets/portfolio/Resume.pdf"
+cv: "assets/portfolio/CV.pdf"
 email: "mailto:h4upt@stanford.edu"
 social:
   twitter: "https://x.com/andreas_h0wpt"
