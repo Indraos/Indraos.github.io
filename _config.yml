@@ -69,6 +69,11 @@ experiences:
   description: "Mathematics Department"
   category: "education"
 papers:
+- title: "Machine Learning from Human Preferences"
+  authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
+  venue: "Stanford Living Textbook initiative"
+  html: "https://mlhp.stanford.edu/"
+
 - title: "AI should not be an imitation game: Centaur evaluations"
   authors: "<b>A. Haupt</b>, E. Brynjolfsson"
   venue: "International Conference on Machine Learning (Position Paper), 2025."
