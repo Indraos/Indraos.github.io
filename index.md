@@ -64,3 +64,5 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
 </li>
 {% endfor %}
 </ul>
+
+h/t to [Martin Saveski](http://martinsaveski.com/) for inspiration and for a pointer to `css` code for the biographical timeline.
