@@ -21,6 +21,7 @@ Andreas Haupt is a Human-Centered AI Postdoctoral Fellow jointly appointed in St
   {% endfor %}
 </details>
 
+[View Arts →](/arts)
 
 ## Selected Publications
 

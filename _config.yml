@@ -159,3 +159,14 @@ papers:
   authors: "<b>A. Haupt</b>"
   venue: "B.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2014."
   pdf: "/assets/portfolio/thesis/thesis_bsc_math.pdf"
+
+arts:
+- title: "Compressed Individuality"
+  authors: "<b>Andreas Haupt</b>"
+  description: "Humans are of unlimited complexity. Yet algorithms that hold user preferences are not quite as complex. To learn preferences, algorithms simplify us to a set of (not too many)number. The pieces in Compressed Individuality show how algorithms simplify, and how we make this simplification visible to humans. How much of us is lost in algorithmic representation?"
+  venues:
+    - name: "39th Chaos Communication Congress"
+      url: "https://cfp.cccv.de/39c3-art/"
+    - name: "Heidelberg Laureate Forum"
+      url: "https://demian-goos.de/isap-2025-artist-andreas-haupt/"
+  thumbnail: "/assets/arts-thumbnail/compressed-individuality.png"
