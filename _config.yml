@@ -166,7 +166,14 @@ arts:
   description: "Humans are of unlimited complexity. Yet algorithms that hold user preferences are not quite as complex. To learn preferences, algorithms simplify us to a set of (not too many)number. The pieces in Compressed Individuality show how algorithms simplify, and how we make this simplification visible to humans. How much of us is lost in algorithmic representation?"
   venues:
     - name: "39th Chaos Communication Congress"
-      url: "https://cfp.cccv.de/39c3-art/"
+      url: "https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/"
     - name: "Heidelberg Laureate Forum"
       url: "https://demian-goos.de/isap-2025-artist-andreas-haupt/"
   thumbnail: "/assets/arts-thumbnail/compressed-individuality.png"
+- title: "Those Who Control"
+  authors: "Aida Baradari, <b>Andreas Haupt</b>"
+  description: "Explorations of Memory and Its Modification Through Technology"
+  venues:
+    - name: "Github"
+      url: "https://github.com/Indraos/those-who-control"
+  thumbnail: "/assets/arts-thumbnail/those-who-control.png"
