@@ -69,6 +69,11 @@ experiences:
   description: "Mathematics Department"
   category: "education"
 papers:
+- title: "Contextually Private Mechanisms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
+  venue: "Conditionally accepted at the American Economic Review"
+  pdf: "https://arxiv.org/abs/2112.10812"
+  
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
   venue: "Stanford Living Textbook initiative"
@@ -129,11 +134,6 @@ papers:
   authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"
   venue: "ACM Conference on Recommender Systems, 2022."
   pdf: "https://dl.acm.org/doi/10.1145/3523227.3546778"
-
-- title: "Contextually Private Mechanisms"
-  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
-  venue: "ACM Conference on Economics and Computation, 2022."
-  pdf: "https://arxiv.org/abs/2112.10812"
 
 - title: "The Optimality of Upgrade Pricing"
   authors: "D. Bergemann<sup>‡</sup>, A. Bonatti<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, A. Smolin<sup>‡</sup>"
