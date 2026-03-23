@@ -13,7 +13,7 @@ title: Arts
         <img src="{{ art.thumbnail }}" alt="{{ art.title }}" class="art-thumbnail">
         <div class="art-info">
             <h3 class="title"><b>{{ art.title }}</b></h3>
-            <p>{{ art.authors }}</p>
+            <p>{{ art.authors }}{% if art.date %} &middot; {{ art.date }}{% endif %}</p>
             <p>
             {% for venue in art.venues %}
                 <a href="{{ venue.url }}" target="_blank"><i>{{ venue.name }}</i></a>{% unless forloop.last %}, {% endunless %}

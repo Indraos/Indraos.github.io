@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <title>{{ site.name }} | {{ page.title }}</title>
   <meta name="description" content=" {{ site.name }}">
   <meta name="author" content="{{ site.name}}">
   <meta property="og:title" content="{{ site.name }}" />
@@ -14,9 +14,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="{{ site.url }}" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href={{ "assets/css/timeline.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "assets/css/main.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ "assets/css/timeline.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
 
 </head>
 <body>
@@ -24,8 +24,8 @@
     <header class="header">
       <div class="header-flex">
         <div class="profile-image">
-          <a href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}{{ site.profile_pic }}" alt="Headshot of {{ site.name }}">
+          <a href="/">
+            <img src="/{{ site.profile_pic }}" alt="Headshot of {{ site.name }}">
           </a>
         </div>
         <div class="profile-text">

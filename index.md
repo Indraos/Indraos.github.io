@@ -23,16 +23,28 @@ Andreas Haupt is a Human-Centered AI Postdoctoral Fellow jointly appointed in St
 
 [View Arts →](/arts)
 
-## Selected Publications
+## Publications
 
 A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing.
 
+<div class="tag-filters">
+{% for tag in site.paper_tags %}
+<button class="tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
+{% endfor %}
+<button class="tag-btn tag-btn-clear" data-tag="all">All</button>
+</div>
+
 {% for paper in site.papers %}
-<div class="paper">
+<div class="paper" data-tags="{{ paper.tags | join: ',' }}">
     <h3 class="title"><b>{{ paper.title }}</b></h3>
     <p>{{ paper.authors }}</p>
     <p><i>{{ paper.venue }}</i></p>
     <div class="paper-buttons">
+    {% if paper.tags %}
+    {% for tag in paper.tags %}
+    <span class="paper-tag">{{ tag }}</span>
+    {% endfor %}
+    {% endif %}
     {% assign keys = 'pdf,slides,poster,video,code,data,html' | split: ',' %}
     {% for item in paper %}
         {% if keys contains item[0] %}
@@ -41,6 +53,15 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
     {% endfor %}
 
     </div>
+</div>
+{% endfor %}
+
+## Ongoing Interests
+
+{% for interest in site.ongoing_interests %}
+<div class="interest">
+    <h3 class="title"><b>{{ interest.title }}</b></h3>
+    <p>{{ interest.description }}</p>
 </div>
 {% endfor %}
 
@@ -67,3 +88,34 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
 </ul>
 
 h/t to [Martin Saveski](http://martinsaveski.com/) for inspiration and for a pointer to `css` code for the biographical timeline.
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var activeTag = null;
+  var buttons = document.querySelectorAll('.tag-btn');
+  var papers = document.querySelectorAll('.paper[data-tags]');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tag = this.getAttribute('data-tag');
+
+      if (tag === 'all' || activeTag === tag) {
+        activeTag = null;
+        buttons.forEach(function(b) { b.classList.remove('tag-btn-active'); });
+        papers.forEach(function(p) { p.style.display = ''; });
+        return;
+      }
+
+      activeTag = tag;
+      buttons.forEach(function(b) {
+        b.classList.toggle('tag-btn-active', b.getAttribute('data-tag') === tag);
+      });
+
+      papers.forEach(function(p) {
+        var tags = p.getAttribute('data-tags').split(',');
+        p.style.display = tags.indexOf(tag) !== -1 ? '' : 'none';
+      });
+    });
+  });
+});
+</script>
