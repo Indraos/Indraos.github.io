@@ -21,8 +21,6 @@ Andreas Haupt is a Human-Centered AI Postdoctoral Fellow jointly appointed in St
   {% endfor %}
 </details>
 
-[View Arts →](/arts)
-
 ## Publications
 
 A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing.
@@ -45,7 +43,7 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
     <span class="paper-tag">{{ tag }}</span>
     {% endfor %}
     {% endif %}
-    {% assign keys = 'pdf,slides,poster,video,code,data,html' | split: ',' %}
+    {% assign keys = 'pdf,slides,poster,video,code,data,html,img' | split: ',' %}
     {% for item in paper %}
         {% if keys contains item[0] %}
             <a class="button" href="{{ item[1] }}" target="_blank">{{ item[0] | upcase }}</a>
@@ -78,7 +76,7 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
     <div class="direction-r">
     {% endif %}
     <div class="flag-wrapper">
-        <span class="flag">{{ exp.place }}</span>
+        <span class="flag">{% if exp.url %}<a href="{{ exp.url }}" target="_blank">{{ exp.place }}</a>{% else %}{{ exp.place }}{% endif %}</span>
         <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
     </div>
     <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.description }}</div>
