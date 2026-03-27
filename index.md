@@ -57,9 +57,16 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 ## Ongoing Interests
 
 {% for interest in site.ongoing_interests %}
-<div class="interest">
+<div class="interest" data-tags="{{ interest.tags | join: ',' }}">
     <h3 class="title"><b>{{ interest.title }}</b></h3>
     <p>{{ interest.description }}</p>
+    <div class="paper-buttons">
+    {% if interest.tags %}
+    {% for tag in interest.tags %}
+    <span class="paper-tag">{{ tag }}</span>
+    {% endfor %}
+    {% endif %}
+    </div>
 </div>
 {% endfor %}
 
@@ -85,13 +92,12 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
 {% endfor %}
 </ul>
 
-h/t to [Martin Saveski](http://martinsaveski.com/) for inspiration and for a pointer to `css` code for the biographical timeline.
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var activeTag = null;
   var buttons = document.querySelectorAll('.tag-btn');
   var papers = document.querySelectorAll('.paper[data-tags]');
+  var interests = document.querySelectorAll('.interest[data-tags]');
 
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -101,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         activeTag = null;
         buttons.forEach(function(b) { b.classList.remove('tag-btn-active'); });
         papers.forEach(function(p) { p.style.display = ''; });
+        interests.forEach(function(p) { p.style.display = ''; });
         return;
       }
 
@@ -110,6 +117,11 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       papers.forEach(function(p) {
+        var tags = p.getAttribute('data-tags').split(',');
+        p.style.display = tags.indexOf(tag) !== -1 ? '' : 'none';
+      });
+
+      interests.forEach(function(p) {
         var tags = p.getAttribute('data-tags').split(',');
         p.style.display = tags.indexOf(tag) !== -1 ? '' : 'none';
       });

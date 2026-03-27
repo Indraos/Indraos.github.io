@@ -314,11 +314,16 @@ papers:
 ongoing_interests:
 - title: "Preferencing & Persuasion"
   description: "design for disobedience, non-self-preferencing for language models, cognitive safety"
+  tags: ["Platforms", "AI Safety", "Preferences"]
 - title: "Privacy"
   description: "roles in contextual integrity, contextual summaries"
+  tags: ["Privacy"]
 - title: "AI Evaluation"
   description: "benchmark aggregation and certification, PastArena"
+  tags: ["AI Evaluation", "Market Design"]
 - title: "New Ways to Learn about the Economy"
   description: "A new O*Net, Centaur evaluations, foundation models for simulacra"
+  tags: ["AI Evaluation"]
 - title: "Applied Theory of human-AI interaction"
   description: "boundary guidance, concentration and preference measurement error, algorithmic risk aversion, network decay"
+  tags: ["Preferences", "AI Safety", "Networks"]
