@@ -137,8 +137,8 @@ papers:
 
 - title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
   authors: "S. Ball, <b>A. Haupt</b>"
-  venue: "Preprint, 2025."
-  date: 2025-10-01
+  venue: "International Conference on Machine Learning, 2026."
+  date: 2026-07-06
   pdf: "https://arxiv.org/abs/2510.11834"
   tags: ["AI Safety"]
 
