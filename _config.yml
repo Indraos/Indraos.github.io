@@ -96,6 +96,7 @@ papers:
   venue: "ACM Conference on Fairness, Accountability, and Transparency, 2026."
   date: 2026-06-25
   pdf: "https://dl.acm.org/doi/10.1145/3805689.3806760"
+  code: "https://github.com/stanford-del/silicon-philosophers"
   tags: ["AI Evaluation", "AI Safety"]
 
 - title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
