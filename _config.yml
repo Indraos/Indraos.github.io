@@ -91,6 +91,14 @@ paper_tags:
   - "Thesis"
 
 papers:
+- title: "The Collapse of Heterogeneity in Silicon Philosophers"
+  authors: "Y. Shi, <b>A. Haupt</b>"
+  venue: "ACM Conference on Fairness, Accountability, and Transparency, 2026."
+  date: 2026-06-25
+  pdf: "https://dl.acm.org/doi/10.1145/3805689.3806760"
+  code: "https://github.com/stanford-del/silicon-philosophers"
+  tags: ["AI Evaluation", "AI Safety"]
+
 - title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
   authors: "<b>A. Haupt</b>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "ICLR Workshop on AI for Mechanism Design and Strategic Decision Making, 2026."
