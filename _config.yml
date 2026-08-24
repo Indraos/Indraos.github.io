@@ -91,6 +91,14 @@ paper_tags:
   - "Thesis"
 
 papers:
+- title: "Bruno"
+  authors: "<b>A. Haupt</b>, P. Ranganathan"
+  venue: "ICML Workshop on AI for Science (Best AI Scientist Award), 2026."
+  date: 2026-07-11
+  html: "https://icml.cc/virtual/2026/73586"
+  video: "https://www.youtube.com/watch?v=hYtxPnl8mbo"
+  tags: ["Arts"]
+
 - title: "The Collapse of Heterogeneity in Silicon Philosophers"
   authors: "Y. Shi, <b>A. Haupt</b>"
   venue: "ACM Conference on Fairness, Accountability, and Transparency, 2026."
