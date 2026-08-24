@@ -120,7 +120,7 @@ papers:
   date: 2026-03-01
   html: "https://www.intelligent-orgs.com/"
   img: "/assets/supporting/the-foreman.png"
-  tags: ["Arts"]
+  tags: ["Arts", "Work"]
 
 - title: "Latent Adversarial Regularization for Offline Preference Optimization"
   authors: "E. Jiang, Y.J. Zhang, Y. Xu, <b>A. Haupt</b>, N. Amato, S. Koyejo"
@@ -178,7 +178,7 @@ papers:
   venue: "International Conference on Machine Learning (Position Paper), 2025."
   date: 2025-07-01
   pdf: "https://openreview.net/forum?id=LkdH35003E"
-  tags: ["AI Evaluation"]
+  tags: ["AI Evaluation", "Work"]
 
 - title: "Convex Markov Games: A Framework for Creativity, Imitation, Fairness, and Safety in Multiagent Learning"
   authors: "I. Gemp, <b>A. Haupt</b>, L. Marris, S. Liu, G. Piliouras"
@@ -256,7 +256,7 @@ papers:
   venue: "Transportation Research Part C: Emerging Technologies 154, 2023."
   date: 2023-09-01
   pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
-  tags: ["Platforms"]
+  tags: ["Platforms", "Work"]
 
 - title: "Steering No-Regret Learners to Optimal Equilibria"
   authors: "B.H. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S.M. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
@@ -340,7 +340,7 @@ ongoing_interests:
   tags: ["AI Evaluation", "Market Design"]
 - title: "New Ways to Learn about the Economy"
   description: "A new O*Net, Centaur evaluations, foundation models for simulacra"
-  tags: ["AI Evaluation"]
+  tags: ["AI Evaluation", "Work"]
 - title: "Applied Theory of human-AI interaction"
   description: "boundary guidance, concentration and preference measurement error, algorithmic risk aversion, network decay"
   tags: ["Preferences", "AI Safety", "Networks"]
