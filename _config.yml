@@ -189,9 +189,10 @@ papers:
 
 - title: "Contextually Private Mechanisms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
-  venue: "Forthcoming at the American Economic Review"
+  venue: "American Economic Review, 2026."
   date: 2025-05-01
   pdf: "https://arxiv.org/abs/2112.10812"
+  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
   tags: ["Privacy", "Market Design"]
 
 - title: "Non-Preferencing as a Fairness Provision: An Illustrated Guide"
