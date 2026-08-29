@@ -1,7 +1,12 @@
 title: Andreas Haupt
 name: "Andreas Haupt"
-title: "AI Institute Fellow-in-Residence"
-employer: "Schmidt Sciences"
+positions:
+  - title: "AI Institute Fellow-in-Residence"
+    employer: "Schmidt Sciences"
+  - title: "Digital Fellow"
+    employer: "Stanford Digital Economy Lab"
+  - title: "Technology and Human Rights Fellow"
+    employer: "Harvard Kennedy School"
 profile_pic: "assets/media/informal_headshot.jpg"
 description: |
   Personal website of Andy Haupt.
