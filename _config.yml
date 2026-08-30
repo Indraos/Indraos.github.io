@@ -172,6 +172,13 @@ papers:
   pdf: "https://arxiv.org/abs/2605.30916"
   tags: ["AI Evaluation", "Market Design"]
 
+- title: "Position: AI Development Should Prioritize Cognitive Security"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b>, J. Zou"
+  venue: "ICLR Workshop on Agents in the Wild: Safety, Security, and Beyond, 2026."
+  date: 2026-04-26
+  pdf: "https://openreview.net/forum?id=5pShDP8LSm"
+  tags: ["AI Safety"]
+
 - title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
   authors: "<b>A. Haupt</b>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "ICLR Workshop on AI for Mechanism Design and Strategic Decision Making, 2026."
@@ -185,13 +192,6 @@ papers:
   html: "https://www.intelligent-orgs.com/"
   img: "/assets/supporting/the-foreman.png"
   tags: ["Arts", "Work"]
-
-- title: "Position: AI Development Should Prioritize Cognitive Security"
-  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b>, J. Zou"
-  venue: "Preprint, 2026."
-  date: 2026-01-30
-  pdf: "https://openreview.net/forum?id=5pShDP8LSm"
-  tags: ["AI Safety"]
 
 - title: "Latent Adversarial Regularization for Offline Preference Optimization"
   authors: "E. Jiang, Y.J. Zhang, Y. Xu, <b>A. Haupt</b>, N. Amato, S. Koyejo"
@@ -364,20 +364,6 @@ papers:
   date: 2021-12-01
   pdf: "https://dl.acm.org/doi/10.1007/978-3-030-94676-0_3"
   tags: ["Market Design"]
-
-- title: "Prior-Independent Auctions for the Demand Side of Federated Learning"
-  authors: "<b>A. Haupt</b>, V. Mugunthan"
-  venue: "ICLR Workshop on Distributed and Private Machine Learning, 2021."
-  date: 2021-05-01
-  pdf: "https://arxiv.org/abs/2103.14375"
-  tags: ["Market Design", "Privacy"]
-
-- title: "Classification on Large Networks: A Quantitative Bound via Motifs and Graphons"
-  authors: "<b>A. Haupt</b>, M. Khatami, T. Schultz, N.M. Tran"
-  venue: "Advances in Mathematical Sciences (AWM Research Symposium), 2020."
-  date: 2020-01-01
-  pdf: "https://arxiv.org/abs/1710.08878"
-  tags: ["Networks"]
 
 - title: "Multi-Agent Influence Diagrams and Commitment"
   authors: "<b>A. Haupt</b>"
