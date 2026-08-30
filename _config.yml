@@ -115,6 +115,13 @@ paper_tags:
   - "Thesis"
 
 papers:
+- title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
+  authors: "S. Ball, <b>A. Haupt</b>"
+  venue: "International Conference on Machine Learning, 2026."
+  date: 2026-07-11
+  pdf: "https://arxiv.org/abs/2510.11834"
+  tags: ["AI Safety"]
+
 - title: "Bruno"
   authors: "<b>A. Haupt</b><sup>‡</sup>, P. Ranganathan<sup>‡</sup>"
   venue: "ICML Workshop on AI for Science (Best AI Scientist Award), 2026."
@@ -174,13 +181,6 @@ papers:
   code: "https://github.com/Indraos/those-who-control"
   img: "/assets/supporting/those-who-control.png"
   tags: ["Arts"]
-
-- title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
-  authors: "S. Ball, <b>A. Haupt</b>"
-  venue: "Preprint, 2025."
-  date: 2025-10-01
-  pdf: "https://arxiv.org/abs/2510.11834"
-  tags: ["AI Safety"]
 
 - title: "Preference Measurement Error, Concentration in Recommendation Systems, and Persuasion"
   authors: "<b>A. Haupt</b>"
