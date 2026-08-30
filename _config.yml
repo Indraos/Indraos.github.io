@@ -115,6 +115,13 @@ paper_tags:
   - "Thesis"
 
 papers:
+- title: "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications"
+  authors: "X. Lin, S. Zhu, S. Yang, Z. Zhang, H. Zhang, Y. Zhao, C. Qian, T. Wang, Z. Zhang, Z. Yuan, D. Wu, J. Wu, Y. Si, J. Liu, B. Bi, R. Mahari, T. South, D. Greenwood, Z. He, R. Bommasani, S. Kazinnik, <b>A. Haupt</b>, S. Marro, E. Brynjolfsson, A. Pentland, J. Pei"
+  venue: "Preprint, 2026."
+  date: 2026-07-30
+  pdf: "https://arxiv.org/abs/2607.28617"
+  tags: ["AI Safety", "AI Evaluation"]
+
 - title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
   authors: "S. Ball, <b>A. Haupt</b>"
   venue: "International Conference on Machine Learning, 2026."
@@ -138,6 +145,33 @@ papers:
   code: "https://github.com/stanford-del/silicon-philosophers"
   tags: ["AI Evaluation", "AI Safety"]
 
+- title: "Discussion of \"The ICML 2023 Ranking Experiment\" by Su et al."
+  authors: "<b>A. Haupt</b>, S. Koyejo"
+  venue: "Journal of the American Statistical Association 121 (554), p. 853-854, 2026."
+  date: 2026-06-01
+  tags: ["AI Evaluation"]
+
+- title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
+  authors: "M. Lamparth, D. Fein, <b>A. Haupt</b>, M. Hussing, M.J. Kochenderfer"
+  venue: "RLEval Workshop, 2026."
+  date: 2026-05-29
+  pdf: "https://arxiv.org/abs/2605.27996"
+  tags: ["Preferences", "AI Safety"]
+
+- title: "General Preference Reinforcement Learning"
+  authors: "M. Umer, M.A. Mohsin, A. Bilal, A. Chaudhry, <b>A. Haupt</b>, S. Koyejo, E. Fox, J.M. Cioffi"
+  venue: "Preprint, 2026."
+  date: 2026-05-18
+  pdf: "https://arxiv.org/abs/2605.18721"
+  tags: ["Preferences"]
+
+- title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
+  authors: "<b>A. Haupt</b>, J. Hartenstein, A. Reuel, M. Kochenderfer, S. Koyejo"
+  venue: "Preprint, 2026."
+  date: 2026-05-01
+  pdf: "https://arxiv.org/abs/2605.30916"
+  tags: ["AI Evaluation", "Market Design"]
+
 - title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
   authors: "<b>A. Haupt</b>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "ICLR Workshop on AI for Mechanism Design and Strategic Decision Making, 2026."
@@ -151,6 +185,13 @@ papers:
   html: "https://www.intelligent-orgs.com/"
   img: "/assets/supporting/the-foreman.png"
   tags: ["Arts", "Work"]
+
+- title: "Position: AI Development Should Prioritize Cognitive Security"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b>, J. Zou"
+  venue: "Preprint, 2026."
+  date: 2026-01-30
+  pdf: "https://openreview.net/forum?id=5pShDP8LSm"
+  tags: ["AI Safety"]
 
 - title: "Latent Adversarial Regularization for Offline Preference Optimization"
   authors: "E. Jiang, Y.J. Zhang, Y. Xu, <b>A. Haupt</b>, N. Amato, S. Koyejo"
@@ -323,6 +364,20 @@ papers:
   date: 2021-12-01
   pdf: "https://dl.acm.org/doi/10.1007/978-3-030-94676-0_3"
   tags: ["Market Design"]
+
+- title: "Prior-Independent Auctions for the Demand Side of Federated Learning"
+  authors: "<b>A. Haupt</b>, V. Mugunthan"
+  venue: "ICLR Workshop on Distributed and Private Machine Learning, 2021."
+  date: 2021-05-01
+  pdf: "https://arxiv.org/abs/2103.14375"
+  tags: ["Market Design", "Privacy"]
+
+- title: "Classification on Large Networks: A Quantitative Bound via Motifs and Graphons"
+  authors: "<b>A. Haupt</b>, M. Khatami, T. Schultz, N.M. Tran"
+  venue: "Advances in Mathematical Sciences (AWM Research Symposium), 2020."
+  date: 2020-01-01
+  pdf: "https://arxiv.org/abs/1710.08878"
+  tags: ["Networks"]
 
 - title: "Multi-Agent Influence Diagrams and Commitment"
   authors: "<b>A. Haupt</b>"
