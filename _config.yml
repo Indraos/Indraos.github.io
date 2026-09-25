@@ -270,7 +270,7 @@ papers:
 
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
-  venue: "Stanford Living Textbook Initiative"
+  venue: "Princeton University Press (forthcoming)"
   date: 2025-01-01
   html: "https://mlhp.stanford.edu/"
   tags: ["Preferences"]
