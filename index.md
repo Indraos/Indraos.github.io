@@ -11,7 +11,7 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 </details>
 <details>
   <summary>Tagline</summary>
-  Federal Trade Commission meets AI alignment.
+  Use AI to Learn about People's Preferences
 </details>
 <details>
   <summary>Media Assets</summary>
