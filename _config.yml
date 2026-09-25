@@ -101,24 +101,11 @@ experiences:
   description: "Mathematics Department"
   category: "education"
 
-paper_tags:
-  - "Privacy"
-  - "Platforms"
-  - "AI Safety"
-  - "Multi-Agent"
-  - "Preferences"
-  - "AI Evaluation"
-  - "Market Design"
-  - "Networks"
-  - "Arts"
-  - "Work"
-  - "Thesis"
-  - "Preprint"
-
 # Papers with any of these tags are hidden until selected via their tag or "All".
 hidden_by_default_tags:
   - "Preprint"
   - "Arts"
+  - "Thesis"
 
 papers:
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
@@ -343,7 +330,7 @@ papers:
   venue: "Symposium on the Foundations of Responsible Computing, 2023."
   date: 2023-06-01
   pdf: "https://arxiv.org/abs/2302.06559"
-  tags: ["Preferences", "Platforms"]
+  tags: ["Preferences", "Platforms", "Preprint"]
 
 - title: "Opaque Contracts"
   authors: "<b>A. Haupt</b>, Z. Hitzig"
