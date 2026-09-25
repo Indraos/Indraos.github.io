@@ -180,12 +180,6 @@ papers:
   pdf: "https://arxiv.org/abs/2605.18721"
   tags: ["Preferences"]
 
-- title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
-  authors: "<b>A. Haupt</b>, A. Reuel, M. Kochenderfer, S. Koyejo"
-  venue: "ICLR Workshop on AI for Mechanism Design and Strategic Decision Making, 2026."
-  date: 2026-04-01
-  tags: ["AI Evaluation", "Market Design"]
-
 - title: "The Foreman"
   authors: "G. Bellini, P. Ranganathan, <b>A. Haupt</b>"
   venue: "March 2026."
