@@ -252,7 +252,7 @@ papers:
   venue: "ACM Symposium on Computer Science and Law (Poster), 2025."
   date: 2025-03-01
   pdf: "https://papers.ssrn.com/abstract=5338793"
-  tags: ["Platforms", "Market Design"]
+  tags: ["Platforms", "Market Design", "Preprint"]
 
 - title: "The Economic Engineering of Personalized Experiences"
   authors: "<b>A. Haupt</b>"
