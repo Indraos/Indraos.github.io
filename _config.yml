@@ -109,7 +109,7 @@ hidden_by_default_tags:
 
 papers:
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
-  authors: "<b>A. Haupt</b>, J. Hartenstein, A. Reuel, M. Kochenderfer, S. Koyejo"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
   date: 2026-12-01
   pdf: "https://arxiv.org/abs/2605.30916"
@@ -124,7 +124,7 @@ papers:
   tags: ["Preferences", "AI Safety"]
 
 - title: "Position: AI Development Should Prioritize Cognitive Security"
-  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b>, J. Zou"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>‡</sup>, J. Zou<sup>‡</sup>"
   venue: "Advances in Neural Information Processing Systems (Position Paper), 2026."
   date: 2026-12-01
   pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
@@ -137,6 +137,13 @@ papers:
   pdf: "https://arxiv.org/abs/2112.10812"
   html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
   tags: ["Privacy", "Market Design"]
+
+- title: "Machine Learning from Human Preferences"
+  authors: "S. Truong<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, S. Koyejo"
+  venue: "Princeton University Press (forthcoming)"
+  date: 2026-08-01
+  html: "https://mlhp.stanford.edu/"
+  tags: ["Preferences"]
 
 - title: "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications"
   authors: "X. Lin, S. Zhu, S. Yang, Z. Zhang, H. Zhang, Y. Zhao, C. Qian, T. Wang, Z. Zhang, Z. Yuan, D. Wu, J. Wu, Y. Si, J. Liu, B. Bi, R. Mahari, T. South, D. Greenwood, Z. He, R. Bommasani, S. Kazinnik, <b>A. Haupt</b>, S. Marro, E. Brynjolfsson, A. Pentland, J. Pei"
@@ -268,13 +275,6 @@ papers:
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
   tags: ["Platforms", "Preprint"]
 
-- title: "Machine Learning from Human Preferences"
-  authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
-  venue: "Princeton University Press (forthcoming)"
-  date: 2025-01-01
-  html: "https://mlhp.stanford.edu/"
-  tags: ["Preferences"]
-
 - title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
   authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
   venue: "Advances in Neural Information Processing Systems, 2024."
@@ -319,7 +319,7 @@ papers:
   tags: ["Multi-Agent", "Market Design"]
 
 - title: "Certification Design for a Competitive Market"
-  authors: "<b>A. Haupt</b>, N. Immorlica, B. Lucier"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, N. Immorlica<sup>‡</sup>, B. Lucier<sup>‡</sup>"
   venue: "ACM Conference on Economics and Computation, 2023."
   date: 2023-07-01
   pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
