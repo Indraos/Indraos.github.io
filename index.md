@@ -23,17 +23,18 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 
 ## Publications
 
-A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing.
+A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Preprints, art projects, and theses are hidden by default; select *Preprint*, *Arts*, *Thesis*, or *All* to show them.
 
 <div class="tag-filters">
-{% for tag in site.paper_tags %}
+{% assign paper_tags = "" | split: "" %}{% for paper in site.papers %}{% if paper.tags %}{% assign paper_tags = paper_tags | concat: paper.tags %}{% endif %}{% endfor %}{% assign paper_tags = paper_tags | uniq %}
+{% for tag in paper_tags %}
 <button class="tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
 {% endfor %}
 <button class="tag-btn tag-btn-clear" data-tag="all">All</button>
 </div>
 
 {% for paper in site.papers %}
-<div class="paper" data-tags="{{ paper.tags | join: ',' }}">
+<div class="paper" data-tags="{{ paper.tags | join: ',' }}"{% assign hidden = false %}{% for t in site.hidden_by_default_tags %}{% if paper.tags contains t %}{% assign hidden = true %}{% endif %}{% endfor %}{% if hidden %} style="display:none"{% endif %}>
     <h3 class="title"><b>{{ paper.title }}</b></h3>
     <p>{{ paper.authors }}</p>
     <p><i>{{ paper.venue }}</i></p>
@@ -95,6 +96,7 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var activeTag = null;
+  var hiddenByDefault = {{ site.hidden_by_default_tags | jsonify }};
   var buttons = document.querySelectorAll('.tag-btn');
   var papers = document.querySelectorAll('.paper[data-tags]');
   var interests = document.querySelectorAll('.interest[data-tags]');
@@ -106,7 +108,16 @@ document.addEventListener('DOMContentLoaded', function() {
       if (tag === 'all' || activeTag === tag) {
         activeTag = null;
         buttons.forEach(function(b) { b.classList.remove('tag-btn-active'); });
-        papers.forEach(function(p) { p.style.display = ''; });
+        if (tag === 'all') {
+          btn.classList.add('tag-btn-active');
+          papers.forEach(function(p) { p.style.display = ''; });
+        } else {
+          papers.forEach(function(p) {
+            var tags = p.getAttribute('data-tags').split(',');
+            var hidden = hiddenByDefault.some(function(t) { return tags.indexOf(t) !== -1; });
+            p.style.display = hidden ? 'none' : '';
+          });
+        }
         interests.forEach(function(p) { p.style.display = ''; });
         return;
       }

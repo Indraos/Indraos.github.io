@@ -101,17 +101,10 @@ experiences:
   description: "Mathematics Department"
   category: "education"
 
-paper_tags:
-  - "Privacy"
-  - "Platforms"
-  - "AI Safety"
-  - "Multi-Agent"
-  - "Preferences"
-  - "AI Evaluation"
-  - "Market Design"
-  - "Networks"
+# Papers with any of these tags are hidden until selected via their tag or "All".
+hidden_by_default_tags:
+  - "Preprint"
   - "Arts"
-  - "Work"
   - "Thesis"
 
 papers:
@@ -142,7 +135,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-07-30
   pdf: "https://arxiv.org/abs/2607.28617"
-  tags: ["AI Safety", "AI Evaluation"]
+  tags: ["AI Safety", "AI Evaluation", "Preprint"]
 
 - title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
   authors: "S. Ball, <b>A. Haupt</b>"
@@ -178,13 +171,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-05-18
   pdf: "https://arxiv.org/abs/2605.18721"
-  tags: ["Preferences"]
-
-- title: "Optimal Aggregation Mechanisms for AI Benchmarking and Platinum Benchmarks"
-  authors: "<b>A. Haupt</b>, A. Reuel, M. Kochenderfer, S. Koyejo"
-  venue: "ICLR Workshop on AI for Mechanism Design and Strategic Decision Making, 2026."
-  date: 2026-04-01
-  tags: ["AI Evaluation", "Market Design"]
+  tags: ["Preferences", "Preprint"]
 
 - title: "The Foreman"
   authors: "G. Bellini, P. Ranganathan, <b>A. Haupt</b>"
@@ -199,7 +186,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-01-01
   pdf: "https://arxiv.org/abs/2601.22083"
-  tags: ["Preferences", "AI Safety"]
+  tags: ["Preferences", "AI Safety", "Preprint"]
 
 - title: "Compressed Individuality"
   authors: "<b>A. Haupt</b>"
@@ -207,7 +194,7 @@ papers:
   date: 2025-12-01
   html: "https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/"
   img: "/assets/supporting/compressed-individuality.png"
-  tags: ["Arts"]
+  tags: ["Arts", "Preferences"]
 
 - title: "Position: ML Conferences Should Establish a Refutations and Critiques Track"
   authors: "R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, S. Zhang, <b>A. Haupt</b>, I. Gupta, E. Obbad, J. Dodge, et al."
@@ -229,7 +216,7 @@ papers:
   venue: "Allied Social Science Associations Meeting, 2025."
   date: 2025-10-01
   pdf: "https://arxiv.org/abs/2510.16972"
-  tags: ["Preferences", "Platforms"]
+  tags: ["Preferences", "Platforms", "Preprint"]
 
 - title: "Scaling Human Judgment in Community Notes with LLMs"
   authors: "H. Li, S. De, M. Revel, <b>A. Haupt</b>, B. Miller, K. Coleman, J. Baxter, M. Saveski, M.A. Bakker"
@@ -265,7 +252,7 @@ papers:
   venue: "ACM Symposium on Computer Science and Law (Poster), 2025."
   date: 2025-03-01
   pdf: "https://papers.ssrn.com/abstract=5338793"
-  tags: ["Platforms", "Market Design"]
+  tags: ["Platforms", "Market Design", "Preprint"]
 
 - title: "The Economic Engineering of Personalized Experiences"
   authors: "<b>A. Haupt</b>"
@@ -279,11 +266,11 @@ papers:
   venue: "SSRN Preprint 5126918, 2025."
   date: 2025-01-01
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
-  tags: ["Platforms"]
+  tags: ["Platforms", "Preprint"]
 
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
-  venue: "Stanford Living Textbook Initiative"
+  venue: "Princeton University Press (forthcoming)"
   date: 2025-01-01
   html: "https://mlhp.stanford.edu/"
   tags: ["Preferences"]
@@ -343,14 +330,14 @@ papers:
   venue: "Symposium on the Foundations of Responsible Computing, 2023."
   date: 2023-06-01
   pdf: "https://arxiv.org/abs/2302.06559"
-  tags: ["Preferences", "Platforms"]
+  tags: ["Preferences", "Platforms", "Preprint"]
 
 - title: "Opaque Contracts"
   authors: "<b>A. Haupt</b>, Z. Hitzig"
   venue: "Preprint, 2023."
   date: 2023-01-01
   pdf: "https://arxiv.org/abs/2301.13404"
-  tags: ["Privacy", "Market Design"]
+  tags: ["Privacy", "Market Design", "Preprint"]
 
 - title: "Towards Psychologically-Grounded Dynamic Preference Models"
   authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"
