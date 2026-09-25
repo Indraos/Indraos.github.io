@@ -194,7 +194,7 @@ papers:
   date: 2025-12-01
   html: "https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/"
   img: "/assets/supporting/compressed-individuality.png"
-  tags: ["Arts"]
+  tags: ["Arts", "Preferences"]
 
 - title: "Position: ML Conferences Should Establish a Refutations and Critiques Track"
   authors: "R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, S. Zhang, <b>A. Haupt</b>, I. Gupta, E. Obbad, J. Dodge, et al."
@@ -216,7 +216,7 @@ papers:
   venue: "Allied Social Science Associations Meeting, 2025."
   date: 2025-10-01
   pdf: "https://arxiv.org/abs/2510.16972"
-  tags: ["Preferences", "Platforms"]
+  tags: ["Preferences", "Platforms", "Preprint"]
 
 - title: "Scaling Human Judgment in Community Notes with LLMs"
   authors: "H. Li, S. De, M. Revel, <b>A. Haupt</b>, B. Miller, K. Coleman, J. Baxter, M. Saveski, M.A. Bakker"
