@@ -23,18 +23,19 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 
 ## Publications
 
-A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Only published work is shown by default; select *Preprint*, *Art*, *Thesis*, or *All* to see the rest.
+A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Only published work is shown by default; select another type, or *All* types, to see the rest.
 
 {% assign default_type = site.paper_types | first %}
 <div class="tag-filters">
 {% for type in site.paper_types %}
-<button class="tag-btn tag-btn-type{% if type == default_type %} tag-btn-active{% endif %}{% if forloop.last %} tag-btn-type-last{% endif %}" data-type="{{ type }}">{{ type }}</button>
+<button class="tag-btn tag-btn-type{% if type == default_type %} tag-btn-active{% endif %}" data-type="{{ type }}">{{ type }}</button>
 {% endfor %}
+<button class="tag-btn tag-btn-type tag-btn-clear tag-btn-type-last" data-type="all">All</button>
 {% assign paper_tags = "" | split: "" %}{% for paper in site.papers %}{% if paper.tags %}{% assign paper_tags = paper_tags | concat: paper.tags %}{% endif %}{% endfor %}{% assign paper_tags = paper_tags | uniq %}
 {% for tag in paper_tags %}
 <button class="tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
 {% endfor %}
-<button class="tag-btn tag-btn-clear" data-tag="all">All</button>
+<button class="tag-btn tag-btn-clear tag-btn-active" data-tag="all">All</button>
 </div>
 
 {% for paper in site.papers %}
@@ -118,19 +119,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     interests.forEach(function(p) { p.style.display = hasTag(p) ? '' : 'none'; });
     typeButtons.forEach(function(b) {
-      b.classList.toggle('tag-btn-active', b.getAttribute('data-type') === activeType);
+      var type = b.getAttribute('data-type');
+      b.classList.toggle('tag-btn-active', type === 'all' ? !activeType : type === activeType);
     });
     tagButtons.forEach(function(b) {
       var tag = b.getAttribute('data-tag');
-      var active = tag === 'all' ? !activeType && !activeTag : tag === activeTag;
-      b.classList.toggle('tag-btn-active', active);
+      b.classList.toggle('tag-btn-active', tag === 'all' ? !activeTag : tag === activeTag);
     });
   }
 
   typeButtons.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var type = this.getAttribute('data-type');
-      activeType = activeType === type ? null : type;
+      activeType = type === 'all' || activeType === type ? null : type;
       apply();
     });
   });
@@ -138,12 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
   tagButtons.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var tag = this.getAttribute('data-tag');
-      if (tag === 'all') {
-        activeType = null;
-        activeTag = null;
-      } else {
-        activeTag = activeTag === tag ? null : tag;
-      }
+      activeTag = tag === 'all' || activeTag === tag ? null : tag;
       apply();
     });
   });
