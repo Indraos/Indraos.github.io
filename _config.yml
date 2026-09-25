@@ -422,7 +422,7 @@ papers:
 
 ongoing_interests:
 - title: "Economic Measurement"
-  description: "a new O*NET, Centaur evaluations, foundation models for simulacra, PastArena"
+  description: "a new O*NET, Centaur evaluations, simulacra"
   tags: ["Work", "AI Evaluation"]
 - title: "Incentives"
   description: "non-self-preferencing for language models, design for disobedience, certification, concentration in recommendation systems, network decay"
