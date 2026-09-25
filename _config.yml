@@ -113,6 +113,7 @@ paper_tags:
   - "Arts"
   - "Work"
   - "Thesis"
+  - "Preprint"
 
 papers:
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
@@ -142,7 +143,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-07-30
   pdf: "https://arxiv.org/abs/2607.28617"
-  tags: ["AI Safety", "AI Evaluation"]
+  tags: ["AI Safety", "AI Evaluation", "Preprint"]
 
 - title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
   authors: "S. Ball, <b>A. Haupt</b>"
@@ -178,7 +179,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-05-18
   pdf: "https://arxiv.org/abs/2605.18721"
-  tags: ["Preferences"]
+  tags: ["Preferences", "Preprint"]
 
 - title: "The Foreman"
   authors: "G. Bellini, P. Ranganathan, <b>A. Haupt</b>"
@@ -193,7 +194,7 @@ papers:
   venue: "Preprint, 2026."
   date: 2026-01-01
   pdf: "https://arxiv.org/abs/2601.22083"
-  tags: ["Preferences", "AI Safety"]
+  tags: ["Preferences", "AI Safety", "Preprint"]
 
 - title: "Compressed Individuality"
   authors: "<b>A. Haupt</b>"
@@ -273,7 +274,7 @@ papers:
   venue: "SSRN Preprint 5126918, 2025."
   date: 2025-01-01
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
-  tags: ["Platforms"]
+  tags: ["Platforms", "Preprint"]
 
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong, <b>A. Haupt</b>, S. Koyejo"
@@ -344,7 +345,7 @@ papers:
   venue: "Preprint, 2023."
   date: 2023-01-01
   pdf: "https://arxiv.org/abs/2301.13404"
-  tags: ["Privacy", "Market Design"]
+  tags: ["Privacy", "Market Design", "Preprint"]
 
 - title: "Towards Psychologically-Grounded Dynamic Preference Models"
   authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"

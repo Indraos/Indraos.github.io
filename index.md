@@ -23,7 +23,7 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 
 ## Publications
 
-A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing.
+A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Preprints and working papers are hidden by default; select *Preprint* or *All* to show them.
 
 <div class="tag-filters">
 {% for tag in site.paper_tags %}
@@ -33,7 +33,7 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 </div>
 
 {% for paper in site.papers %}
-<div class="paper" data-tags="{{ paper.tags | join: ',' }}">
+<div class="paper" data-tags="{{ paper.tags | join: ',' }}"{% if paper.tags contains "Preprint" %} style="display:none"{% endif %}>
     <h3 class="title"><b>{{ paper.title }}</b></h3>
     <p>{{ paper.authors }}</p>
     <p><i>{{ paper.venue }}</i></p>
@@ -106,7 +106,15 @@ document.addEventListener('DOMContentLoaded', function() {
       if (tag === 'all' || activeTag === tag) {
         activeTag = null;
         buttons.forEach(function(b) { b.classList.remove('tag-btn-active'); });
-        papers.forEach(function(p) { p.style.display = ''; });
+        if (tag === 'all') {
+          btn.classList.add('tag-btn-active');
+          papers.forEach(function(p) { p.style.display = ''; });
+        } else {
+          papers.forEach(function(p) {
+            var tags = p.getAttribute('data-tags').split(',');
+            p.style.display = tags.indexOf('Preprint') !== -1 ? 'none' : '';
+          });
+        }
         interests.forEach(function(p) { p.style.display = ''; });
         return;
       }
