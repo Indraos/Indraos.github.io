@@ -115,6 +115,11 @@ paper_tags:
   - "Thesis"
   - "Preprint"
 
+# Papers with any of these tags are hidden until selected via their tag or "All".
+hidden_by_default_tags:
+  - "Preprint"
+  - "Arts"
+
 papers:
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b>, J. Hartenstein, A. Reuel, M. Kochenderfer, S. Koyejo"

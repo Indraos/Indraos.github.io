@@ -23,7 +23,7 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 
 ## Publications
 
-A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Preprints and working papers are hidden by default; select *Preprint* or *All* to show them.
+A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Preprints and art projects are hidden by default; select *Preprint*, *Arts*, or *All* to show them.
 
 <div class="tag-filters">
 {% for tag in site.paper_tags %}
@@ -33,7 +33,7 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 </div>
 
 {% for paper in site.papers %}
-<div class="paper" data-tags="{{ paper.tags | join: ',' }}"{% if paper.tags contains "Preprint" %} style="display:none"{% endif %}>
+<div class="paper" data-tags="{{ paper.tags | join: ',' }}"{% assign hidden = false %}{% for t in site.hidden_by_default_tags %}{% if paper.tags contains t %}{% assign hidden = true %}{% endif %}{% endfor %}{% if hidden %} style="display:none"{% endif %}>
     <h3 class="title"><b>{{ paper.title }}</b></h3>
     <p>{{ paper.authors }}</p>
     <p><i>{{ paper.venue }}</i></p>
@@ -95,6 +95,7 @@ Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var activeTag = null;
+  var hiddenByDefault = {{ site.hidden_by_default_tags | jsonify }};
   var buttons = document.querySelectorAll('.tag-btn');
   var papers = document.querySelectorAll('.paper[data-tags]');
   var interests = document.querySelectorAll('.interest[data-tags]');
@@ -112,7 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
           papers.forEach(function(p) {
             var tags = p.getAttribute('data-tags').split(',');
-            p.style.display = tags.indexOf('Preprint') !== -1 ? 'none' : '';
+            var hidden = hiddenByDefault.some(function(t) { return tags.indexOf(t) !== -1; });
+            p.style.display = hidden ? 'none' : '';
           });
         }
         interests.forEach(function(p) { p.style.display = ''; });
