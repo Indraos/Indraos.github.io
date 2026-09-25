@@ -130,6 +130,14 @@ papers:
   pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
   tags: ["AI Safety"]
 
+- title: "Contextually Private Mechanisms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
+  venue: "American Economic Review (Lead Article), 2026."
+  date: 2026-09-01
+  pdf: "https://arxiv.org/abs/2112.10812"
+  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
+  tags: ["Privacy", "Market Design"]
+
 - title: "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications"
   authors: "X. Lin, S. Zhu, S. Yang, Z. Zhang, H. Zhang, Y. Zhao, C. Qian, T. Wang, Z. Zhang, Z. Yuan, D. Wu, J. Wu, Y. Si, J. Liu, B. Bi, R. Mahari, T. South, D. Greenwood, Z. He, R. Bommasani, S. Kazinnik, <b>A. Haupt</b>, S. Marro, E. Brynjolfsson, A. Pentland, J. Pei"
   venue: "Preprint, 2026."
@@ -238,14 +246,6 @@ papers:
   date: 2025-07-01
   pdf: "https://arxiv.org/pdf/2410.16600v1"
   tags: ["Multi-Agent", "AI Safety"]
-
-- title: "Contextually Private Mechanisms"
-  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
-  venue: "American Economic Review (Lead Article), 2026."
-  date: 2025-05-01
-  pdf: "https://arxiv.org/abs/2112.10812"
-  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
-  tags: ["Privacy", "Market Design"]
 
 - title: "Non-Preferencing as a Fairness Provision: An Illustrated Guide"
   authors: "<b>A. Haupt</b>"
