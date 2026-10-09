@@ -1,0 +1,394 @@
+# Publications, preprints, art, theses and organized events; `type` is one
+# of paper_types in _config.yml.
+# Entries of type "Event" use `organizers` in place of `authors`, and `venue`
+# for host, place and date; link the event page with `html`.
+# `resume: true` lists an entry on the resume, using `short_title` (if given)
+# in place of the full title.
+- title: "SimulacraBench"
+  organizers: "<b>A. Haupt</b>"
+  venue: "Conference on Neural Information Processing Systems, Sydney, 2026."
+  date: 2026-12-01
+  html: "https://simulacrabench.org/"
+  type: "Event"
+  resume: true
+  tags: ["AI Evaluation"]
+
+- title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
+  short_title: "Optimal Benchmark Item Aggregation"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
+  venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
+  date: 2026-12-01
+  pdf: "https://arxiv.org/abs/2605.30916"
+  html: "https://openreview.net/forum?id=yF6rmSx7l7"
+  type: "Published"
+  resume: true
+  tags: ["AI Evaluation", "Aggregation", "Market Design"]
+
+- title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
+  authors: "M. Lamparth, D. Fein, <b>A. Haupt</b>, M. Hussing, M.J. Kochenderfer"
+  venue: "Advances in Neural Information Processing Systems, 2026."
+  date: 2026-12-01
+  pdf: "https://arxiv.org/abs/2605.27996"
+  type: "Published"
+  tags: ["Preferences"]
+
+- title: "Position: AI Development Should Prioritize Cognitive Security"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>‡</sup>, J. Zou<sup>‡</sup>"
+  venue: "Advances in Neural Information Processing Systems (Position Paper), 2026."
+  date: 2026-12-01
+  pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
+  type: "Published"
+  tags: ["Preferences"]
+
+- title: "The Future of Authorship"
+  organizers: "<b>A. Haupt</b>, K. Neubert, E. Brynjolfsson"
+  venue: "Stanford Digital Economy Lab, Stanford, November 2026."
+  date: 2026-11-16
+  type: "Event"
+  resume: true
+  tags: ["Work"]
+
+- title: "Contextually Private Mechanisms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
+  venue: "American Economic Review (Lead Article), 2026."
+  date: 2026-09-01
+  pdf: "https://arxiv.org/abs/2112.10812"
+  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
+  type: "Published"
+  resume: true
+  tags: ["Privacy", "Market Design"]
+
+- title: "Machine Learning from Human Preferences"
+  authors: "S. Truong<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, S. Koyejo<sup>‡</sup>"
+  venue: "Princeton University Press (forthcoming)"
+  date: 2026-08-01
+  html: "https://mlhp.stanford.edu/"
+  type: "Published"
+  resume: true
+  tags: ["Preferences"]
+
+- title: "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications"
+  authors: "X. Lin, S. Zhu, S. Yang, Z. Zhang, H. Zhang, Y. Zhao, C. Qian, T. Wang, Z. Zhang, Z. Yuan, D. Wu, J. Wu, Y. Si, J. Liu, B. Bi, R. Mahari, T. South, D. Greenwood, Z. He, R. Bommasani, S. Kazinnik, <b>A. Haupt</b>, S. Marro, E. Brynjolfsson, A. Pentland, J. Pei"
+  venue: "Preprint, 2026."
+  date: 2026-07-30
+  pdf: "https://arxiv.org/abs/2607.28617"
+  type: "Preprint"
+  tags: ["AI Evaluation", "Platforms"]
+
+- title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
+  short_title: "Boundary Guidance for Filtered Generation"
+  authors: "S. Ball, <b>A. Haupt</b>"
+  venue: "International Conference on Machine Learning, 2026."
+  date: 2026-07-11
+  pdf: "https://arxiv.org/abs/2510.11834"
+  type: "Published"
+  resume: true
+  tags: ["Multi-Agent"]
+
+- title: "Bruno: An AI Product Manager for Scientists"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, P. Ranganathan<sup>‡</sup>"
+  venue: "ICML Workshop on AI for Science (Best AI Scientist Award), 2026."
+  date: 2026-07-11
+  html: "https://icml.cc/virtual/2026/73586"
+  video: "https://www.youtube.com/watch?v=hYtxPnl8mbo"
+  type: "Published"
+  resume: true
+  tags: ["Work"]
+
+- title: "LLM Incentives"
+  organizers: "Y. Alimohammadi, K. Donahue, S. Fish, <b>A. Haupt</b>, C. Li, G. Mantegazza"
+  venue: "ACM Conference on Economics and Computation, Rome, July 2026."
+  date: 2026-07-06
+  html: "https://llm-incentives.com/"
+  type: "Event"
+  resume: true
+  tags: ["Market Design"]
+
+- title: "The Collapse of Heterogeneity in Silicon Philosophers"
+  authors: "Y. Shi, <b>A. Haupt</b>"
+  venue: "ACM Conference on Fairness, Accountability, and Transparency, 2026."
+  date: 2026-06-25
+  pdf: "https://dl.acm.org/doi/10.1145/3805689.3806760"
+  code: "https://github.com/stanford-del/silicon-philosophers"
+  type: "Published"
+  resume: true
+  tags: ["AI Evaluation", "Preferences"]
+
+- title: "Discussion of \"The ICML 2023 Ranking Experiment\" by Su et al."
+  authors: "<b>A. Haupt</b>, S. Koyejo"
+  venue: "Journal of the American Statistical Association 121 (554), p. 853-854, 2026."
+  date: 2026-06-01
+  type: "Published"
+  tags: ["AI Evaluation", "Aggregation"]
+
+- title: "General Preference Reinforcement Learning"
+  authors: "M. Umer, M.A. Mohsin, A. Bilal, A. Chaudhry, <b>A. Haupt</b>, S. Koyejo, E. Fox, J.M. Cioffi"
+  venue: "Preprint, 2026."
+  date: 2026-05-18
+  pdf: "https://arxiv.org/abs/2605.18721"
+  type: "Preprint"
+  tags: ["Preferences"]
+
+- title: "The Foreman"
+  authors: "G. Bellini, P. Ranganathan, <b>A. Haupt</b>"
+  venue: "March 2026."
+  date: 2026-03-01
+  html: "https://www.intelligent-orgs.com/"
+  img: "/assets/img/art/the-foreman.png"
+  type: "Art"
+  tags: ["Work"]
+
+- title: "Latent Adversarial Regularization for Offline Preference Optimization"
+  authors: "E. Jiang, Y.J. Zhang, Y. Xu, <b>A. Haupt</b>, N. Amato, S. Koyejo"
+  venue: "Preprint, 2026."
+  date: 2026-01-01
+  pdf: "https://arxiv.org/abs/2601.22083"
+  type: "Preprint"
+  tags: ["Preferences"]
+
+- title: "Compressed Individuality"
+  authors: "<b>A. Haupt</b>"
+  venue: "39th Chaos Communication Congress; Heidelberg Laureate Forum, 2025."
+  date: 2025-12-01
+  html: "https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/"
+  img: "/assets/img/art/compressed-individuality.png"
+  type: "Art"
+  tags: ["Preferences"]
+
+- title: "Position: ML Conferences Should Establish a Refutations and Critiques Track"
+  authors: "R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, S. Zhang, <b>A. Haupt</b>, I. Gupta, E. Obbad, J. Dodge, et al."
+  venue: "Advances in Neural Information Processing Systems (Position Paper), 2025."
+  date: 2025-12-01
+  pdf: "https://arxiv.org/abs/2506.19882"
+  type: "Published"
+  tags: ["AI Evaluation"]
+
+- title: "Those Who Control"
+  authors: "A. Baradari, <b>A. Haupt</b>"
+  venue: "November 2025."
+  date: 2025-11-01
+  code: "https://github.com/Indraos/those-who-control"
+  img: "/assets/img/art/those-who-control.png"
+  type: "Art"
+  tags: []
+
+- title: "Preference Measurement Error, Concentration in Recommendation Systems, and Persuasion"
+  authors: "<b>A. Haupt</b>"
+  venue: "Allied Social Science Associations Meeting, 2025."
+  date: 2025-10-01
+  pdf: "https://arxiv.org/abs/2510.16972"
+  type: "Preprint"
+  tags: ["Preferences", "Platforms"]
+
+- title: "Scaling Human Judgment in Community Notes with LLMs"
+  authors: "H. Li, S. De, M. Revel, <b>A. Haupt</b>, B. Miller, K. Coleman, J. Baxter, M. Saveski, M.A. Bakker"
+  venue: "Journal of Online Trust and Safety 3 (1), 2025."
+  date: 2025-09-01
+  pdf: "https://tsjournal.org/index.php/jots/article/view/255"
+  type: "Published"
+  tags: ["AI Evaluation", "Aggregation", "Platforms"]
+
+- title: "H+AI@EC: Workshop on Human-AI Collaboration"
+  short_title: "H+AI@EC"
+  organizers: "<b>A. Haupt</b>"
+  venue: "ACM Conference on Economics and Computation, Stanford University, July 2025."
+  date: 2025-07-10
+  html: "https://sites.google.com/berkeley.edu/haiec/home"
+  type: "Event"
+  resume: true
+  tags: ["Work"]
+
+- title: "AI should not be an imitation game: Centaur evaluations"
+  short_title: "Centaur Evaluations"
+  authors: "<b>A. Haupt</b>, E. Brynjolfsson"
+  venue: "International Conference on Machine Learning (Position Paper), 2025."
+  date: 2025-07-01
+  pdf: "https://openreview.net/forum?id=LkdH35003E"
+  type: "Published"
+  resume: true
+  tags: ["AI Evaluation", "Work"]
+
+- title: "Convex Markov Games: A New Frontier for Multi-Agent Reinforcement Learning"
+  short_title: "Convex Markov Games"
+  authors: "I. Gemp, <b>A. Haupt</b>, L. Marris, S. Liu, G. Piliouras"
+  venue: "International Conference on Machine Learning, 2025."
+  date: 2025-07-01
+  pdf: "https://proceedings.mlr.press/v267/gemp25a.html"
+  type: "Published"
+  resume: true
+  tags: ["Multi-Agent"]
+
+- title: "The Self-Preferencing Prohibition as a Fairness Provision"
+  authors: "<b>A. Haupt</b>"
+  venue: "ACM Symposium on Computer Science and Law (Poster), 2025."
+  date: 2025-03-01
+  pdf: "https://kgi.georgetown.edu/wp-content/uploads/2026/01/The-Self-Preferencing-Prohibition-as-a-Fairness-Provision_Haupt_53.pdf"
+  type: "Preprint"
+  tags: ["Platforms", "Market Design"]
+
+- title: "The Economic Engineering of Personalized Experiences"
+  authors: "<b>A. Haupt</b>"
+  venue: "Ph.D. Dissertation, Massachusetts Institute of Technology, 2025."
+  date: 2025-02-01
+  pdf: "https://dspace.mit.edu/handle/1721.1/159105"
+  type: "Thesis"
+  tags: ["Preferences"]
+
+- title: "Platform Preferencing and Price Competition I: Evidence from Amazon"
+  short_title: "Platform Preferencing and Price Competition I"
+  authors: "O. Hartzell<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>"
+  venue: "SSRN Preprint 5126918, 2025."
+  date: 2025-01-01
+  pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
+  type: "Preprint"
+  resume: true
+  tags: ["Platforms"]
+
+- title: "Risk Preferences of Learning Algorithms"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, A. Narayanan<sup>‡</sup>"
+  venue: "Games and Economic Behavior 148, p. 415-426, 2024."
+  date: 2024-11-01
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S089982562400143X"
+  type: "Published"
+  resume: true
+  tags: ["Multi-Agent", "Preferences"]
+
+- title: "Formal Contracts Mitigate Social Dilemmas in Multi-Agent Reinforcement Learning"
+  short_title: "Formal Contracts Mitigate Social Dilemmas in MARL"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, P. Christoffersen<sup>‡</sup>, M. Damani, D. Hadfield-Menell"
+  venue: "Autonomous Agents and Multi-Agent Systems 38 (2), p. 1-38, 2024."
+  date: 2024-10-01
+  pdf: "https://link.springer.com/article/10.1007/s10458-024-09682-5"
+  code: "https://github.com/Algorithmic-Alignment-Lab/contracts"
+  type: "Published"
+  resume: true
+  tags: ["Multi-Agent", "Market Design"]
+
+- title: "Steering No-Regret Learners to a Desired Equilibrium"
+  authors: "B.H. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S.M. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
+  venue: "ACM Conference on Economics and Computation, 2024."
+  date: 2024-07-01
+  pdf: "https://arxiv.org/abs/2306.05221"
+  type: "Published"
+  tags: ["Multi-Agent", "Market Design"]
+
+- title: "Certification Design for a Competitive Market"
+  authors: "<b>A. Haupt</b><sup>‡</sup>, N. Immorlica<sup>‡</sup>, B. Lucier<sup>‡</sup>"
+  venue: "ACM Conference on Economics and Computation, 2024."
+  date: 2024-07-01
+  pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
+  type: "Published"
+  resume: true
+  tags: ["Market Design"]
+
+- title: "Black-Box Access is Insufficient for Rigorous AI Audits"
+  authors: "S. Casper, C. Ezell, C. Siegmann, N. Kolt, T.L. Curtis, B. Bucknall, <b>A. Haupt</b>, K. Wei, J. Scheurer, M. Hobbhahn, et al."
+  venue: "ACM Conference on Fairness, Accountability, and Transparency, 2024."
+  date: 2024-06-01
+  pdf: "https://dl.acm.org/doi/10.1145/3630106.3659037"
+  type: "Published"
+  tags: ["AI Evaluation"]
+
+- title: "Algorithms and Centralization"
+  organizers: "<b>A. Haupt</b>, Z. Hitzig"
+  venue: "Weeklong seminar, Villigst Foundation, Germany, 2024."
+  date: 2024-01-01
+  html: "https://www.evstudienwerk.de/foerderung/ideelle-foerderung/jahresprogramm/b-3-algorithms-and-centralization/"
+  type: "Event"
+  tags: ["Market Design", "Platforms"]
+
+- title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
+  authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
+  venue: "Advances in Neural Information Processing Systems, 2023."
+  date: 2023-12-01
+  pdf: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/07be1a0850e58ca29e2b6ce31fc0c791-Abstract.html"
+  type: "Published"
+  tags: ["Multi-Agent", "Market Design"]
+
+- title: "Understanding Multi-Homing and Switching by Platform Drivers"
+  authors: "X. Guo<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, H. Wang, R. Qadri, J. Zhao"
+  venue: "Transportation Research Part C: Emerging Technologies 154, 2023."
+  date: 2023-09-01
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
+  type: "Published"
+  tags: ["Platforms", "Work"]
+
+- title: "Recommending to Strategic Users"
+  authors: "<b>A. Haupt</b>, D. Hadfield-Menell, C. Podimata"
+  venue: "Symposium on the Foundations of Responsible Computing, 2023."
+  date: 2023-06-01
+  pdf: "https://arxiv.org/abs/2302.06559"
+  type: "Preprint"
+  tags: ["Preferences", "Platforms"]
+
+- title: "Opaque Contracts"
+  authors: "<b>A. Haupt</b>, Z. Hitzig"
+  venue: "Preprint, 2023."
+  date: 2023-01-01
+  pdf: "https://arxiv.org/abs/2301.13404"
+  type: "Preprint"
+  tags: ["Privacy", "Market Design"]
+
+- title: "Technical Perspectives on the EU AI Act"
+  organizers: "<b>A. Haupt</b>"
+  venue: "MIT AI Ethics and Policy Group, with G. Mazzini (European Commission), B. Barak (Harvard), and S. Agarwal, 2023."
+  date: 2023-01-01
+  html: "https://mitaiethics.github.io/ai_act/"
+  type: "Event"
+  tags: ["AI Evaluation"]
+
+- title: "Towards Psychologically-Grounded Dynamic Preference Models"
+  authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"
+  venue: "ACM Conference on Recommender Systems, 2022."
+  date: 2022-09-01
+  pdf: "https://dl.acm.org/doi/10.1145/3523227.3546778"
+  type: "Published"
+  tags: ["Preferences"]
+
+- title: "Algorithmic Audits in Economic Contexts"
+  organizers: "<b>A. Haupt</b>"
+  venue: "MIT AI Ethics and Policy Group, with C. O'Neil (ORCAA), C. Wilson (Northeastern), and A. MacKay (Harvard Business School), 2022."
+  date: 2022-01-01
+  html: "https://mitaiethics.github.io/algorithmic_audits/"
+  type: "Event"
+  tags: ["AI Evaluation", "Platforms"]
+
+- title: "The Optimality of Upgrade Pricing"
+  authors: "D. Bergemann<sup>‡</sup>, A. Bonatti<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, A. Smolin<sup>‡</sup>"
+  venue: "Web and Internet Economics, 2021."
+  date: 2021-12-01
+  pdf: "https://dl.acm.org/doi/10.1007/978-3-030-94676-0_3"
+  type: "Published"
+  tags: ["Market Design"]
+
+- title: "Multi-Agent Influence Diagrams and Commitment"
+  authors: "<b>A. Haupt</b>"
+  venue: "B.S. Thesis, Goethe Universität Frankfurt, 2019."
+  date: 2019-01-01
+  pdf: "/assets/pdf/theses/thesis_bsc_cs.pdf"
+  type: "Thesis"
+  tags: ["Multi-Agent"]
+
+- title: "Voting with Restricted Communication"
+  authors: "<b>A. Haupt</b>"
+  venue: "M.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2018."
+  date: 2018-01-01
+  pdf: "/assets/pdf/theses/thesis_msc_econ.pdf"
+  type: "Thesis"
+  tags: ["Market Design", "Aggregation"]
+
+- title: "A Data Application of Graphon Theory"
+  authors: "<b>A. Haupt</b>"
+  venue: "M.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2017."
+  date: 2017-01-01
+  pdf: "/assets/pdf/theses/thesis_msc_math.pdf"
+  type: "Thesis"
+  tags: ["Platforms"]
+
+- title: "Die Integrality Ratio der Subtour-Relaxierung"
+  authors: "<b>A. Haupt</b>"
+  venue: "B.S. Thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2014."
+  date: 2014-01-01
+  pdf: "/assets/pdf/theses/thesis_bsc_math.pdf"
+  type: "Thesis"
+  tags: []

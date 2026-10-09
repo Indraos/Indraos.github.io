@@ -1,0 +1,20 @@
+<div class="paper" data-type="{{ include.paper.type }}" data-tags="{{ include.paper.tags | join: ',' }}"{% if include.paper.type != include.default_type %} style="display:none"{% endif %}>
+    <h3 class="title"><b>{{ include.paper.title }}</b></h3>
+    <p>{% if include.paper.organizers %}Organizers: {{ include.paper.organizers }}{% else %}{{ include.paper.authors }}{% endif %}</p>
+    <p><i>{{ include.paper.venue }}</i></p>
+    <div class="paper-buttons">
+    {% if include.paper.type %}
+    <span class="paper-tag paper-type">{{ include.paper.type }}</span>
+    {% endif %}
+    {% for tag in include.paper.tags %}
+    <span class="paper-tag">{{ tag }}</span>
+    {% endfor %}
+    {% assign keys = 'pdf,slides,poster,video,code,data,html,img' | split: ',' %}
+    {% for item in include.paper %}
+        {% if keys contains item[0] %}
+            <a class="button" href="{{ item[1] }}" target="_blank">{{ item[0] | upcase }}</a>
+        {% endif %}
+    {% endfor %}
+
+    </div>
+</div>

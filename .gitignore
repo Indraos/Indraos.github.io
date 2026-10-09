@@ -5,7 +5,7 @@ _site
 .texpadtmp/
 _posts/_site
 assets/_site
-# Built by .github/workflows/pages.yml from _cv/
-assets/portfolio/CV.pdf
-assets/portfolio/Resume.pdf
-assets/portfolio/cv-latex.zip
+# Built by .github/workflows/pages.yml from cv/
+assets/cv/
+assets/portfolio/
+vendor/

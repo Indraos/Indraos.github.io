@@ -1,0 +1,12 @@
+{% assign default_type = site.paper_types | first %}
+<div class="tag-filters">
+{% for type in site.paper_types %}
+<button class="tag-btn tag-btn-type{% if type == default_type %} tag-btn-active{% endif %}" data-type="{{ type }}">{{ type }}</button>
+{% endfor %}
+<button class="tag-btn tag-btn-type tag-btn-clear tag-btn-type-last" data-type="all">All</button>
+{% assign paper_tags = "" | split: "" %}{% for paper in site.data.publications %}{% if paper.tags %}{% assign paper_tags = paper_tags | concat: paper.tags %}{% endif %}{% endfor %}{% assign paper_tags = paper_tags | uniq %}
+{% for tag in paper_tags %}
+<button class="tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
+{% endfor %}
+<button class="tag-btn tag-btn-clear tag-btn-active" data-tag="all">All</button>
+</div>
