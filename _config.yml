@@ -135,6 +135,14 @@ papers:
   type: "Event"
   tags: ["AI Evaluation"]
 
+- title: "HAIEC"
+  organizers: "<b>A. Haupt</b>"
+  venue: "UC Berkeley, 2026."
+  date: 2026-10-01
+  html: "https://sites.google.com/berkeley.edu/haiec"
+  type: "Event"
+  tags: []
+
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
