@@ -1,8 +1,9 @@
+# Everything below is produced by build.py / latexmk (see .github/workflows/pages.yml)
+generated/
 *.aux
 *.fdb_latexmk
 *.fls
 *.log
 *.out
 *.pdf
-generated/__pycache__/
 __pycache__/

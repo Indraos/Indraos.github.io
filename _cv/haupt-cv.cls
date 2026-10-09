@@ -119,9 +119,12 @@
   \addvspace{\if@cvcompact .8ex\else 2.2ex\fi}%
   {\headingfont\fontsize{\if@cvcompact 13.5\else 15.5\fi}{18}\selectfont #1\par}%
   \nobreak\vspace{\if@cvcompact .35ex\else .8ex\fi}\nobreak}
-\renewcommand\subsection[1]{%
+% \cvsubsection: a lighter heading inside a section (e.g. preprints after
+% publications) that never forces a page break.
+\newcommand\cvsubsection[1]{%
   \par\addvspace{1.2ex}%
-  {\headingfont\large #1\par}\nobreak\vspace{.4ex}\nobreak}
+  {\headingfont\large #1\par}\nobreak\vspace{.6ex}\nobreak}
+\let\subsection\cvsubsection
 
 % --------------------------------------------------------- pills and buttons
 % .paper-tag: tinted pill; .paper-type: grey pill; .button: filled cardinal.

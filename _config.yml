@@ -44,7 +44,7 @@ experiences:
   url: "https://www.hks.harvard.edu/about/andreas-haupt"
   time: "Aug 2026-Aug 2027"
   title: "Technology and Human Rights Fellow"
-  description: "Carr Center for Human Rights Policy"
+  description: "Harvard Kennedy School"
   category: "work"
 - place: "Stanford University"
   url: "https://www.stanford.edu/"
@@ -375,6 +375,14 @@ papers:
   type: "Published"
   tags: ["AI Evaluation"]
 
+- title: "Algorithms and Centralization"
+  organizers: "<b>A. Haupt</b>, Z. Hitzig"
+  venue: "Weeklong seminar, Villigst Foundation, Germany, 2024."
+  date: 2024-01-01
+  html: "https://www.evstudienwerk.de/foerderung/ideelle-foerderung/jahresprogramm/b-3-algorithms-and-centralization/"
+  type: "Event"
+  tags: ["Market Design", "Platforms"]
+
 - title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
   authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
   venue: "Advances in Neural Information Processing Systems, 2023."
@@ -407,6 +415,14 @@ papers:
   type: "Preprint"
   tags: ["Privacy", "Market Design"]
 
+- title: "Technical Perspectives on the EU AI Act"
+  organizers: "<b>A. Haupt</b>"
+  venue: "MIT AI Ethics and Policy Group, with G. Mazzini (European Commission), B. Barak (Harvard), and S. Agarwal, 2023."
+  date: 2023-01-01
+  html: "https://mitaiethics.github.io/ai_act/"
+  type: "Event"
+  tags: ["AI Evaluation"]
+
 - title: "Towards Psychologically-Grounded Dynamic Preference Models"
   authors: "M. Curmei<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, B. Recht, D. Hadfield-Menell"
   venue: "ACM Conference on Recommender Systems, 2022."
@@ -414,6 +430,14 @@ papers:
   pdf: "https://dl.acm.org/doi/10.1145/3523227.3546778"
   type: "Published"
   tags: ["Preferences"]
+
+- title: "Algorithmic Audits in Economic Contexts"
+  organizers: "<b>A. Haupt</b>"
+  venue: "MIT AI Ethics and Policy Group, with C. O'Neil (ORCAA), C. Wilson (Northeastern), and A. MacKay (Harvard Business School), 2022."
+  date: 2022-01-01
+  html: "https://mitaiethics.github.io/algorithmic_audits/"
+  type: "Event"
+  tags: ["AI Evaluation", "Platforms"]
 
 - title: "The Optimality of Upgrade Pricing"
   authors: "D. Bergemann<sup>‡</sup>, A. Bonatti<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, A. Smolin<sup>‡</sup>"

@@ -1,19 +1,22 @@
 # CV and résumé
 
-LaTeX sources for `assets/portfolio/CV.pdf` and `assets/portfolio/Resume.pdf`,
-styled after the website (Lato body, Palatino headings, cardinal `#8C1515`
-accents, round headshot, timeline-style entries). Jekyll ignores this folder
-because its name starts with an underscore.
+LaTeX sources for the CV and résumé linked from the website, styled after the
+site (Lato body, Palatino headings, cardinal `#8C1515` accents, round headshot,
+timeline-style entries). Jekyll ignores this folder because its name starts
+with an underscore.
 
-Publications, events, art and ongoing interests come from `../_config.yml`, so
-editing the website also updates the CV:
+Only sources are committed. On every push to `master`, the GitHub Pages
+workflow (`.github/workflows/pages.yml`) runs `build.py`, compiles both
+documents, writes `assets/portfolio/CV.pdf`, `Resume.pdf` and `cv-latex.zip`,
+and deploys the site with them.
+
+Publications and organized events come from `../_config.yml`, so editing the
+website updates the CV. To build locally (needs PyYAML, Pillow and TeX Live):
 
 ```sh
-python3 build.py            # regenerates generated/*.tex and refs.bib
+python3 build.py            # writes generated/ (fragments, refs.bib, headshot)
 latexmk -pdf cv.tex resume.tex
-cp cv.pdf ../assets/portfolio/CV.pdf
-cp resume.pdf ../assets/portfolio/Resume.pdf
-./package.sh                # refreshes ../assets/portfolio/cv-latex.zip
+./package.sh                # writes ../assets/portfolio/cv-latex.zip
 ```
 
 Everything else (appointments, education, honors, talks, references) lives in
