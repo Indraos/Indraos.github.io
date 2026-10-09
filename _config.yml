@@ -27,6 +27,21 @@ social:
   linkedin: "https://www.linkedin.com/in/indraos"
   facebook: "https://www.facebook.com/indraos"
   google: "https://scholar.google.com/citations?hl=en&user=O6NknDYAAAAJ"
+# One sentence on the research program, shared by the bio on the website
+# ("He studies ...") and the CV/resume ("I study ..."). Markdown links allowed.
+research: "how algorithmic systems represent and are evaluated against diverse human preferences, using methods from [microeconomic theory](https://dl.acm.org/doi/10.1145/3670865.3673593), [structural econometrics](https://papers.ssrn.com/abstract_id=5126918), and [reinforcement learning](https://link.springer.com/article/10.1007/s10458-024-09682-5)"
+
+# Vita entries. The website shows place, time, title and description, plus
+# the honors and service that list the same place (under the first entry
+# for that place); `website: false` keeps an entry off the website. The CV and resume
+# (built by _cv/build.py) also read:
+#   cv_section      CV section to list the entry in (see cv_layout)
+#   degree          CV title for education entries
+#   cv_description  replaces the description on the CV ("" to omit)
+#   cv_details      bullet points shown only on the CV
+#   resume          puts the entry on the resume, with shorter wording (place,
+#                   time, url, title, description; style: line puts the
+#                   entry on a single line)
 experiences:
 - place: "Schmidt Sciences"
   url: "https://www.schmidtsciences.org/person/andreas-haupt/"
@@ -34,73 +49,267 @@ experiences:
   title: "AI Institute Fellow-in-Residence"
   description: "AI Institutes"
   category: "work"
+  cv_section: "appointments"
+  resume:
+    description: "Also Digital Fellow, <a href=\"https://digitaleconomy.stanford.edu/person/andreas-alexander-haupt/\">Stanford DEL</a>; Technology and Human Rights Fellow, <a href=\"https://www.hks.harvard.edu/about/andreas-haupt\">Harvard Kennedy School</a>"
 - place: "Stanford Digital Economy Lab"
   url: "https://digitaleconomy.stanford.edu/person/andreas-alexander-haupt/"
   time: "Aug 2026-Aug 2027"
   title: "Digital Fellow"
   description: "Stanford Institute for Human-Centered AI"
   category: "work"
+  cv_section: "appointments"
 - place: "Harvard Kennedy School"
   url: "https://www.hks.harvard.edu/about/andreas-haupt"
   time: "Aug 2026-Aug 2027"
   title: "Technology and Human Rights Fellow"
   description: "Harvard Kennedy School"
   category: "work"
+  cv_section: "appointments"
 - place: "Stanford University"
   url: "https://www.stanford.edu/"
   time: "2024-2026"
   title: "Human-Centered AI Fellow<br>Stanford Impact Labs Fellow"
-  description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM, STAIR<br>Co-Chair, HAI Affinity Group on Global AI Governance<br>Rising Star in Data Science, 2025<br>Young Scientist, 8th Economics Lindau Nobel Laureate Meeting, 2025<br>Young Researcher, 12th Heidelberg Laureate Forum, 2025"
+  description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM, STAIR"
   category: "work"
+  cv_section: "appointments"
+  cv_details:
+    - "Worked with Erik Brynjolfsson (Economics) and Sanmi Koyejo (Computer Science)"
+  resume:
+    description: "Computer Science and Economics, with Erik Brynjolfsson and Sanmi Koyejo"
+- place: "Stanford University"
+  url: "https://www.stanford.edu/"
+  time: "2024-2026"
+  title: "Co-Primary Instructor"
+  description: "CS329H: Machine Learning from Human Preferences"
+  category: "work"
+  website: false
+  cv_section: "teaching"
+  cv_description: "CS329H: Machine Learning from Human Preferences. Textbook: <a href=\"https://mlhp.stanford.edu\"><i>Machine Learning from Human Preferences</i></a> (with S. Truong and S. Koyejo), forthcoming with Princeton University Press."
+  resume:
+    style: "line"
+    description: "CS329H (Machine Learning from Human Preferences)"
 - place: "MIT"
   url: "https://www.mit.edu/"
   time: "2019-2024"
   title: "Ph.D. Student"
-  description: |
-    Engineering-Economic Systems, Computer Science and AI Lab<br>Committee: A. Bonatti, D. Hadfield-Menell, E. Maskin, D. Parkes<br>Co-Chair of the AI Ethics and Policy Group<br>Vice-President of the Science Policy Initiative<br><a href="https://bfi.uchicago.edu/price-theory-summer-camp-2024-cohort/" target="_blank">Price Theory Summer Camp</a>, 2024 cohort
+  description: "Engineering-Economic Systems, Computer Science and AI Lab<br>Committee: A. Bonatti, D. Hadfield-Menell, E. Maskin, D. Parkes"
   category: "education"
+  cv_section: "education"
+  degree: "Ph.D., Engineering-Economic Systems"
+  cv_description: "Computer Science and AI Lab; degree conferred February 2025.<br>Committee: Alessandro Bonatti, Dylan Hadfield-Menell, Eric Maskin, David Parkes.<br>Fields: microeconomic theory, market design, industrial organization, reinforcement learning.<br>Dissertation: <i>The Economic Engineering of Personalized Experiences</i>."
+  resume:
+    description: "Committee: A. Bonatti, D. Hadfield-Menell, E. Maskin, D. Parkes; MIT Presidential Fellowship."
 - place: "Federal Trade Commission"
   url: "https://www.ftc.gov/"
   time: "2023"
   title: "Summer Fellow"
   description: "Office of International Affairs<br>Bureau for Competition"
   category: "work"
+  cv_section: "policy"
+  cv_details:
+    - "Drafted background memos on European and U.S. regulatory and self-regulatory approaches to AI and on effects of large-scale AI systems on competition (G7 and ICN)"
+    - "Investigated consumer protection issues of emerging AI chatbots"
+  resume:
+    style: "line"
+    description: "memos on AI, competition, and consumer protection"
 - place: "European Commission"
   url: "https://commission.europa.eu/"
   time: "Jan-May 2021"
   title: "Atypical Trainee"
   description: "Directorate-General for Competition"
   category: "work"
+  cv_section: "policy"
+  cv_description: "Directorate-General for Competition, Unit C.6: Data Markets and E-commerce"
+  cv_details:
+    - "Drafted sections of the sector inquiry into voice assistants"
+    - "Rebutted economic and technological arguments in the case against Amazon regarding Marketplace data sharing with third-party sellers"
+  resume:
+    style: "line"
+    title: "DG COMP Trainee"
+    description: "voice assistants inquiry; Amazon data case"
 - place: "Berufliche Schulen Gross-Gerau"
   url: "https://www.bsgg.net/"
   time: "2017-19"
   title: "Teach First Deutschland Fellow"
   description: "Full-time high school teaching"
   category: "work"
+  cv_section: "teaching"
+  cv_description: "Full-time high school teaching of mathematics and computer science"
+  resume:
+    style: "line"
+    place: "Teach First Deutschland"
+    title: "High School Teacher"
+    description: "mathematics and computer science"
 - place: "University of Frankfurt"
   url: "https://www.goethe-university-frankfurt.de/"
   time: "2017-19"
   title: "B.S. Student"
   description: "Computer Science Department"
   category: "education"
+  cv_section: "education"
+  degree: "B.S., Computer Science"
+  cv_description: ""
 - place: "University of Bonn"
   url: "https://www.uni-bonn.de/"
   time: "2015-18"
   title: "M.S. Student (distinction)"
   description: "Economics Department"
   category: "education"
+  cv_section: "education"
+  degree: "M.S., Economics (with distinction)"
+  cv_description: ""
+  resume:
+    time: "2012-2019"
+    place: "Bonn & Frankfurt"
+    url: ""
+    title: "M.S. Economics (distinction), B.S. & M.S. Mathematics, B.S. Computer Science"
 - place: "University of Bonn"
   url: "https://www.uni-bonn.de/"
   time: "2014-17"
   title: "M.S. Student"
   description: Mathematics Department<br>Year 1 at EPF Lausanne<br>Years 2-3 at Bonn
   category: "education"
+  cv_section: "education"
+  degree: "M.S., Mathematics"
+  cv_description: "Year 1 at EPF Lausanne"
 - place: "University of Bonn"
   url: "https://www.uni-bonn.de/"
   time: "2012-14"
   title: "B.S. Student"
   description: "Mathematics Department"
   category: "education"
+  cv_section: "education"
+  degree: "B.S., Mathematics"
+  cv_description: ""
+
+# Honors: listed on the CV and resume; with `place`, also under that Vita
+# entry on the website. `resume: true` lists it on the resume, where `short`
+# replaces the title.
+honors:
+- year: "2026"
+  title: "Best AI Scientist Award, ICML Workshop on AI for Science (for <i>Bruno</i>)"
+  short: "Best AI Scientist Award, ICML AI for Science Workshop"
+  resume: true
+- year: "2025"
+  title: "Rising Star in Data Science"
+  place: "Stanford University"
+  resume: true
+- year: "2025"
+  title: "Young Scientist, 8th Economics Lindau Nobel Laureate Meeting"
+  place: "Stanford University"
+  resume: true
+- year: "2025"
+  title: "Young Researcher, 12th Heidelberg Laureate Forum"
+  place: "Stanford University"
+  resume: true
+- year: "2024"
+  title: "Price Theory Summer Camp, Becker Friedman Institute"
+  place: "MIT"
+  url: "https://bfi.uchicago.edu/price-theory-summer-camp-2024-cohort/"
+- year: "2019"
+  title: "Presidential Fellowship, MIT"
+- year: "2012-2018"
+  title: "Full Scholarship, Villigst Foundation"
+
+# Leadership and service; `place`, `short` and `resume` work as for honors.
+service:
+- years: "2024-2026"
+  title: "Co-Chair, Stanford HAI Affinity Group on Global AI Governance"
+  place: "Stanford University"
+  resume: true
+- years: "2021-2023"
+  title: "Co-Chair, MIT AI Ethics and Policy Group"
+  place: "MIT"
+  short: "MIT AI Ethics & Policy"
+  resume: true
+- years: "2022-2023"
+  title: "Vice-President, MIT Science Policy Initiative"
+  place: "MIT"
+  short: "MIT Science Policy Initiative"
+  resume: true
+
+talks:
+- year: "2025"
+  venues: "NYU, Carnegie Mellon University, Lindau Nobel Laureate Meeting, Harvard Kennedy School"
+- year: "2024"
+  venues: "Microsoft Research New England, Harvard Law School, FAR.AI"
+- year: "2023"
+  venues: "Harvard Business School, Google DeepMind London, MPI Berlin, MPI Tübingen"
+
+references:
+- name: "Erik Brynjolfsson"
+  title: "Professor of Economics"
+  institution: "Stanford University"
+  email: "erikb@stanford.edu"
+  field: "Economics"
+- name: "Sanmi Koyejo"
+  title: "Professor of Computer Science"
+  institution: "Stanford University"
+  email: "sanmi@cs.stanford.edu"
+  field: "AI"
+- name: "David Parkes"
+  title: "Professor of Computer Science"
+  institution: "Harvard University"
+  email: "parkes@seas.harvard.edu"
+  field: "AI"
+- name: "Eric Maskin"
+  title: "Professor of Economics and Mathematics"
+  institution: "Harvard University"
+  email: "emaskin@fas.harvard.edu"
+  field: "Economics"
+- name: "Sendhil Mullainathan"
+  title: "Professor of Economics and EECS"
+  institution: "MIT"
+  email: "sendhil@mit.edu"
+  field: "Economics"
+- name: "Dylan Hadfield-Menell"
+  title: "Professor of AI and Decision-Making"
+  institution: "MIT"
+  email: "dhm@csail.mit.edu"
+  field: "AI"
+
+# Layout of the CV and resume built by _cv/build.py. Section `content` is a
+# cv_section of the experiences above, or one of: references, honors,
+# service, talks, papers (with `types`), rows (one-line summaries of honors,
+# service or events); papers sections can set `merged: true` to interleave
+# their types by date. A section or row with `selected: true` lists only the
+# entries marked `resume` (experiences, papers, honors, service); otherwise
+# every entry of the category is shown.
+cv_layout:
+  title: "Curriculum Vitæ"
+  contacts: [email, url, google, github, linkedin, twitter]
+  sections:
+  - {title: "Appointments", content: "appointments"}
+  - {title: "Education", content: "education"}
+  - {title: "References", content: "references"}
+  - {title: "Honors and Awards", content: "honors"}
+  - {title: "Publications", content: "papers", types: ["Published", "Preprint", "Thesis"]}
+  - {title: "Organized Events", content: "papers", types: ["Event"]}
+  - {title: "Policy Experience", content: "policy"}
+  - {title: "Teaching", content: "teaching"}
+  - {title: "Selected Talks", content: "talks"}
+  - {title: "Leadership and Service", content: "service"}
+  type_headings:
+    Preprint: "Working Papers and Preprints"
+    Thesis: "Theses"
+resume_layout:
+  title: "Résumé"
+  contacts: [email, url, google, github, linkedin]
+  sections:
+  - {title: "Appointments", content: "appointments", selected: true}
+  - {title: "Education", content: "education", selected: true}
+  - {title: "Policy and Teaching Experience", content: ["policy", "teaching"], selected: true}
+  - {title: "Selected Publications", content: "papers", types: ["Published", "Preprint"], selected: true, merged: true}
+  - title: "Honors, Events, and Service"
+    content: "rows"
+    rows:
+    - {label: "Honors", content: "honors", selected: true}
+    - {label: "Organized", content: "events", selected: true}
+    - {label: "Leadership", content: "service", selected: true}
+    - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
+    - {label: "Tools", text: "trl, peft, wandb; online learning; mathematical maturity"}
+  - {title: "References", content: "references"}
 
 # Each paper has one type; only the first type is shown until another is selected.
 paper_types:
@@ -112,6 +321,8 @@ paper_types:
 
 # Entries of type "Event" use `organizers` in place of `authors`, and `venue`
 # for host, place and date; link the event page with `html`.
+# `resume: true` lists an entry on the resume, using `short_title` (if given)
+# in place of the full title.
 papers:
 - title: "SimulacraBench"
   organizers: "<b>A. Haupt</b>"
@@ -119,15 +330,18 @@ papers:
   date: 2026-12-01
   html: "https://simulacrabench.org/"
   type: "Event"
+  resume: true
   tags: ["AI Evaluation"]
 
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
+  short_title: "Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
   date: 2026-12-01
   pdf: "https://arxiv.org/abs/2605.30916"
   html: "https://openreview.net/forum?id=yF6rmSx7l7"
   type: "Published"
+  resume: true
   tags: ["AI Evaluation", "Aggregation", "Market Design"]
 
 - title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
@@ -151,6 +365,7 @@ papers:
   venue: "Stanford Digital Economy Lab, Stanford, November 2026."
   date: 2026-11-16
   type: "Event"
+  resume: true
   tags: ["Work"]
 
 - title: "Contextually Private Mechanisms"
@@ -160,6 +375,7 @@ papers:
   pdf: "https://arxiv.org/abs/2112.10812"
   html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
   type: "Published"
+  resume: true
   tags: ["Privacy", "Market Design"]
 
 - title: "Machine Learning from Human Preferences"
@@ -168,6 +384,7 @@ papers:
   date: 2026-08-01
   html: "https://mlhp.stanford.edu/"
   type: "Published"
+  resume: true
   tags: ["Preferences"]
 
 - title: "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications"
@@ -179,11 +396,13 @@ papers:
   tags: ["AI Evaluation", "Platforms"]
 
 - title: "Don't Walk the Line: Boundary Guidance for Filtered Generation"
+  short_title: "Boundary Guidance for Filtered Generation"
   authors: "S. Ball, <b>A. Haupt</b>"
   venue: "International Conference on Machine Learning, 2026."
   date: 2026-07-11
   pdf: "https://arxiv.org/abs/2510.11834"
   type: "Published"
+  resume: true
   tags: ["Multi-Agent"]
 
 - title: "Bruno: An AI Product Manager for Scientists"
@@ -193,6 +412,7 @@ papers:
   html: "https://icml.cc/virtual/2026/73586"
   video: "https://www.youtube.com/watch?v=hYtxPnl8mbo"
   type: "Published"
+  resume: true
   tags: ["Work"]
 
 - title: "LLM Incentives"
@@ -201,6 +421,7 @@ papers:
   date: 2026-07-06
   html: "https://llm-incentives.com/"
   type: "Event"
+  resume: true
   tags: ["Market Design"]
 
 - title: "The Collapse of Heterogeneity in Silicon Philosophers"
@@ -210,6 +431,7 @@ papers:
   pdf: "https://dl.acm.org/doi/10.1145/3805689.3806760"
   code: "https://github.com/stanford-del/silicon-philosophers"
   type: "Published"
+  resume: true
   tags: ["AI Evaluation", "Preferences"]
 
 - title: "Discussion of \"The ICML 2023 Ranking Experiment\" by Su et al."
@@ -287,27 +509,33 @@ papers:
   tags: ["AI Evaluation", "Aggregation", "Platforms"]
 
 - title: "H+AI@EC: Workshop on Human-AI Collaboration"
+  short_title: "H+AI@EC"
   organizers: "<b>A. Haupt</b>"
   venue: "ACM Conference on Economics and Computation, Stanford University, July 2025."
   date: 2025-07-10
   html: "https://sites.google.com/berkeley.edu/haiec/home"
   type: "Event"
+  resume: true
   tags: ["Work"]
 
 - title: "AI should not be an imitation game: Centaur evaluations"
+  short_title: "Centaur Evaluations"
   authors: "<b>A. Haupt</b>, E. Brynjolfsson"
   venue: "International Conference on Machine Learning (Position Paper), 2025."
   date: 2025-07-01
   pdf: "https://openreview.net/forum?id=LkdH35003E"
   type: "Published"
+  resume: true
   tags: ["AI Evaluation", "Work"]
 
 - title: "Convex Markov Games: A New Frontier for Multi-Agent Reinforcement Learning"
+  short_title: "Convex Markov Games"
   authors: "I. Gemp, <b>A. Haupt</b>, L. Marris, S. Liu, G. Piliouras"
   venue: "International Conference on Machine Learning, 2025."
   date: 2025-07-01
   pdf: "https://proceedings.mlr.press/v267/gemp25a.html"
   type: "Published"
+  resume: true
   tags: ["Multi-Agent"]
 
 - title: "The Self-Preferencing Prohibition as a Fairness Provision"
@@ -327,11 +555,13 @@ papers:
   tags: ["Preferences"]
 
 - title: "Platform Preferencing and Price Competition I: Evidence from Amazon"
+  short_title: "Platform Preferencing and Price Competition I"
   authors: "O. Hartzell<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>"
   venue: "SSRN Preprint 5126918, 2025."
   date: 2025-01-01
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
   type: "Preprint"
+  resume: true
   tags: ["Platforms"]
 
 - title: "Risk Preferences of Learning Algorithms"
@@ -340,15 +570,18 @@ papers:
   date: 2024-11-01
   pdf: "https://www.sciencedirect.com/science/article/abs/pii/S089982562400143X"
   type: "Published"
+  resume: true
   tags: ["Multi-Agent", "Preferences"]
 
 - title: "Formal Contracts Mitigate Social Dilemmas in Multi-Agent Reinforcement Learning"
+  short_title: "Formal Contracts Mitigate Social Dilemmas in MARL"
   authors: "<b>A. Haupt</b><sup>‡</sup>, P. Christoffersen<sup>‡</sup>, M. Damani, D. Hadfield-Menell"
   venue: "Autonomous Agents and Multi-Agent Systems 38 (2), p. 1-38, 2024."
   date: 2024-10-01
   pdf: "https://link.springer.com/article/10.1007/s10458-024-09682-5"
   code: "https://github.com/Algorithmic-Alignment-Lab/contracts"
   type: "Published"
+  resume: true
   tags: ["Multi-Agent", "Market Design"]
 
 - title: "Steering No-Regret Learners to a Desired Equilibrium"
@@ -365,6 +598,7 @@ papers:
   date: 2024-07-01
   pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
   type: "Published"
+  resume: true
   tags: ["Market Design"]
 
 - title: "Black-Box Access is Insufficient for Rigorous AI Audits"

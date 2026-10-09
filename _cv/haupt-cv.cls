@@ -115,14 +115,14 @@
 
 % Section headings: Palatino, regular weight, as h2 on the website.
 \renewcommand\section[1]{%
-  \par\needspace{\if@cvcompact 3\else 5\fi\baselineskip}%
+  \par\gdef\@lastpubyear{}\needspace{\if@cvcompact 3\else 5\fi\baselineskip}%
   \addvspace{\if@cvcompact .8ex\else 2.2ex\fi}%
   {\headingfont\fontsize{\if@cvcompact 13.5\else 15.5\fi}{18}\selectfont #1\par}%
   \nobreak\vspace{\if@cvcompact .35ex\else .8ex\fi}\nobreak}
 % \cvsubsection: a lighter heading inside a section (e.g. preprints after
 % publications) that never forces a page break.
 \newcommand\cvsubsection[1]{%
-  \par\addvspace{1.2ex}%
+  \par\gdef\@lastpubyear{}\addvspace{1.2ex}%
   {\headingfont\large #1\par}\nobreak\vspace{.6ex}\nobreak}
 \let\subsection\cvsubsection
 
@@ -198,11 +198,6 @@
   \global\let\@lastpubyear\@thispubyear
   \cvitem{\@shownyear}{\ifblank{#5}{\textbf{#2}}{\href{#5}{\color{ink}\textbf{#2}}},
     \textit{#3}\ifblank{#4}{}{ {\color{muted}(#4)}}}}
-
-% \selectedpub[short title]{key}: a publication from generated/pubdefs.tex
-\newcommand\selectedpub[2][]{%
-  \ifcsname pub@#2\endcsname\csname pub@#2\endcsname{#1}%
-  \else\PackageWarning{haupt-cv}{Unknown publication key #2}\fi}
 
 % ----------------------------------------------------------------- references
 \newcommand\cvreference[4]{% name, title, institution, email
