@@ -112,21 +112,6 @@ paper_types:
 # Entries of type "Event" use `organizers` in place of `authors`, and `venue`
 # for host, place and date; link the event page with `html`.
 papers:
-- title: "The Future of Authorship"
-  organizers: "<b>A. Haupt</b>, K. Neubert, E. Brynjolfsson"
-  venue: "Stanford Digital Economy Lab, Stanford, November 2026."
-  date: 2026-11-16
-  type: "Event"
-  tags: ["Work"]
-
-- title: "LLM Incentives"
-  organizers: "Y. Alimohammadi, K. Donahue, S. Fish, <b>A. Haupt</b>, C. Li, G. Mantegazza"
-  venue: "ACM Conference on Economics and Computation, Rome, July 2026."
-  date: 2026-07-06
-  html: "https://llm-incentives.com/"
-  type: "Event"
-  tags: ["Market Design"]
-
 - title: "SimulacraBench"
   organizers: "<b>A. Haupt</b>"
   venue: "Conference on Neural Information Processing Systems, Sydney, 2026."
@@ -159,6 +144,13 @@ papers:
   pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
   type: "Published"
   tags: ["Preferences"]
+
+- title: "The Future of Authorship"
+  organizers: "<b>A. Haupt</b>, K. Neubert, E. Brynjolfsson"
+  venue: "Stanford Digital Economy Lab, Stanford, November 2026."
+  date: 2026-11-16
+  type: "Event"
+  tags: ["Work"]
 
 - title: "Contextually Private Mechanisms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
@@ -201,6 +193,14 @@ papers:
   video: "https://www.youtube.com/watch?v=hYtxPnl8mbo"
   type: "Published"
   tags: ["Work"]
+
+- title: "LLM Incentives"
+  organizers: "Y. Alimohammadi, K. Donahue, S. Fish, <b>A. Haupt</b>, C. Li, G. Mantegazza"
+  venue: "ACM Conference on Economics and Computation, Rome, July 2026."
+  date: 2026-07-06
+  html: "https://llm-incentives.com/"
+  type: "Event"
+  tags: ["Market Design"]
 
 - title: "The Collapse of Heterogeneity in Silicon Philosophers"
   authors: "Y. Shi, <b>A. Haupt</b>"
@@ -301,11 +301,11 @@ papers:
   type: "Published"
   tags: ["AI Evaluation", "Work"]
 
-- title: "Convex Markov Games: A Framework for Creativity, Imitation, Fairness, and Safety in Multiagent Learning"
+- title: "Convex Markov Games: A New Frontier for Multi-Agent Reinforcement Learning"
   authors: "I. Gemp, <b>A. Haupt</b>, L. Marris, S. Liu, G. Piliouras"
   venue: "International Conference on Machine Learning, 2025."
   date: 2025-07-01
-  pdf: "https://arxiv.org/pdf/2410.16600v1"
+  pdf: "https://proceedings.mlr.press/v267/gemp25a.html"
   type: "Published"
   tags: ["Multi-Agent"]
 
@@ -333,14 +333,6 @@ papers:
   type: "Preprint"
   tags: ["Platforms"]
 
-- title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
-  authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
-  venue: "Advances in Neural Information Processing Systems, 2024."
-  date: 2024-12-01
-  pdf: "https://dl.acm.org/doi/10.5555/3666122.3666242"
-  type: "Published"
-  tags: ["Multi-Agent", "Market Design"]
-
 - title: "Risk Preferences of Learning Algorithms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, A. Narayanan<sup>‡</sup>"
   venue: "Games and Economic Behavior 148, p. 415-426, 2024."
@@ -358,27 +350,11 @@ papers:
   type: "Published"
   tags: ["Multi-Agent", "Market Design"]
 
-- title: "Black-Box Access is Insufficient for Rigorous AI Audits"
-  authors: "S. Casper, C. Ezell, C. Siegmann, N. Kolt, T.L. Curtis, B. Bucknall, <b>A. Haupt</b>, K. Wei, J. Scheurer, M. Hobbhahn, et al."
-  venue: "ACM Conference on Fairness, Accountability, and Transparency, 2024."
-  date: 2024-06-01
-  pdf: "https://dl.acm.org/doi/10.1145/3630106.3659037"
-  type: "Published"
-  tags: ["AI Evaluation"]
-
-- title: "Understanding Multi-Homing and Switching by Platform Drivers"
-  authors: "X. Guo<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, H. Wang, R. Qadri, J. Zhao"
-  venue: "Transportation Research Part C: Emerging Technologies 154, 2023."
-  date: 2023-09-01
-  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
-  type: "Published"
-  tags: ["Platforms", "Work"]
-
-- title: "Steering No-Regret Learners to Optimal Equilibria"
+- title: "Steering No-Regret Learners to a Desired Equilibrium"
   authors: "B.H. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S.M. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
-  venue: "ACM Conference on Economics and Computation, 2023."
-  date: 2023-07-01
-  pdf: "https://openreview.net/forum?id=EsjoMaNeVo"
+  venue: "ACM Conference on Economics and Computation, 2024."
+  date: 2024-07-01
+  pdf: "https://arxiv.org/abs/2306.05221"
   type: "Published"
   tags: ["Multi-Agent", "Market Design"]
 
@@ -389,6 +365,30 @@ papers:
   pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
   type: "Published"
   tags: ["Market Design"]
+
+- title: "Black-Box Access is Insufficient for Rigorous AI Audits"
+  authors: "S. Casper, C. Ezell, C. Siegmann, N. Kolt, T.L. Curtis, B. Bucknall, <b>A. Haupt</b>, K. Wei, J. Scheurer, M. Hobbhahn, et al."
+  venue: "ACM Conference on Fairness, Accountability, and Transparency, 2024."
+  date: 2024-06-01
+  pdf: "https://dl.acm.org/doi/10.1145/3630106.3659037"
+  type: "Published"
+  tags: ["AI Evaluation"]
+
+- title: "Computing Optimal Equilibria and Mechanisms via Learning in Zero-Sum Extensive-Form Games"
+  authors: "B. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
+  venue: "Advances in Neural Information Processing Systems, 2023."
+  date: 2023-12-01
+  pdf: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/07be1a0850e58ca29e2b6ce31fc0c791-Abstract.html"
+  type: "Published"
+  tags: ["Multi-Agent", "Market Design"]
+
+- title: "Understanding Multi-Homing and Switching by Platform Drivers"
+  authors: "X. Guo<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, H. Wang, R. Qadri, J. Zhao"
+  venue: "Transportation Research Part C: Emerging Technologies 154, 2023."
+  date: 2023-09-01
+  pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
+  type: "Published"
+  tags: ["Platforms", "Work"]
 
 - title: "Recommending to Strategic Users"
   authors: "<b>A. Haupt</b>, D. Hadfield-Menell, C. Podimata"
