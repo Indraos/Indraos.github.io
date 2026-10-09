@@ -120,17 +120,17 @@ papers:
   tags: ["Work"]
 
 - title: "LLM Incentives"
-  organizers: "<b>A. Haupt</b>"
-  venue: "2026."
-  date: 2026-10-01
+  organizers: "Y. Alimohammadi<sup>‡</sup>, K. Donahue<sup>‡</sup>, S. Fish<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, C. Li<sup>‡</sup>, G. Mantegazza<sup>‡</sup>"
+  venue: "ACM Conference on Economics and Computation, Rome, July 2026."
+  date: 2026-07-06
   html: "https://llm-incentives.com/"
   type: "Event"
   tags: ["Market Design"]
 
 - title: "SimulacraBench"
   organizers: "<b>A. Haupt</b>"
-  venue: "2026."
-  date: 2026-10-01
+  venue: "Conference on Neural Information Processing Systems, 2026."
+  date: 2026-12-01
   html: "https://simulacrabench.org/"
   type: "Event"
   tags: ["AI Evaluation"]
@@ -287,7 +287,7 @@ papers:
 
 - title: "H+AI@EC: Workshop on Human-AI Collaboration"
   organizers: "<b>A. Haupt</b>"
-  venue: "Workshop at the ACM Conference on Economics and Computation, Stanford University, July 2025."
+  venue: "ACM Conference on Economics and Computation, Stanford University, July 2025."
   date: 2025-07-10
   html: "https://sites.google.com/berkeley.edu/haiec/home"
   type: "Event"
