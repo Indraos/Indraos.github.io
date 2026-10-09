@@ -47,7 +47,7 @@ experiences:
   category: "work"
 - place: "Stanford University"
   url: "https://www.stanford.edu/"
-  time: "2024-current"
+  time: "2024-2026"
   title: "Human-Centered AI Fellow<br>Stanford Impact Labs Fellow"
   description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM, STAIR<br>Co-Chair, HAI Affinity Group on Global AI Governance<br>Rising Star in Data Science, 2025<br>Young Scientist, 8th Economics Lindau Nobel Laureate Meeting, 2025<br>Young Researcher, 12th Heidelberg Laureate Forum, 2025"
   category: "work"
@@ -384,8 +384,8 @@ papers:
 
 - title: "Certification Design for a Competitive Market"
   authors: "<b>A. Haupt</b><sup>‡</sup>, N. Immorlica<sup>‡</sup>, B. Lucier<sup>‡</sup>"
-  venue: "ACM Conference on Economics and Computation, 2023."
-  date: 2023-07-01
+  venue: "ACM Conference on Economics and Computation, 2024."
+  date: 2024-07-01
   pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
   type: "Published"
   tags: ["Market Design"]
