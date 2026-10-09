@@ -1,0 +1,83 @@
+# Builds the CV and resume from _cv/ (using publications from _config.yml),
+# then builds the Jekyll site with them and deploys it to GitHub Pages.
+# Requires Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
+name: Build CV and deploy site
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-fonts-extra latexmk
+
+      - name: Generate CV inputs from _config.yml
+        run: |
+          pip install pyyaml pillow
+          python _cv/build.py
+
+      - name: Compile CV and resume
+        working-directory: _cv
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex resume.tex
+
+      - name: Place PDFs and LaTeX template in the site
+        run: |
+          cp _cv/cv.pdf assets/portfolio/CV.pdf
+          cp _cv/resume.pdf assets/portfolio/Resume.pdf
+          _cv/package.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv
+          path: |
+            assets/portfolio/CV.pdf
+            assets/portfolio/Resume.pdf
+            assets/portfolio/cv-latex.zip
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
