@@ -48,15 +48,15 @@ experiences:
 - place: "Stanford University"
   url: "https://www.stanford.edu/"
   time: "2024-current"
-  title: "Human-Centered AI Fellow"
-  description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM, STAIR<br>Co-Chair, HAI Affinity Group on Global AI Governance"
+  title: "Human-Centered AI Fellow<br>Stanford Impact Labs Fellow"
+  description: "Departments of Computer Science and Economics<br>HAI, DEL, StatsML, CRFM, STAIR<br>Co-Chair, HAI Affinity Group on Global AI Governance<br>Rising Star in Data Science, 2025<br>Young Scientist, 8th Lindau Nobel Laureate Meeting in Economic Sciences, 2025<br>Young Researcher, 12th Heidelberg Laureate Forum, 2025"
   category: "work"
 - place: "MIT"
   url: "https://www.mit.edu/"
   time: "2019-2024"
   title: "Ph.D. Student"
   description: |
-    Engineering-Economic Systems, Computer Science and AI Lab<br>Committee: A. Bonatti, D. Hadfield-Menell, E. Maskin, D. Parkes<br>Co-Chair of the AI Ethics and Policy Group<br>Vice-President of the Science Policy Initiative
+    Engineering-Economic Systems, Computer Science and AI Lab<br>Committee: A. Bonatti, D. Hadfield-Menell, E. Maskin, D. Parkes<br>Co-Chair of the AI Ethics and Policy Group<br>Vice-President of the Science Policy Initiative<br><a href="https://bfi.uchicago.edu/price-theory-summer-camp-2024-cohort/" target="_blank">Price Theory Summer Camp</a>, 2024 cohort
   category: "education"
 - place: "Federal Trade Commission"
   url: "https://www.ftc.gov/"
@@ -107,8 +107,34 @@ paper_types:
   - "Preprint"
   - "Art"
   - "Thesis"
+  - "Event"
 
+# Entries of type "Event" use `organizers` in place of `authors`, and `venue`
+# for host, place and date; link the event page with `html`.
 papers:
+- title: "The Future of Authorship"
+  organizers: "<b>A. Haupt</b>, K. Neubert, E. Brynjolfsson"
+  venue: "Stanford Digital Economy Lab, Stanford, November 2026."
+  date: 2026-11-16
+  type: "Event"
+  tags: ["Work"]
+
+- title: "LLM Incentives"
+  organizers: "<b>A. Haupt</b>"
+  venue: "2026."
+  date: 2026-10-01
+  html: "https://llm-incentives.com/"
+  type: "Event"
+  tags: ["Market Design"]
+
+- title: "SimulacraBench"
+  organizers: "<b>A. Haupt</b>"
+  venue: "2026."
+  date: 2026-10-01
+  html: "https://simulacrabench.org/"
+  type: "Event"
+  tags: ["AI Evaluation"]
+
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
@@ -258,6 +284,14 @@ papers:
   pdf: "https://tsjournal.org/index.php/jots/article/view/255"
   type: "Published"
   tags: ["AI Evaluation", "Aggregation", "Platforms"]
+
+- title: "H+AI@EC: Workshop on Human-AI Collaboration"
+  organizers: "<b>A. Haupt</b>"
+  venue: "Workshop at the ACM Conference on Economics and Computation, Stanford University, July 2025."
+  date: 2025-07-10
+  html: "https://sites.google.com/berkeley.edu/haiec/home"
+  type: "Event"
+  tags: ["Work"]
 
 - title: "AI should not be an imitation game: Centaur evaluations"
   authors: "<b>A. Haupt</b>, E. Brynjolfsson"
@@ -422,11 +456,11 @@ papers:
 
 ongoing_interests:
 - title: "Economic Measurement"
-  description: "SituatedEvals (leading <a href=\"https://simulacrabench.org\" target=\"_blank\">simulacrabench.org</a>), Centaurs (AI-resilient coding assistants, alignment as a centaur evaluation), a new O*NET"
+  description: "SituatedEvals (leading <a href=\"https://simulacrabench.org\" target=\"_blank\">simulacrabench.org</a>), Centaur evaluations (AlignmentBench), a new O*NET"
   tags: ["Work", "AI Evaluation"]
 - title: "Incentives"
-  description: "Self-Preferencing of LLMs (VZBV evaluation), Multi-Tasking (welfare, improvability, and variance in benchmark aggregation)"
+  description: "Self-Preferencing of LLMs (<a href=\"https://www.vzbv.de/en\" target=\"_blank\">VZBV</a> evaluation)"
   tags: ["Platforms", "Market Design", "Multi-Agent"]
 - title: "Preference Learning"
-  description: "Simulacra (training models that simulate people), Compressed Individuality (heterogeneity in silicon philosophers), Roles (the role of roles in contextual integrity)"
-  tags: ["Preferences", "Privacy", "Aggregation"]
+  description: "Interviewing people as a learning task (AlignmentBench); Privacy (the Role of roles in contextual integrity)"
+  tags: ["Preferences", "Privacy"]
