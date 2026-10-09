@@ -185,7 +185,7 @@ papers:
   type: "Published"
   tags: ["Multi-Agent"]
 
-- title: "Bruno"
+- title: "Bruno: An AI Product Manager for Scientists"
   authors: "<b>A. Haupt</b><sup>‡</sup>, P. Ranganathan<sup>‡</sup>"
   venue: "ICML Workshop on AI for Science (Best AI Scientist Award), 2026."
   date: 2026-07-11
@@ -309,7 +309,7 @@ papers:
   type: "Published"
   tags: ["Multi-Agent"]
 
-- title: "Non-Preferencing as a Fairness Provision: An Illustrated Guide"
+- title: "The Self-Preferencing Prohibition as a Fairness Provision"
   authors: "<b>A. Haupt</b>"
   venue: "ACM Symposium on Computer Science and Law (Poster), 2025."
   date: 2025-03-01
