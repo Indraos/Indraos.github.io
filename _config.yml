@@ -422,11 +422,11 @@ papers:
 
 ongoing_interests:
 - title: "Economic Measurement"
-  description: "SituatedEvals (leading <a href=\"https://simulacrabench.org\" target=\"_blank\">simulacrabench.org</a>), Centaurs (AI-resilient coding assistants, alignment as a centaur evaluation), a new O*NET"
+  description: "SituatedEvals (leading <a href=\"https://simulacrabench.org\" target=\"_blank\">simulacrabench.org</a>), Centaur evaluations (AlignmentBench), a new O*NET"
   tags: ["Work", "AI Evaluation"]
 - title: "Incentives"
-  description: "Self-Preferencing of LLMs (VZBV evaluation), Multi-Tasking (welfare, improvability, and variance in benchmark aggregation)"
+  description: "Self-Preferencing of LLMs (<a href=\"https://www.vzbv.de/en\" target=\"_blank\">VZBV</a> evaluation)"
   tags: ["Platforms", "Market Design", "Multi-Agent"]
 - title: "Preference Learning"
-  description: "Simulacra (training models that simulate people), Compressed Individuality (heterogeneity in silicon philosophers), Roles (the role of roles in contextual integrity)"
-  tags: ["Preferences", "Privacy", "Aggregation"]
+  description: "Interviewing people as a learning task (AlignmentBench); Privacy (the Role of roles in contextual integrity)"
+  tags: ["Preferences", "Privacy"]
