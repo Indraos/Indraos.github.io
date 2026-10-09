@@ -30,8 +30,9 @@
         </div>
         <div class="profile-text">
           <h2>{{ site.name }}</h2>
-          <p>{{ site.title }}</p>
-          <p>{{ site.employer }}</p>
+          {% for position in site.positions %}
+          <p>{{ position.title }}, {{ position.employer }}</p>
+          {% endfor %}
           <p class="social-icons">
             <a onclick="window.open('{{ site.email }}')" class="fa-solid fa-envelope fa-sm"></a>
             {% for social in site.social %}
