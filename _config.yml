@@ -107,8 +107,34 @@ paper_types:
   - "Preprint"
   - "Art"
   - "Thesis"
+  - "Event"
 
+# Entries of type "Event" use `organizers` in place of `authors`, and `venue`
+# for host, place and date; link the event page with `html`.
 papers:
+- title: "The Future of Authorship"
+  organizers: "<b>A. Haupt</b>, K. Neubert, E. Brynjolfsson"
+  venue: "Stanford Digital Economy Lab, Stanford, November 2026."
+  date: 2026-11-16
+  type: "Event"
+  tags: ["Work"]
+
+- title: "LLM Incentives"
+  organizers: "<b>A. Haupt</b>"
+  venue: "2026."
+  date: 2026-10-01
+  html: "https://llm-incentives.com/"
+  type: "Event"
+  tags: ["Market Design"]
+
+- title: "SimulacraBench"
+  organizers: "<b>A. Haupt</b>"
+  venue: "2026."
+  date: 2026-10-01
+  html: "https://simulacrabench.org/"
+  type: "Event"
+  tags: ["AI Evaluation"]
+
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."

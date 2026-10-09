@@ -41,7 +41,7 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 {% for paper in site.papers %}
 <div class="paper" data-type="{{ paper.type }}" data-tags="{{ paper.tags | join: ',' }}"{% if paper.type != default_type %} style="display:none"{% endif %}>
     <h3 class="title"><b>{{ paper.title }}</b></h3>
-    <p>{{ paper.authors }}</p>
+    <p>{% if paper.organizers %}Organizers: {{ paper.organizers }}{% else %}{{ paper.authors }}{% endif %}</p>
     <p><i>{{ paper.venue }}</i></p>
     <div class="paper-buttons">
     {% if paper.type %}
