@@ -135,14 +135,6 @@ papers:
   type: "Event"
   tags: ["AI Evaluation"]
 
-- title: "HAIEC"
-  organizers: "<b>A. Haupt</b>"
-  venue: "UC Berkeley, 2026."
-  date: 2026-10-01
-  html: "https://sites.google.com/berkeley.edu/haiec"
-  type: "Event"
-  tags: []
-
 - title: "Welfare, Improvability, and Variance: A Principal-Agent Approach to Optimal Benchmark Item Aggregation"
   authors: "<b>A. Haupt</b><sup>‡</sup>, J. Hartenstein<sup>‡</sup>, A. Reuel, M. Kochenderfer, S. Koyejo"
   venue: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track), 2026."
@@ -292,6 +284,14 @@ papers:
   pdf: "https://tsjournal.org/index.php/jots/article/view/255"
   type: "Published"
   tags: ["AI Evaluation", "Aggregation", "Platforms"]
+
+- title: "H+AI@EC: Workshop on Human-AI Collaboration"
+  organizers: "<b>A. Haupt</b>"
+  venue: "Workshop at the ACM Conference on Economics and Computation, Stanford University, July 2025."
+  date: 2025-07-10
+  html: "https://sites.google.com/berkeley.edu/haiec/home"
+  type: "Event"
+  tags: ["Work"]
 
 - title: "AI should not be an imitation game: Centaur evaluations"
   authors: "<b>A. Haupt</b>, E. Brynjolfsson"
