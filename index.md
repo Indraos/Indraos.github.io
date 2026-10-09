@@ -26,44 +26,15 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 A more complete list of publications can be found on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Only published work is shown by default; select another type, or *All* types, to see the rest.
 
 {% assign default_type = site.paper_types | first %}
-<div class="tag-filters">
-{% for type in site.paper_types %}
-<button class="tag-btn tag-btn-type{% if type == default_type %} tag-btn-active{% endif %}" data-type="{{ type }}">{{ type }}</button>
-{% endfor %}
-<button class="tag-btn tag-btn-type tag-btn-clear tag-btn-type-last" data-type="all">All</button>
-{% assign paper_tags = "" | split: "" %}{% for paper in site.papers %}{% if paper.tags %}{% assign paper_tags = paper_tags | concat: paper.tags %}{% endif %}{% endfor %}{% assign paper_tags = paper_tags | uniq %}
-{% for tag in paper_tags %}
-<button class="tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
-{% endfor %}
-<button class="tag-btn tag-btn-clear tag-btn-active" data-tag="all">All</button>
-</div>
+{% include publication-filters.html %}
 
-{% for paper in site.papers %}
-<div class="paper" data-type="{{ paper.type }}" data-tags="{{ paper.tags | join: ',' }}"{% if paper.type != default_type %} style="display:none"{% endif %}>
-    <h3 class="title"><b>{{ paper.title }}</b></h3>
-    <p>{% if paper.organizers %}Organizers: {{ paper.organizers }}{% else %}{{ paper.authors }}{% endif %}</p>
-    <p><i>{{ paper.venue }}</i></p>
-    <div class="paper-buttons">
-    {% if paper.type %}
-    <span class="paper-tag paper-type">{{ paper.type }}</span>
-    {% endif %}
-    {% for tag in paper.tags %}
-    <span class="paper-tag">{{ tag }}</span>
-    {% endfor %}
-    {% assign keys = 'pdf,slides,poster,video,code,data,html,img' | split: ',' %}
-    {% for item in paper %}
-        {% if keys contains item[0] %}
-            <a class="button" href="{{ item[1] }}" target="_blank">{{ item[0] | upcase }}</a>
-        {% endif %}
-    {% endfor %}
-
-    </div>
-</div>
+{% for paper in site.data.publications %}
+{% include publication.html paper=paper default_type=default_type %}
 {% endfor %}
 
 ## Ongoing Interests
 
-{% for interest in site.ongoing_interests %}
+{% for interest in site.data.interests %}
 <div class="interest" data-tags="{{ interest.tags | join: ',' }}">
     <h3 class="title"><b>{{ interest.title }}</b></h3>
     <p>{{ interest.description }}</p>
@@ -81,68 +52,4 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 
 Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`; their [LaTeX source]({{ site.cv_source }}) uses this site's style.
 
-<ul class="timeline">
-{% assign decorated = "" | split: "" %}
-{% for exp in site.experiences %}{% if exp.website == false %}{% continue %}{% endif %}
-<li>
-    {% if exp.category == "work" %}
-    <div class="direction-l">
-    {% else %}
-    <div class="direction-r">
-    {% endif %}
-    <div class="flag-wrapper">
-        <span class="flag">{% if exp.url %}<a href="{{ exp.url }}" target="_blank">{{ exp.place }}</a>{% else %}{{ exp.place }}{% endif %}</span>
-        <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-    </div>
-    <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.description }}{% unless decorated contains exp.place %}{% for item in site.service %}{% if item.place == exp.place %}<br>{{ item.title }}{% endif %}{% endfor %}{% for item in site.honors %}{% if item.place == exp.place %}<br>{% if item.url %}<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}, {{ item.year }}{% endif %}{% endfor %}{% assign decorated = decorated | push: exp.place %}{% endunless %}</div>
-    </div>
-</li>
-{% endfor %}
-</ul>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var activeType = {{ default_type | jsonify }};
-  var activeTag = null;
-  var typeButtons = document.querySelectorAll('.tag-btn[data-type]');
-  var tagButtons = document.querySelectorAll('.tag-btn[data-tag]');
-  var papers = document.querySelectorAll('.paper[data-tags]');
-  var interests = document.querySelectorAll('.interest[data-tags]');
-
-  function hasTag(el) {
-    return !activeTag || el.getAttribute('data-tags').split(',').indexOf(activeTag) !== -1;
-  }
-
-  function apply() {
-    papers.forEach(function(p) {
-      var typeMatch = !activeType || p.getAttribute('data-type') === activeType;
-      p.style.display = typeMatch && hasTag(p) ? '' : 'none';
-    });
-    interests.forEach(function(p) { p.style.display = hasTag(p) ? '' : 'none'; });
-    typeButtons.forEach(function(b) {
-      var type = b.getAttribute('data-type');
-      b.classList.toggle('tag-btn-active', type === 'all' ? !activeType : type === activeType);
-    });
-    tagButtons.forEach(function(b) {
-      var tag = b.getAttribute('data-tag');
-      b.classList.toggle('tag-btn-active', tag === 'all' ? !activeTag : tag === activeTag);
-    });
-  }
-
-  typeButtons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var type = this.getAttribute('data-type');
-      activeType = type === 'all' || activeType === type ? null : type;
-      apply();
-    });
-  });
-
-  tagButtons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var tag = this.getAttribute('data-tag');
-      activeTag = tag === 'all' || activeTag === tag ? null : tag;
-      apply();
-    });
-  });
-});
-</script>
+{% include vita.html %}

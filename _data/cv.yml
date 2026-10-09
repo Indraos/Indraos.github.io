@@ -1,0 +1,42 @@
+# Layout of the CV and resume built by cv/build.py. Section `content` is a
+# cv_section of _data/experiences.yml, or one of: references, honors,
+# service, talks, papers (with `types`), rows (one-line summaries of honors,
+# service or events); papers sections can set `merged: true` to interleave
+# their types by date. A section or row with `selected: true` lists only the
+# entries marked `resume` (experiences, papers, honors, service); otherwise
+# every entry of the category is shown.
+cv:
+  title: "Curriculum Vitæ"
+  contacts: [email, url, google, github, linkedin, twitter]
+  sections:
+  - {title: "Appointments", content: "appointments"}
+  - {title: "Education", content: "education"}
+  - {title: "References", content: "references"}
+  - {title: "Honors and Awards", content: "honors"}
+  - {title: "Publications", content: "papers", types: ["Published", "Preprint", "Thesis"]}
+  - {title: "Organized Events", content: "papers", types: ["Event"]}
+  - {title: "Policy Experience", content: "policy"}
+  - {title: "Teaching", content: "teaching"}
+  - {title: "Selected Talks", content: "talks"}
+  - {title: "Leadership and Service", content: "service"}
+  type_headings:
+    Preprint: "Working Papers and Preprints"
+    Thesis: "Theses"
+
+resume:
+  title: "Résumé"
+  contacts: [email, url, google, github, linkedin]
+  sections:
+  - {title: "Appointments", content: "appointments", selected: true}
+  - {title: "Education", content: "education", selected: true}
+  - {title: "Policy and Teaching Experience", content: ["policy", "teaching"], selected: true}
+  - {title: "Selected Publications", content: "papers", types: ["Published", "Preprint"], selected: true, merged: true}
+  - title: "Honors, Events, and Service"
+    content: "rows"
+    rows:
+    - {label: "Honors", content: "honors", selected: true}
+    - {label: "Organized", content: "events", selected: true}
+    - {label: "Leadership", content: "service", selected: true}
+    - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
+    - {label: "Tools", text: "trl, peft, wandb; online learning; mathematical maturity"}
+  - {title: "References", content: "references"}

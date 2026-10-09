@@ -1,5 +1,5 @@
-# Builds the CV and resume from _cv/ (using publications from _config.yml),
-# then builds the Jekyll site with them and deploys it to GitHub Pages.
+# Builds the CV and resume from cv/ (using _config.yml and _data/), then
+# builds the Jekyll site with them and deploys it to GitHub Pages.
 # Requires Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
 name: Build CV and deploy site
 
@@ -35,28 +35,34 @@ jobs:
             texlive-latex-base texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended texlive-fonts-extra latexmk
 
-      - name: Generate CV inputs from _config.yml
+      - name: Generate CV inputs from the site data
         run: |
           pip install pyyaml pillow
-          python _cv/build.py
+          python cv/build.py
 
       - name: Compile CV and resume
-        working-directory: _cv
+        working-directory: cv
         run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex resume.tex
 
       - name: Place PDFs and LaTeX template in the site
         run: |
-          cp _cv/cv.pdf assets/portfolio/CV.pdf
-          cp _cv/resume.pdf assets/portfolio/Resume.pdf
-          _cv/package.sh
+          mkdir -p assets/cv
+          cp cv/cv.pdf cv/resume.pdf assets/cv/
+          cv/package.sh
+
+      # Earlier versions of the site served these files under
+      # assets/portfolio/; keep those URLs working.
+      - name: Keep old URLs working
+        run: |
+          mkdir -p assets/portfolio
+          cp assets/cv/cv.pdf assets/portfolio/CV.pdf
+          cp assets/cv/resume.pdf assets/portfolio/Resume.pdf
+          cp -r assets/pdf/theses assets/portfolio/thesis
 
       - uses: actions/upload-artifact@v4
         with:
           name: cv
-          path: |
-            assets/portfolio/CV.pdf
-            assets/portfolio/Resume.pdf
-            assets/portfolio/cv-latex.zip
+          path: assets/cv/
 
       - uses: ruby/setup-ruby@v1
         with:

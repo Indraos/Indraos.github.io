@@ -1,0 +1,24 @@
+    <header class="header">
+      <div class="header-flex">
+        <div class="profile-image">
+          <a href="/">
+            <img src="/{{ site.profile_pic }}" alt="Headshot of {{ site.name }}">
+          </a>
+        </div>
+        <div class="profile-text">
+          <h2>{{ site.name }}</h2>
+          {% for position in site.positions %}
+          <p>{{ position.title }}, {{ position.employer }}</p>
+          {% endfor %}
+          <p class="social-icons">
+            <a onclick="window.open('{{ site.email }}')" class="fa-solid fa-envelope fa-sm"></a>
+            {% for social in site.social %}
+              <a 
+                onclick="window.open('{{ social[1] }}')" 
+                class="fa-brands fa-{{ social[0] | replace: '@', '' | replace: '-', '' | replace: '_', '' | replace: ' ', '' | downcase }} fa-sm"
+              ></a>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </header>

@@ -1,0 +1,27 @@
+# Honors: listed on the CV and resume; with `place`, also under that Vita
+# entry on the website. `resume: true` lists it on the resume, where `short`
+# replaces the title.
+- year: "2026"
+  title: "Best AI Scientist Award, ICML Workshop on AI for Science (for <i>Bruno</i>)"
+  short: "Best AI Scientist Award, ICML AI for Science Workshop"
+  resume: true
+- year: "2025"
+  title: "Rising Star in Data Science"
+  place: "Stanford University"
+  resume: true
+- year: "2025"
+  title: "Young Scientist, 8th Economics Lindau Nobel Laureate Meeting"
+  place: "Stanford University"
+  resume: true
+- year: "2025"
+  title: "Young Researcher, 12th Heidelberg Laureate Forum"
+  place: "Stanford University"
+  resume: true
+- year: "2024"
+  title: "Price Theory Summer Camp, Becker Friedman Institute"
+  place: "MIT"
+  url: "https://bfi.uchicago.edu/price-theory-summer-camp-2024-cohort/"
+- year: "2019"
+  title: "Presidential Fellowship, MIT"
+- year: "2012-2018"
+  title: "Full Scholarship, Villigst Foundation"
