@@ -11,7 +11,7 @@ Writes into _cv/generated/:
     pubs-<type>.tex   one \\cvpub per entry, grouped by website type
     pubdefs.tex       \\pub@<key> macros for selected entries in the resume
     interests.tex     the website's "Ongoing Interests"
-and _cv/refs.bib with a BibTeX entry for every non-event item.
+and _cv/refs.bib with a BibTeX entry for every item (events as @misc).
 """
 import html
 import re
@@ -161,10 +161,9 @@ def short_venue(venue, note):
 
 
 def bibtex(paper, key):
-    if paper["type"] == "Event":
-        return None
     year = str(paper["date"])[:4]
-    authors = [a.strip() for a in plain(paper.get("authors", "")).split(",") if a.strip()]
+    people = paper.get("authors") or paper.get("organizers", "")
+    authors = [a.strip() for a in plain(people).split(",") if a.strip()]
     authors = ["others" if a == "et al." else a for a in authors]
     fields = {"title": "{" + paper["title"] + "}",
               "author": " and ".join(authors), "year": year}
@@ -198,6 +197,8 @@ def bibtex(paper, key):
             fields["booktitle"] = venue
     else:
         fields["howpublished"] = venue or paper["type"]
+        if paper["type"] == "Event":
+            note = "Organized event"
     if note:
         fields["note"] = note
     url = paper.get("html") or paper.get("pdf")
