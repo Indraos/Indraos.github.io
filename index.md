@@ -79,7 +79,7 @@ A more complete list of publications can be found on [Google Scholar]({{ site.so
 
 ## Vita
 
-Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`.
+Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`; their [LaTeX source]({{ site.cv_source }}) uses this site's style.
 
 <ul class="timeline">
 {% for exp in site.experiences %}

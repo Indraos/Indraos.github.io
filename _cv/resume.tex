@@ -1,0 +1,81 @@
+% One-page resume of Andreas Haupt -- styled after andyhaupt.com.
+% Selected publications are pulled by key from generated/pubdefs.tex
+% (keys are listed by `python3 build.py`):
+%   python3 build.py && latexmk -pdf resume.tex
+\documentclass[compact]{haupt-cv}
+
+\cvname{Andreas Haupt}
+\cvdoctype{R\'esum\'e}
+\cvphoto{headshot.jpg}
+\cvposition{AI Institute Fellow-in-Residence, Schmidt Sciences}
+\cvposition{Digital Fellow, Stanford Digital Economy Lab}
+\cvposition{Technology and Human Rights Fellow, Harvard Kennedy School}
+\cvcontact{\faEnvelope[regular]}{mailto:h4upt@stanford.edu}{h4upt@stanford.edu}
+\cvcontact{\faGlobeAmericas}{https://andyhaupt.com}{andyhaupt.com}
+\cvcontact{\faGraduationCap}{https://scholar.google.com/citations?hl=en&user=O6NknDYAAAAJ}{Scholar}
+\cvcontact{\faGithub}{https://www.github.com/indraos}{indraos}
+\cvcontact{\faLinkedin}{https://www.linkedin.com/in/indraos}{indraos}
+
+\hypersetup{pdftitle={Andreas Haupt -- Resume},pdfauthor={Andreas Haupt}}
+\input{generated/pubdefs}
+\pagestyle{empty}
+
+\begin{document}
+\makecvheader
+
+{\small I study how algorithmic systems represent and are evaluated against
+diverse human preferences, using methods from microeconomic theory,
+structural econometrics, and reinforcement learning.}
+
+\section{Appointments}
+\cventry{2026--2027}{Schmidt Sciences}{https://www.schmidtsciences.org/person/andreas-haupt/}
+  {AI Institute Fellow-in-Residence}
+  {Also Digital Fellow, \href{https://digitaleconomy.stanford.edu/person/andreas-alexander-haupt/}{Stanford DEL};
+  Technology and Human Rights Fellow, \href{https://www.hks.harvard.edu/about/andreas-haupt}{Harvard Kennedy School}.}
+\cventry{2024--2026}{Stanford University}{https://www.stanford.edu/}
+  {Human-Centered AI Fellow; Stanford Impact Labs Fellow}
+  {CS and Economics, with E.\ Brynjolfsson and S.\ Koyejo; co-taught CS329H (ML from Human Preferences).}
+
+\section{Education}
+\cventry{2019--2024}{MIT}{https://www.mit.edu/}{Ph.D., Engineering-Economic Systems}
+  {Committee: A.\ Bonatti, D.\ Hadfield-Menell, E.\ Maskin, D.\ Parkes; MIT Presidential Fellowship.}
+\cventry{2012--2019}{Bonn \& Frankfurt}{}
+  {M.S.\ Economics (distinction), B.S.\ \& M.S.\ Mathematics, B.S.\ Computer Science}{}
+
+\section{Policy and Teaching Experience}
+\cvitem{2023}{\textbf{Federal Trade Commission}, Summer Fellow: memos on AI, competition, and consumer protection}
+\cvitem{2021}{\textbf{European Commission}, DG COMP Trainee: voice assistants inquiry; Amazon data case}
+\cvitem{2017--2019}{\textbf{Teach First Deutschland}, High School Teacher: mathematics and computer science}
+
+\section{Selected Publications}
+{\footnotesize\color{muted}With co-authors in parentheses; full list at
+\href{https://andyhaupt.com}{andyhaupt.com}.}\par\vspace{.6ex}
+\selectedpub{haupt2026contextually}
+\selectedpub[Optimal Benchmark Item Aggregation]{haupt2026welfare}
+\selectedpub[Boundary Guidance for Filtered Generation]{ball2026don}
+\selectedpub{shi2026collapse}
+\selectedpub[Bruno: An AI Product Manager for Scientists]{haupt2026bruno}
+\selectedpub{truong2026machine}
+\selectedpub[Centaur Evaluations]{haupt2025ai}
+\selectedpub[Convex Markov Games]{gemp2025convex}
+\selectedpub[Platform Preferencing and Price Competition I]{hartzell2025platform}
+\selectedpub{haupt2024certification}
+\selectedpub{haupt2024risk}
+\selectedpub[Formal Contracts Mitigate Social Dilemmas in MARL]{haupt2024formal}
+
+\section{Honors, Events, and Service}
+\cvitem{Honors}{Best AI Scientist Award, ICML AI for Science Workshop (2026);
+  Rising Star in Data Science (2025); Young Scientist, 8th Economics Lindau
+  Nobel Laureate Meeting (2025); Young Researcher, 12th Heidelberg Laureate Forum (2025)}
+\cvitem{Organized}{LLM Incentives (ACM EC 2026), SimulacraBench (NeurIPS 2026),
+  The Future of Authorship (Stanford DEL 2026), H+AI@EC (ACM EC 2025)}
+\cvitem{Leadership}{Co-Chair, Stanford HAI Affinity Group on Global AI Governance (2024--26);
+  MIT AI Ethics \& Policy (2021--23); MIT Science Policy Initiative (2022--23)}
+\cvitem{Talks}{NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS}
+\cvitem{Tools}{trl, peft, wandb; online learning; mathematical maturity}
+
+\section{References}
+\cvitem{AI}{Sanmi Koyejo (Stanford), David Parkes (Harvard), Dylan Hadfield-Menell (MIT)}
+\cvitem{Economics}{Erik Brynjolfsson (Stanford), Eric Maskin (Harvard), Sendhil Mullainathan (MIT)}
+
+\end{document}

@@ -19,6 +19,7 @@ defaults:
       media: true
 resume: "assets/portfolio/Resume.pdf"
 cv: "assets/portfolio/CV.pdf"
+cv_source: "assets/portfolio/cv-latex.zip"
 email: "mailto:h4upt@stanford.edu"
 social:
   twitter: "https://x.com/andreas_h0wpt"
