@@ -120,7 +120,7 @@ papers:
   tags: ["Work"]
 
 - title: "LLM Incentives"
-  organizers: "Y. Alimohammadi<sup>‡</sup>, K. Donahue<sup>‡</sup>, S. Fish<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, C. Li<sup>‡</sup>, G. Mantegazza<sup>‡</sup>"
+  organizers: "Y. Alimohammadi, K. Donahue, S. Fish, <b>A. Haupt</b>, C. Li, G. Mantegazza"
   venue: "ACM Conference on Economics and Computation, Rome, July 2026."
   date: 2026-07-06
   html: "https://llm-incentives.com/"
