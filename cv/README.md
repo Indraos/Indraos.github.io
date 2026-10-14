@@ -37,17 +37,13 @@ calls ask for, in the site's style:
 - every entry links to the publisher's version or a preprint, and the
   opening line counts the entries as of the build date.
 
-`build.py` also writes the same list as `generated/publications.md`, which
-cites the records of `generated/refs.bib` by key (Pandoc:
-`pandoc --citeproc generated/publications.md`).
-
 ## Building
 
 `cv.tex`, `resume.tex` and `publications.tex` only choose the document class
 and include the generated files. Only sources are committed: on every push to
 `master`, the GitHub Pages workflow (`.github/workflows/pages.yml`) runs
 `build.py`, compiles the three documents, writes `assets/cv/cv.pdf`,
-`resume.pdf`, `publications.pdf` (with `publications.md` and `refs.bib`) and
+`resume.pdf`, `publications.pdf` (with `refs.bib`) and
 `cv-latex.zip`, and deploys the site with them. To build locally (needs
 PyYAML, Pillow and TeX Live):
 

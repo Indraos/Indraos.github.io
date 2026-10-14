@@ -33,7 +33,6 @@ research: "how algorithmic systems represent and are evaluated against diverse h
 cv: "assets/cv/cv.pdf"
 resume: "assets/cv/resume.pdf"
 publications: "assets/cv/publications.pdf"
-publications_md: "assets/cv/publications.md"
 bibtex: "assets/cv/refs.bib"
 cv_source: "assets/cv/cv-latex.zip"
 

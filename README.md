@@ -23,7 +23,7 @@ cv/                 LaTeX CV, résumé and list of publications, generated from
 
 Edit `_data/` to change content: the website and the CV/résumé both read it.
 On every push to `master`, `.github/workflows/pages.yml` builds the CV,
-résumé and list of publications (with its Markdown and BibTeX twins) into
+résumé and list of publications (with its BibTeX twin) into
 `assets/cv/` (not committed), builds the site and deploys it.
 Pages must be set to deploy from GitHub Actions (Settings → Pages → Source).
 

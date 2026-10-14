@@ -25,7 +25,6 @@ Writes into cv/generated/:
     resume-preamble.tex, resume-body.tex  the resume
     publications-preamble.tex, publications-body.tex
                                           the list of publications
-    publications.md                       the same list in Markdown, citing refs.bib
     refs.bib                              every publication and event as BibTeX
     headshot.jpg                          the website photo, downscaled
 """
@@ -252,32 +251,6 @@ def pubentry(paper, label, note=""):
             rf"{{{html_to_latex(paper['venue'])}}}{{{pills}}}{{{buttons}}}{{{note}}}")
 
 
-def html_to_markdown(text):
-    """The small HTML subset of the site data as Markdown."""
-    text = html.unescape(str(text or ""))
-    text = re.sub(r'<a href="([^"]*)"[^>]*>(.*?)</a>', r"[\2](\1)", text)
-    text = re.sub(r"</?b>", "**", text)
-    text = re.sub(r"</?(i|em)>", "*", text)
-    text = text.replace("<sup>‡</sup>", "‡").replace("<br>", "; ")
-    return re.sub(r"<[^>]+>", "", text).strip()
-
-
-def mdentry(paper, key, label, note=""):
-    """Markdown twin of pubentry; cites the refs.bib record by `key`."""
-    people = paper.get("authors")
-    if people is None:
-        people = "Organizers: " + paper.get("organizers", "")
-    links = ", ".join(f"[{l}]({paper[l]})" for l in LINK_LABELS if paper.get(l))
-    found = "".join(f" [{m}]" for m in marks(paper))
-    line = (f"{label} **{paper['title']}** [@{key}]. {html_to_markdown(people)}. "
-            f"*{html_to_markdown(paper['venue'])}*{found}")
-    if links:
-        line += f" ({links})"
-    if note:
-        line += f"  \n    Contribution: {html_to_markdown(note)}"
-    return line
-
-
 def cvpub(paper):
     people = paper.get("authors")
     if people is None:
@@ -359,7 +332,6 @@ class Renderer:
         self.publist = mode == "publications"
         self.keys = keys or {}
         self.number = 0  # running number of the list of publications
-        self.markdown = []
 
     # header ---------------------------------------------------------------
     def preamble(self):
@@ -388,8 +360,6 @@ class Renderer:
         c = self.config
         if self.publist:
             intro = self.counts() + " " + html_to_latex(self.layout.get("intro", ""))
-            self.markdown = [f"# {c['name']}: {self.layout['title']}", "",
-                             self.counts() + " " + html_to_markdown(self.layout.get("intro", "")), ""]
         else:
             research = escape(strip_markdown_links(c["research"]))
             intro = f"I study {research}."
@@ -397,8 +367,6 @@ class Renderer:
         for section in self.layout["sections"]:
             content = section["content"]
             out.append(rf"\section{{{escape(section['title'])}}}")
-            if self.publist:
-                self.markdown += [f"## {section['title']}", ""]
             if content == "papers":
                 out.append(self.papers(section))
             elif content in ("references", "honors", "service", "talks", "rows"):
@@ -407,8 +375,6 @@ class Renderer:
                 groups = content if isinstance(content, list) else [content]
                 out.append(self.experiences(groups, section.get("selected")))
             out.append("")
-            if self.publist:
-                self.markdown.append("")
         return HEADER + "\n".join(out)
 
     def counts(self):
@@ -555,12 +521,10 @@ class Renderer:
                 if not note:
                     print(f"warning: no `contribution` for {p['title']!r}", file=sys.stderr)
                 out.append(pubentry(p, r"\cvstar", note))
-                self.markdown.append(mdentry(p, self.keys[p["title"]], "-", p.get("contribution", "")))
             return "\n".join(out)
         types = section.get("types", [])
         if "Published" in types:
             out.append(r"{\small\color{muted}\eq{} indicates equal contribution or alphabetical author order.}\par\vspace{1ex}")
-            self.markdown += ["‡ indicates equal contribution or alphabetical author order.", ""]
         for p in pubs:
             if p["type"] not in types:
                 continue
@@ -569,8 +533,6 @@ class Renderer:
             if p.get("important"):
                 label = r"\cvstar\," + label
             out.append(pubentry(p, label))
-            self.markdown.append(mdentry(p, self.keys[p["title"]],
-                                         f"{self.number}." + (" ★" if p.get("important") else "")))
         return "\n".join(out)
 
 
@@ -596,9 +558,6 @@ def main():
         renderer = Renderer(config, data, mode, keys)
         (OUT / f"{mode}-preamble.tex").write_text(renderer.preamble())
         (OUT / f"{mode}-body.tex").write_text(renderer.body())
-        if renderer.publist:
-            (OUT / "publications.md").write_text(
-                "---\nbibliography: refs.bib\n---\n\n" + "\n".join(renderer.markdown).rstrip() + "\n")
     photo = root / config.get("profile_pic", "")
     if photo.is_file():
         with Image.open(photo) as im:
