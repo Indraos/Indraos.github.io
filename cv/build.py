@@ -193,7 +193,7 @@ def short_venue(paper):
     """'Games and Economic Behavior 148, p. 415-426' -> 'Games and Economic Behavior'."""
     venue, note = split_venue(paper["venue"])
     venue = re.sub(r"^SSRN Preprint \d+$", "SSRN", venue)
-    venue = re.sub(r" \d+(?: \(\d+\))?(?:, p\. [\d-]+)?$", "", venue)
+    venue = re.sub(r" \d+(?: \(\d+\))?(?:, (?:p\. [\d-]+|Article \d+))?$", "", venue)
     for long, short in SHORT_VENUES:
         if venue.startswith(long):
             if venue[len(long):].strip():  # e.g. a speaker list: its parentheses are no note
@@ -291,13 +291,15 @@ def bibtex(paper, key):
     elif paper["type"] in ("Published", "Preprint") and not venue.startswith(("Preprint", "SSRN")):
         if any(h in venue for h in JOURNAL_HINTS):
             kind = "article"
-            m = re.match(r"(.+?) (\d+)(?: \((\d+)\))?(?:, p\. ([\d-]+))?$", venue)
+            m = re.match(r"(.+?) (\d+)(?: \((\d+)\))?(?:, (?:p\. ([\d-]+)|Article (\d+)))?$", venue)
             if m:
                 fields["journal"], fields["volume"] = m.group(1), m.group(2)
                 if m.group(3):
                     fields["number"] = m.group(3)
                 if m.group(4):
                     fields["pages"] = m.group(4).replace("-", "--")
+                elif m.group(5):  # article-number journals: Springer cites these as 'vol, article'
+                    fields["pages"] = m.group(5)
             else:
                 fields["journal"] = venue
         else:
