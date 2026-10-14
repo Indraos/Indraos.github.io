@@ -49,7 +49,7 @@ jobs:
         run: |
           mkdir -p assets/cv
           cp cv/cv.pdf cv/resume.pdf cv/publications.pdf assets/cv/
-          cp cv/generated/publications.md cv/generated/refs.bib assets/cv/
+          cp cv/generated/refs.bib assets/cv/
           cv/package.sh
 
       # Earlier versions of the site served these files under
