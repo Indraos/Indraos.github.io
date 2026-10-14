@@ -63,10 +63,10 @@
 
 - title: "Contextually Private Mechanisms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
-  venue: "American Economic Review (Lead Article), 2026."
+  venue: "American Economic Review 116 (9), p. 3223-3262 (Lead Article), 2026."
   date: 2026-09-01
   pdf: "https://arxiv.org/abs/2112.10812"
-  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240576"
+  html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240579"
   type: "Published"
   resume: true
   important: true
@@ -272,7 +272,7 @@
 - title: "Formal Contracts Mitigate Social Dilemmas in Multi-Agent Reinforcement Learning"
   short_title: "Formal Contracts Mitigate Social Dilemmas in MARL"
   authors: "<b>A. Haupt</b><sup>‡</sup>, P. Christoffersen<sup>‡</sup>, M. Damani, D. Hadfield-Menell"
-  venue: "Autonomous Agents and Multi-Agent Systems 38 (2), p. 1-38, 2024."
+  venue: "Autonomous Agents and Multi-Agent Systems 38, Article 51, 2024."
   date: 2024-10-01
   pdf: "https://link.springer.com/article/10.1007/s10458-024-09682-5"
   code: "https://github.com/Algorithmic-Alignment-Lab/contracts"
