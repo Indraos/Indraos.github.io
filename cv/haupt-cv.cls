@@ -42,6 +42,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage{needspace}
+\RequirePackage{amssymb}
 \RequirePackage{hyperref}
 
 % ------------------------------------------------------------------ colours
@@ -188,6 +189,30 @@
       \mbox{\@pills}\parfillskip=0pt}%
     \par
   \end{minipage}\par\vspace{1.05ex}}
+
+% \cvpubentry{label}{title}{authors}{venue}{pills}{buttons}{note}
+% Numbered entry for the list of publications: the label ("[12]", or
+% \cvstar for a most important publication) sits in the date column, the
+% entry reads like \cvpub, and the optional note (e.g. the applicant's
+% contribution) follows in muted small print.
+\newcommand\cvstar{\textcolor{cardinal}{\raisebox{-.1ex}{$\bigstar$}}}
+\newcommand\cvpubentry[7]{%
+  \par\noindent\begin{minipage}[t]{\linewidth}
+  \makebox[\cvdatewidth][r]{\small\color{muted}#1}%
+  \hspace{.8em}{\color{timeline!45}\vrule width 1.2pt}\hspace{\cvgutter}%
+  \parbox[t]{\dimexpr\linewidth-\cvdatewidth-.8em-1.2pt-\cvgutter\relax}{%
+    \raggedright
+    \textbf{#2}\par
+    {\small #3}\par
+    {\small\itshape #4}%
+    \ifcvshowtags\def\@pills{#5\,#6}\else\def\@pills{#6}\fi
+    \ifblank{#5#6}{}{%
+      \unskip\nobreak\hfil\penalty50\hskip1em\hbox{}\nobreak\hfill
+      \mbox{\@pills}\parfillskip=0pt}%
+    \par
+    \ifblank{#7}{}{\vspace{.25ex}{\small\color{muted}#7\par}}%
+    \vspace{\if@cvcompact .35ex\else 1.05ex\fi}}%
+  \end{minipage}\par}
 
 % \cvpubline{year}{title}{venue}{with}{url}: one-line entry for the resume;
 % the year is printed only when it changes.

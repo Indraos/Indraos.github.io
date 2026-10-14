@@ -1,10 +1,13 @@
-# Layout of the CV and resume built by cv/build.py. Section `content` is a
-# cv_section of _data/experiences.yml, or one of: references, honors,
-# service, talks, papers (with `types`), rows (one-line summaries of honors,
-# service or events); papers sections can set `merged: true` to interleave
-# their types by date. A section or row with `selected: true` lists only the
-# entries marked `resume` (experiences, papers, honors, service); otherwise
-# every entry of the category is shown.
+# Layout of the CV, resume and list of publications built by cv/build.py.
+# Section `content` is a cv_section of _data/experiences.yml, or one of:
+# references, honors, service, talks, papers (with `types`), rows (one-line
+# summaries of honors, service or events); papers sections can set
+# `merged: true` to interleave their types by date. A section or row with
+# `selected: true` lists only the entries marked `resume` (experiences,
+# papers, honors, service); otherwise every entry of the category is shown.
+# In the list of publications, papers sections are numbered, and a section
+# with `important: true` lists the publications marked `important` with
+# their `contribution` instead.
 cv:
   title: "Curriculum Vitæ"
   contacts: [email, url, google, github, linkedin, twitter]
@@ -40,3 +43,18 @@ resume:
     - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
     - {label: "Tools", text: "trl, peft, wandb; online learning; mathematical maturity"}
   - {title: "References", content: "references"}
+
+# List of publications as asked for by the Max Planck Research Group calls:
+# the three most important publications identified (here: marked and listed
+# first, with the applicant's contribution quantified), submitted and
+# unreviewed work marked as such, open-access publications marked, and
+# every entry linked.
+publications:
+  title: "List of Publications"
+  contacts: [email, url, google]
+  intro: "Only peer-reviewed and in-press work is counted as published; preprints, submitted work and theses are listed separately and marked. <b>Open Access</b> marks publications freely available online; every entry links to the publisher's version or a preprint."
+  sections:
+  - {title: "Three Most Important Publications", content: "papers", important: true}
+  - {title: "Peer-Reviewed and In-Press Publications", content: "papers", types: ["Published"]}
+  - {title: "Working Papers and Preprints", content: "papers", types: ["Preprint"]}
+  - {title: "Theses", content: "papers", types: ["Thesis"]}

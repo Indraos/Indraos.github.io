@@ -16,13 +16,15 @@ assets/css/         styles
 assets/js/          publication filters
 assets/img/         press photos (offered as media assets), art, thumbnail
 assets/pdf/         theses
-cv/                 LaTeX CV and résumé, generated from _config.yml and _data/
+cv/                 LaTeX CV, résumé and list of publications, generated from
+                    _config.yml and _data/
 .github/workflows/  builds the CV, then the site, and deploys to GitHub Pages
 ```
 
 Edit `_data/` to change content: the website and the CV/résumé both read it.
-On every push to `master`, `.github/workflows/pages.yml` builds the CV and
-résumé into `assets/cv/` (not committed), builds the site and deploys it.
+On every push to `master`, `.github/workflows/pages.yml` builds the CV,
+résumé and list of publications (with its Markdown and BibTeX twins) into
+`assets/cv/` (not committed), builds the site and deploys it.
 Pages must be set to deploy from GitHub Actions (Settings → Pages → Source).
 
 To preview locally: `bundle exec jekyll serve`. To build the CV locally, see
