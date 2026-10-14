@@ -34,7 +34,7 @@
   type: "Published"
   resume: true
   important: true
-  contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); A. Reuel, M. Kochenderfer and S. Koyejo are senior co-authors."
+  contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); M. Kochenderfer and S. Koyejo are senior co-authors."
   tags: ["AI Evaluation", "Aggregation", "Market Design"]
 
 - title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
