@@ -1,5 +1,6 @@
-# Builds the CV and resume from cv/ (using _config.yml and _data/), then
-# builds the Jekyll site with them and deploys it to GitHub Pages.
+# Builds the CV, resume and list of publications from cv/ (using _config.yml
+# and _data/), then builds the Jekyll site with them and deploys it to GitHub
+# Pages.
 # Requires Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
 name: Build CV and deploy site
 
@@ -40,14 +41,15 @@ jobs:
           pip install pyyaml pillow
           python cv/build.py
 
-      - name: Compile CV and resume
+      - name: Compile CV, resume and list of publications
         working-directory: cv
-        run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex resume.tex
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex resume.tex publications.tex
 
       - name: Place PDFs and LaTeX template in the site
         run: |
           mkdir -p assets/cv
-          cp cv/cv.pdf cv/resume.pdf assets/cv/
+          cp cv/cv.pdf cv/resume.pdf cv/publications.pdf assets/cv/
+          cp cv/generated/publications.md cv/generated/refs.bib assets/cv/
           cv/package.sh
 
       # Earlier versions of the site served these files under
