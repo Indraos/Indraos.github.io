@@ -8,7 +8,7 @@ built with Jekyll and deployed by GitHub Actions.
 ```
 _config.yml         site settings and identity (name, positions, links, research sentence)
 _data/              content: publications, experiences, honors, service, talks,
-                    references, interests, and the CV/résumé layout (cv.yml)
+                    references, ongoing work, and the CV/résumé layout (cv.yml)
 _includes/          header, footer, publication card and filters, Vita timeline
 _layouts/           page layout
 index.md            the home page

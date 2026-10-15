@@ -1,0 +1,24 @@
+# "Ongoing Work" on the website: one line per project, sorted by topic.
+# `tags` use the publication tags so that the filters above the
+# publication list also filter this section.
+- title: "TaskNet"
+  description: "task bags from AI-guided interviews"
+  tags: ["Work", "AI Evaluation"]
+- title: "Economic Evaluations"
+  description: "measurement science of economically relevant tasks"
+  tags: ["Work", "AI Evaluation"]
+- title: "AlignmentBench"
+  description: "alignment as a centaur evaluation"
+  tags: ["Work", "AI Evaluation", "Preferences"]
+- title: "SituatedEvals"
+  description: "competitions in predicting real-world microdata"
+  tags: ["AI Evaluation", "Preferences"]
+- title: "Design for Disobedience"
+  description: "algorithmic monoculture as a benchmark"
+  tags: ["AI Evaluation", "Preferences"]
+- title: "VZBVal"
+  description: "consumer protection evaluations in the German context"
+  tags: ["Platforms", "Market Design", "AI Evaluation"]
+- title: "The Role of Roles"
+  description: "in contextual integrity"
+  tags: ["Privacy", "Preferences"]
