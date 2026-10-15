@@ -2,22 +2,22 @@
 # `tags` use the publication tags so that the filters above the
 # publication list also filter this section.
 - title: "TaskNet"
-  description: "Task bags from AI-guided interviews"
+  description: "task bags from AI-guided interviews"
   tags: ["Work", "AI Evaluation"]
 - title: "Economic Evaluations"
-  description: "Measurement science of economically relevant tasks"
+  description: "measurement science of economically relevant tasks"
   tags: ["Work", "AI Evaluation"]
 - title: "AlignmentBench"
-  description: "Alignment as a centaur evaluation"
+  description: "alignment as a centaur evaluation"
   tags: ["Work", "AI Evaluation", "Preferences"]
 - title: "SituatedEvals"
-  description: "Competitions in predicting real-world microdata"
+  description: "competitions in predicting real-world microdata"
   tags: ["AI Evaluation", "Preferences"]
 - title: "Design for Disobedience"
-  description: "Algorithmic monoculture as a benchmark"
+  description: "algorithmic monoculture as a benchmark"
   tags: ["AI Evaluation", "Preferences"]
 - title: "VZBVal"
-  description: "Consumer protection evaluations in the German context"
+  description: "consumer protection evaluations in the German context"
   tags: ["Platforms", "Market Design", "AI Evaluation"]
 - title: "The Role of Roles"
   description: "in contextual integrity"
