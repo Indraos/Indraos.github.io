@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var typeButtons = document.querySelectorAll('.tag-btn[data-type]');
   var tagButtons = document.querySelectorAll('.tag-btn[data-tag]');
   var papers = document.querySelectorAll('.paper[data-tags]');
-  var interests = document.querySelectorAll('.interest[data-tags]');
+  var work = document.querySelectorAll('.work-item[data-tags]');
 
   function hasTag(el) {
     return !activeTag || el.getAttribute('data-tags').split(',').indexOf(activeTag) !== -1;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var typeMatch = !activeType || p.getAttribute('data-type') === activeType;
       p.style.display = typeMatch && hasTag(p) ? '' : 'none';
     });
-    interests.forEach(function(p) { p.style.display = hasTag(p) ? '' : 'none'; });
+    work.forEach(function(w) { w.style.display = hasTag(w) ? '' : 'none'; });
     typeButtons.forEach(function(b) {
       var type = b.getAttribute('data-type');
       b.classList.toggle('tag-btn-active', type === 'all' ? !activeType : type === activeType);

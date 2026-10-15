@@ -1,0 +1,57 @@
+# "Ongoing Work" on the website: named projects, proposals and evaluations
+# in progress. `tags` use the publication tags so that the filters above
+# the publication list also filter this section; `links` are rendered as
+# buttons with the given label.
+- title: "TaskNet (O*NET 2.0)"
+  description: "A successor to <a href=\"https://www.onetonline.org/\" target=\"_blank\">O*NET</a> that describes occupations by the tasks AI is actually used for: a task taxonomy induced from usage data and validated against worker judgment, instead of compiled from occupational surveys. The data layer that economic evaluations of AI need."
+  tags: ["Work", "AI Evaluation"]
+  links:
+    - label: "O*NET"
+      url: "https://www.onetonline.org/"
+
+- title: "AI@Work: Economic Evaluations"
+  description: "A measurement science for AI on economically relevant tasks. Workshop proposed for ICLR 2027 with C. Ong (OpenAI), V. Chen (Stanford), J. H. Shen (Anthropic), N. Thompson (MIT), and R. Bommasani (Stanford): constructs of economic success, cost-aware and repeated-run evaluation, the design of concrete economic evaluations, and building evaluations from usage data."
+  tags: ["Work", "AI Evaluation"]
+
+- title: "Personalized Benchmarks in Professional Services"
+  description: "Benchmarks whose items come from one professional's own practice, in law, accounting, and consulting, so that a score measures fit to that practice rather than to a population average. The principal-agent view of <a href=\"https://arxiv.org/abs/2605.30916\" target=\"_blank\">benchmark item aggregation</a> applied to a single principal."
+  tags: ["Work", "AI Evaluation", "Aggregation"]
+  links:
+    - label: "Aggregation"
+      url: "https://arxiv.org/abs/2605.30916"
+
+- title: "AlignmentBench"
+  description: "The first centaur benchmark: a model is scored by how well a human–AI pair performs, with interviewing a person about their preferences treated as a learning task. The benchmark that <a href=\"https://openreview.net/forum?id=LkdH35003E\" target=\"_blank\">Centaur Evaluations</a> (ICML 2025) argues for."
+  tags: ["AI Evaluation", "Preferences", "Work"]
+  links:
+    - label: "Centaur Evaluations"
+      url: "https://openreview.net/forum?id=LkdH35003E"
+
+- title: "What Does AI Do to the User?"
+  description: "Longitudinal measurement and modeling of how repeated AI interaction changes people's beliefs, reliance, and capability, and training objectives that account for it. Workshop proposed for ICLR 2027 with M. Abdulhai (Princeton), L. Ibrahim (Oxford), P. Maes (MIT), J. Moore (Stanford), M. Rodriguez (Michigan), and M. Kleiman-Weiner (Washington)."
+  tags: ["Preferences", "AI Evaluation"]
+
+- title: "Design for Disobedience"
+  description: "An evaluation design that takes the compression of a model's outputs over a population of users, how much individuality survives assistance, as a benchmarkable feature rather than a side effect. <a href=\"https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/\" target=\"_blank\">Compressed Individuality</a> is its prototype."
+  tags: ["Preferences", "AI Evaluation"]
+  links:
+    - label: "Compressed Individuality"
+      url: "https://events.ccc.de/congress/2025/hub/en/project/detail/assembly/compressed-individuality/"
+
+- title: "SituatedEvals"
+  description: "Leading <a href=\"https://simulacrabench.org\" target=\"_blank\">SimulacraBench</a> at NeurIPS 2026: evaluations situated in the contexts AI is used in, including whether LLM simulacra of users stand in for the people themselves."
+  tags: ["AI Evaluation", "Preferences"]
+  links:
+    - label: "SimulacraBench"
+      url: "https://simulacrabench.org"
+
+- title: "VZBVal"
+  description: "An evaluation of self-preferencing by LLM assistants for the <a href=\"https://www.vzbv.de/en\" target=\"_blank\">Verbraucherzentrale Bundesverband</a> (vzbv), Germany's federation of consumer organisations, building on reading the <a href=\"https://kgi.georgetown.edu/wp-content/uploads/2026/01/The-Self-Preferencing-Prohibition-as-a-Fairness-Provision_Haupt_53.pdf\" target=\"_blank\">self-preferencing prohibition as a fairness provision</a>."
+  tags: ["Platforms", "Market Design", "AI Evaluation"]
+  links:
+    - label: "vzbv"
+      url: "https://www.vzbv.de/en"
+
+- title: "The Role of Roles in Contextual Integrity"
+  description: "Which information flows are appropriate depends on the role the recipient occupies; agents that act for people, and the privacy evaluations applied to them, have to represent roles explicitly."
+  tags: ["Privacy", "Preferences"]

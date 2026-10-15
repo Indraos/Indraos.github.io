@@ -32,18 +32,21 @@ A full publication list is available as [`pdf`]({{ site.publications }}) and [Bi
 {% include publication.html paper=paper default_type=default_type %}
 {% endfor %}
 
-## Ongoing Interests
+## Ongoing Work
 
-{% for interest in site.data.interests %}
-<div class="interest" data-tags="{{ interest.tags | join: ',' }}">
-    <h3 class="title"><b>{{ interest.title }}</b></h3>
-    <p>{{ interest.description }}</p>
+Projects, proposals, and evaluations in progress. The tag filters above also narrow this list.
+
+{% for item in site.data.work %}
+<div class="work-item" data-tags="{{ item.tags | join: ',' }}">
+    <h3 class="title"><b>{{ item.title }}</b></h3>
+    <p>{{ item.description }}</p>
     <div class="paper-buttons">
-    {% if interest.tags %}
-    {% for tag in interest.tags %}
+    {% for tag in item.tags %}
     <span class="paper-tag">{{ tag }}</span>
     {% endfor %}
-    {% endif %}
+    {% for link in item.links %}
+    <a class="button" href="{{ link.url }}" target="_blank">{{ link.label | upcase }}</a>
+    {% endfor %}
     </div>
 </div>
 {% endfor %}
