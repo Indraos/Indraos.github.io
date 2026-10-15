@@ -1,30 +1,24 @@
-# "Ongoing Work" on the website: one line per project, with a four-word
-# description. `tags` use the publication tags so that the filters above
-# the publication list also filter this section.
+# "Ongoing Work" on the website: one line per project, sorted by topic.
+# `tags` use the publication tags so that the filters above the
+# publication list also filter this section.
 - title: "TaskNet"
-  description: "Task taxonomy succeeding O*NET"
+  description: "Task bags from AI-guided interviews"
   tags: ["Work", "AI Evaluation"]
-- title: "AI@Work: Economic Evaluations"
-  description: "ICLR 2027 workshop proposal"
+- title: "Economic Evaluations"
+  description: "Workshop on measurement science of economically relevant tasks"
   tags: ["Work", "AI Evaluation"]
-- title: "Personalized Benchmarks in Professional Services"
-  description: "Benchmarks from one practice"
-  tags: ["Work", "AI Evaluation", "Aggregation"]
 - title: "AlignmentBench"
-  description: "The first centaur benchmark"
-  tags: ["AI Evaluation", "Preferences", "Work"]
-- title: "What Does AI Do to the User?"
-  description: "ICLR 2027 workshop proposal"
-  tags: ["Preferences", "AI Evaluation"]
-- title: "Design for Disobedience"
-  description: "Output compression as benchmark"
-  tags: ["Preferences", "AI Evaluation"]
+  description: "Alignment as a centaur evaluation"
+  tags: ["Work", "AI Evaluation", "Preferences"]
 - title: "SituatedEvals"
-  description: "Leading SimulacraBench, NeurIPS 2026"
+  description: "Competitions in predicting real-world microdata"
+  tags: ["AI Evaluation", "Preferences"]
+- title: "Design for Disobedience"
+  description: "Algorithmic monoculture as a benchmark"
   tags: ["AI Evaluation", "Preferences"]
 - title: "VZBVal"
-  description: "Self-preferencing evaluation for vzbv"
+  description: "Consumer protection evaluations in the German context"
   tags: ["Platforms", "Market Design", "AI Evaluation"]
-- title: "The Role of Roles in Contextual Integrity"
-  description: "Roles in privacy evaluations"
+- title: "The Role of Roles"
+  description: "in contextual integrity"
   tags: ["Privacy", "Preferences"]
