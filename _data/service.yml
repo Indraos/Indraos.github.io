@@ -1,4 +1,8 @@
 # Leadership and service; `place`, `short` and `resume` work as for honors.
+- years: "2025-2026"
+  title: "Area Chair, ICLR, ICML, and AAAI"
+  short: "Area Chair, ICLR/ICML/AAAI"
+  resume: true
 - years: "2024-2026"
   title: "Co-Chair, Stanford HAI Affinity Group on Global AI Governance"
   place: "Stanford University"
