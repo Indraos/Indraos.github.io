@@ -39,7 +39,7 @@ resume:
     rows:
     - {label: "Honors", content: "honors", selected: true}
     - {label: "Organized", content: "events", selected: true}
-    - {label: "Leadership", content: "service", selected: true}
+    - {label: "Service", content: "service", selected: true}
     - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
     - {label: "Tools", text: "trl, peft, wandb; online learning; mathematical maturity"}
   - {title: "References", content: "references"}
