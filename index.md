@@ -23,7 +23,7 @@ Andreas Haupt is an AI Institute Fellow-in-Residence at [Schmidt Sciences](https
 
 ## Publications
 
-A full publication list is available as [`pdf`]({{ site.publications }}) and [BibTeX]({{ site.bibtex }}), and a more complete list on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing. Only published work is shown by default; select another type, or *All* types, to see the rest.
+A full publication list is available as [`pdf`]({{ site.publications }}) and [BibTeX]({{ site.bibtex }}), and a more complete list on [Google Scholar]({{ site.social.google }}). <sup>‡</sup> indicates equal contribution or alphabetic author listing, <sup>†</sup> equal supervision. Only published work is shown by default; select another type, or *All* types, to see the rest.
 
 {% assign default_type = site.paper_types | first %}
 {% include publication-filters.html %}

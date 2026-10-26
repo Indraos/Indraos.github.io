@@ -63,7 +63,7 @@
 
 - title: "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale"
   short_title: "TaskNet"
-  authors: "J. Wang, <b>A. Haupt</b>, I. Robinson, P. Lewis, E. Brynjolfsson, D. Yang"
+  authors: "J. Wang<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, I. Robinson, P. Lewis, E. Brynjolfsson<sup>†</sup>, D. Yang<sup>†</sup>"
   venue: "SSRN Preprint 7670419, 2026."
   date: 2026-10-25
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670419"

@@ -138,6 +138,7 @@
 % Author markup used by the generated publication lists.
 \newcommand\me[1]{\textbf{#1}}
 \newcommand\eq{\textsuperscript{\ensuremath{\ddagger}}}
+\newcommand\eqsup{\textsuperscript{\ensuremath{\dagger}}}
 
 % ------------------------------------------------------------ timeline vita
 % \cventry{dates}{institution}{url}{role}{details}
