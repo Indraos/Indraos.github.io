@@ -315,8 +315,11 @@ def bibtex(paper, key):
     if url and not url.startswith("/"):
         fields["url"] = url
     doi = re.search(r"(10\.\d{4,}/[^\s\"]+)", url)
+    ssrn = re.match(r"SSRN Preprint (\d+)$", venue)
     if doi and "arxiv" not in url:
         fields["doi"] = doi.group(1).split("?")[0]
+    elif ssrn:  # SSRN registers 10.2139/ssrn.<abstract id> for every preprint
+        fields["doi"] = f"10.2139/ssrn.{ssrn.group(1)}"
     body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields.items() if v)
     return f"@{kind}{{{key},\n{body}\n}}\n"
 

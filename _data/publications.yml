@@ -61,6 +61,16 @@
   resume: true
   tags: ["Work"]
 
+- title: "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale"
+  short_title: "TaskNet"
+  authors: "J. Wang, <b>A. Haupt</b>, I. Robinson, P. Lewis, E. Brynjolfsson, D. Yang"
+  venue: "SSRN Preprint 7670419, 2026."
+  date: 2026-10-25
+  pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670419"
+  type: "Preprint"
+  resume: true
+  tags: ["Work", "AI Evaluation"]
+
 - title: "Contextually Private Mechanisms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
   venue: "American Economic Review 116 (9), p. 3223-3262 (Lead Article), 2026."
