@@ -46,7 +46,7 @@
   tags: ["Preferences"]
 
 - title: "Position: AI Development Should Prioritize Cognitive Security"
-  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>‡</sup>, J. Zou<sup>‡</sup>"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>†</sup>, J. Zou<sup>†</sup>"
   venue: "Advances in Neural Information Processing Systems (Position Paper), 2026."
   date: 2026-12-01
   pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
