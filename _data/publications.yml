@@ -46,7 +46,7 @@
   tags: ["Preferences"]
 
 - title: "Position: AI Development Should Prioritize Cognitive Security"
-  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>‡</sup>, J. Zou<sup>‡</sup>"
+  authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>†</sup>, J. Zou<sup>†</sup>"
   venue: "Advances in Neural Information Processing Systems (Position Paper), 2026."
   date: 2026-12-01
   pdf: "https://openreview.net/forum?id=WJ6PzoECZO"
@@ -63,7 +63,7 @@
 
 - title: "TaskNet: Building Occupational Task Inventories from Worker Interviews at Scale"
   short_title: "TaskNet"
-  authors: "J. Wang, <b>A. Haupt</b>, I. Robinson, P. Lewis, E. Brynjolfsson, D. Yang"
+  authors: "J. Wang<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, I. Robinson, P. Lewis, E. Brynjolfsson<sup>†</sup>, D. Yang<sup>†</sup>"
   venue: "SSRN Preprint 7670419, 2026."
   date: 2026-10-25
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670419"

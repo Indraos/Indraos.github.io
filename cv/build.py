@@ -110,14 +110,16 @@ def html_to_latex(text, br=r"\newline "):
     text = re.sub(r'<a href="([^"]*)"[^>]*>(.*?)</a>', stash, text)
     for tag, mark in (("b", "\x01"), ("i", "\x05"), ("em", "\x05")):
         text = text.replace(f"<{tag}>", mark).replace(f"</{tag}>", "\x02")
-    text = text.replace("<sup>‡</sup>", "\x03").replace("<br>", "\x04")
+    text = (text.replace("<sup>‡</sup>", "\x03").replace("<sup>†</sup>", "\x06")
+                .replace("<br>", "\x04"))
     text = re.sub(r"<[^>]+>", "", text)
     text = quotes(escape(text))
     text = (text.replace("\x01", r"\me{").replace("\x05", r"\emph{")
-                .replace("\x02", "}").replace("\x03", r"\eq{}").replace("\x04", br))
+                .replace("\x02", "}").replace("\x03", r"\eq{}").replace("\x06", r"\eqsup{}")
+                .replace("\x04", br))
     for i, (url, label) in enumerate(links):
         text = text.replace(f"\x00{i}\x00", rf"\href{{{url_tex(url)}}}{{{html_to_latex(label)}}}")
-    return text.replace("‡", r"\eq{}")
+    return text.replace("‡", r"\eq{}").replace("†", r"\eqsup{}")
 
 
 def strip_markdown_links(text):
@@ -125,8 +127,9 @@ def strip_markdown_links(text):
 
 
 def plain(text):
-    """Strip HTML and equal-contribution markers (for BibTeX)."""
-    return re.sub(r"<[^>]+>", "", html.unescape(str(text or ""))).replace("‡", "").strip()
+    """Strip HTML and equal-contribution/supervision markers (for BibTeX)."""
+    text = re.sub(r"<[^>]+>", "", html.unescape(str(text or "")))
+    return text.replace("‡", "").replace("†", "").strip()
 
 
 def years(time, short=False):
@@ -499,7 +502,7 @@ class Renderer:
         for i, kind in enumerate(types):
             kinds = kind if isinstance(kind, tuple) else (kind,)
             if "Published" in kinds:
-                note = (r"\eq{} indicates equal contribution or alphabetical author order."
+                note = (r"\eq{} indicates equal contribution or alphabetical author order, \eqsup{} equal supervision."
                         if not self.resume else
                         "With co-authors in parentheses.")
                 out.append(rf"{{\small\color{{muted}}{note}}}\par\vspace{{1ex}}")
@@ -529,7 +532,7 @@ class Renderer:
             return "\n".join(out)
         types = section.get("types", [])
         if "Published" in types:
-            out.append(r"{\small\color{muted}\eq{} indicates equal contribution or alphabetical author order.}\par\vspace{1ex}")
+            out.append(r"{\small\color{muted}\eq{} indicates equal contribution or alphabetical author order, \eqsup{} equal supervision.}\par\vspace{1ex}")
         for p in pubs:
             if p["type"] not in types:
                 continue
