@@ -44,7 +44,7 @@
   contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); M. Kochenderfer and S. Koyejo are senior co-authors."
   tags: ["AI Evaluation", "Aggregation", "Market Design"]
   figure: "figures/benchmark-weights.svg"
-  figure_caption: "The optimal weight of a benchmark item rises with its welfare relevance and improvability and falls with its variance, which turns the formula into an item-level audit."
+  figure_caption: "The optimal weight of an item rises with its welfare relevance and improvability and falls with its variance; improvability is estimated from the cost of moving an item by pretraining, supervised fine-tuning and reinforcement learning."
   summary: >-
     A benchmark is reported as a measurement but works as an incentive: once labs optimize
     against it, the weight on each item steers effort. We model benchmark aggregation as a
@@ -129,7 +129,7 @@
   contribution: "Equal contribution with Z. Hitzig (50% each); authors in alphabetical order, as is customary in economics. Lead article of the issue."
   tags: ["Privacy", "Market Design"]
   figure: "figures/contextually-private.svg"
-  figure_caption: "An ascending-join auction learns only what the outcome needs: the clock runs on two bidders, and later joiners are never asked about values below the current price."
+  figure_caption: "The corners lemma: when two agents are jointly but not individually pivotal, whoever is asked first is told apart from a profile with the same outcome, so no protocol implementing the rule is contextually private."
   summary: >-
     Mechanism design usually asks <i>what</i> to implement. This paper asks what a mechanism
     must <i>learn</i> about participants to do it—and shows the answer is a design choice. A
