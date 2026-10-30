@@ -51,12 +51,11 @@
     multitask principal–agent problem. The optimal item weights have a closed form,
     <i>v</i>* = (<i>M</i> + <i>r</i>Σ)<sup>−1</sup><i>Mw</i>—higher for items that matter
     for welfare (<i>w</i>) and that effort can improve (<i>M</i>), lower for noisy items (Σ)
-    when the lab is risk-averse (<i>r</i>). The formula becomes an item-level audit. On the
-    OLMES suite, with welfare weights from workers' own task ratings, all 52 mathematics
-    items are Pareto-dominated by general-knowledge items under a pro-worker welfare
-    definition, and only ~6% of the suite's "automation loading" falls on activities workers
-    want automated. Evaluation designers should publish <i>why</i> each item carries the
-    weight it does.
+    when the lab is risk-averse (<i>r</i>). On the OLMES suite, with welfare weights from
+    workers' own task ratings, all 52 mathematics items are Pareto-dominated by
+    general-knowledge items under a pro-worker welfare definition, and only ~6% of the
+    suite's "automation loading" falls on activities workers want automated. Evaluation
+    designers should publish <i>why</i> each item carries the weight it does.
 
 - title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
   authors: "M. Lamparth, D. Fein, <b>A. Haupt</b>, M. Hussing, M.J. Kochenderfer"
