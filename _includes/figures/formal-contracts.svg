@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="formal-contracts-title">
+<title id="formal-contracts-title">A contracting stage before a Markov game: agents propose, accept and then play with reward transfers.</title>
+<defs><marker id="formal-contracts-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect class="fg-box" x="20" y="45" width="130" height="50" rx="6"/>
+<text class="fg-text" x="85.0" y="66" text-anchor="middle" font-weight="700">1. Propose</text>
+<text class="fg-text" x="85.0" y="82" text-anchor="middle" font-weight="700">a contract</text>
+<text class="fg-small" x="85.0" y="113" text-anchor="middle" >“whoever pollutes</text>
+<text class="fg-small" x="85.0" y="125" text-anchor="middle" >pays t to the others”</text>
+<line class="fg-line" x1="153" y1="70" x2="177" y2="70" marker-end="url(#formal-contracts-arrow)"/>
+<rect class="fg-box" x="180" y="45" width="130" height="50" rx="6"/>
+<text class="fg-text" x="245.0" y="66" text-anchor="middle" font-weight="700">2. Accept</text>
+<text class="fg-text" x="245.0" y="82" text-anchor="middle" font-weight="700">or decline</text>
+<text class="fg-small" x="245.0" y="113" text-anchor="middle" >binding only if</text>
+<text class="fg-small" x="245.0" y="125" text-anchor="middle" >every agent agrees</text>
+<line class="fg-line" x1="313" y1="70" x2="337" y2="70" marker-end="url(#formal-contracts-arrow)"/>
+<rect class="fg-box" x="340" y="45" width="130" height="50" rx="6"/>
+<text class="fg-text" x="405.0" y="66" text-anchor="middle" font-weight="700">3. Play the</text>
+<text class="fg-text" x="405.0" y="82" text-anchor="middle" font-weight="700">Markov game</text>
+<text class="fg-small" x="405.0" y="113" text-anchor="middle" >transfers apply</text>
+<text class="fg-small" x="405.0" y="125" text-anchor="middle" >to the rewards</text>
+<line class="fg-dash" x1="20" y1="140" x2="580" y2="140"/>
+<text class="fg-accent-text" x="20" y="160" text-anchor="start" style="font-size:11.5px">Rich enough contract space ⇒ every subgame-perfect equilibrium is socially optimal</text>
+<text class="fg-small" x="20" y="176" text-anchor="start" >(fully observable games); richer spaces weakly raise welfare in general. MOCA learns the stage;</text>
+<text class="fg-small" x="20" y="188" text-anchor="start" >tested in traffic, pollution and common-pool-resource environments.</text>
+<text class="fg-small" x="545" y="66" text-anchor="middle" >social dilemma</text>
+<text class="fg-accent-text" x="545" y="80" text-anchor="middle" style="font-size:11px">→ cooperation</text>
+</svg>

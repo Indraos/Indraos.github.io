@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="centaur-evaluations-title">
+<title id="centaur-evaluations-title">A centaur evaluation scores the uplift of a human-AI team over the human alone and the AI alone.</title>
+<defs><marker id="centaur-evaluations-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<line class="fg-line" x1="60" y1="175" x2="330" y2="175"/>
+<rect class="fg-grey" x="85" y="105" width="50" height="70" rx="3"/>
+<text class="fg-small" x="110" y="191" text-anchor="middle" >human alone</text>
+<rect class="fg-grey" x="170" y="75" width="50" height="100" rx="3"/>
+<text class="fg-small" x="195" y="191" text-anchor="middle" >AI alone</text>
+<rect class="fg-accent" x="255" y="35" width="50" height="140" rx="3"/>
+<text class="fg-small" x="280" y="191" text-anchor="middle" >human + AI team</text>
+<line class="fg-accent-line" x1="313" y1="75" x2="313" y2="35"/>
+<line class="fg-accent-line" x1="309" y1="75" x2="317" y2="75"/>
+<line class="fg-accent-line" x1="309" y1="35" x2="317" y2="35"/>
+<text class="fg-accent-text" x="321" y="59" text-anchor="start" >uplift</text>
+<line class="fg-dash" x1="60" y1="75" x2="313" y2="75"/>
+<text class="fg-text" x="60" y="40" text-anchor="start" font-weight="700">what the evaluation scores</text>
+<text class="fg-text" x="385" y="60" text-anchor="start" font-weight="700">Standalone benchmark</text>
+<text class="fg-small" x="385" y="76" text-anchor="start" >scores the AI alone, so it rewards</text>
+<text class="fg-small" x="385" y="88" text-anchor="start" >replacing people.</text>
+<text class="fg-accent-text" x="385" y="120" text-anchor="start" >Centaur evaluation</text>
+<text class="fg-small" x="385" y="136" text-anchor="start" >scores what the team achieves over</text>
+<text class="fg-small" x="385" y="148" text-anchor="start" >either alone, so interpretability,</text>
+<text class="fg-small" x="385" y="160" text-anchor="start" >helpfulness and complementarity</text>
+<text class="fg-small" x="385" y="172" text-anchor="start" >count.</text>
+</svg>

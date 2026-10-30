@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="convex-markov-games-title">
+<title id="convex-markov-games-title">In a Markov game, preferences over occupancy measures are linear; in a convex Markov game they can be any convex function, which allows objectives such as diversity, imitation, fairness and safety.</title>
+<defs><marker id="convex-markov-games-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<clipPath id="convex-markov-games-clip0"><path d="M50,170 L230,170 L140,40 Z"/></clipPath>
+<path class="fg-softer" d="M50,170 L230,170 L140,40 Z"/>
+<g clip-path="url(#convex-markov-games-clip0)">
+<line class="fg-accent-line" x1="-4" y1="180" x2="66" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="24" y1="180" x2="94" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="52" y1="180" x2="122" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="80" y1="180" x2="150" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="108" y1="180" x2="178" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="136" y1="180" x2="206" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="164" y1="180" x2="234" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="192" y1="180" x2="262" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="220" y1="180" x2="290" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="248" y1="180" x2="318" y2="30" stroke-width="1.2"/>
+<line class="fg-accent-line" x1="276" y1="180" x2="346" y2="30" stroke-width="1.2"/>
+</g>
+<path class="fg-line" d="M50,170 L230,170 L140,40 Z"/>
+<text class="fg-text" x="140" y="28" text-anchor="middle" font-weight="700">Markov game</text>
+<text class="fg-small" x="140" y="190" text-anchor="middle" >linear reward: parallel level sets</text>
+<clipPath id="convex-markov-games-clip1"><path d="M330,170 L510,170 L420,40 Z"/></clipPath>
+<path class="fg-softer" d="M330,170 L510,170 L420,40 Z"/>
+<g clip-path="url(#convex-markov-games-clip1)">
+<ellipse class="fg-accent-line" cx="425" cy="130" rx="16" ry="12" stroke-width="1.2"/>
+<ellipse class="fg-accent-line" cx="425" cy="130" rx="36" ry="28" stroke-width="1.2"/>
+<ellipse class="fg-accent-line" cx="425" cy="130" rx="60" ry="46" stroke-width="1.2"/>
+<ellipse class="fg-accent-line" cx="425" cy="130" rx="86" ry="66" stroke-width="1.2"/>
+<ellipse class="fg-accent-line" cx="425" cy="130" rx="117" ry="90" stroke-width="1.2"/>
+<circle class="fg-accent" cx="425" cy="130" r="3.5"/>
+</g>
+<path class="fg-line" d="M330,170 L510,170 L420,40 Z"/>
+<text class="fg-text" x="420" y="28" text-anchor="middle" font-weight="700">convex Markov game</text>
+<text class="fg-small" x="420" y="190" text-anchor="middle" >convex preference: curved level sets</text>
+<text class="fg-small" x="300" y="100" text-anchor="middle" >generalizes</text>
+<line class="fg-line" x1="262" y1="108" x2="338" y2="108" marker-end="url(#convex-markov-games-arrow)"/>
+<text class="fg-small" x="300" y="125" text-anchor="middle" >diversity, imitation,</text>
+<text class="fg-small" x="300" y="137" text-anchor="middle" >fairness, safety</text>
+</svg>
