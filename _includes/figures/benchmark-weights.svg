@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="benchmark-weights-title">
+<title id="benchmark-weights-title">The optimal item weights depend on welfare, improvability and variance; the formula audits each benchmark item.</title>
+<defs><marker id="benchmark-weights-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text class="fg-text" x="235" y="46" text-anchor="middle" style="font-size:24px;font-family:Palatino Linotype, Palatino, serif"><tspan style="font-style:italic">v</tspan>* = (<tspan class="fg-accent-text" style="font-size:24px">M</tspan> + <tspan style="font-style:italic">r</tspan><tspan class="fg-accent-text" style="font-size:24px">Σ</tspan>)⁻¹ <tspan class="fg-accent-text" style="font-size:24px">M</tspan> <tspan class="fg-accent-text" style="font-size:24px">w</tspan></text>
+<text class="fg-muted" x="235" y="66" text-anchor="middle" >optimal weight of each benchmark item</text>
+<rect class="fg-box" x="22" y="88" width="136" height="92" rx="6"/>
+<text class="fg-text" x="90" y="108" text-anchor="middle" font-weight="700">w — welfare</text>
+<text class="fg-small" x="90" y="126" text-anchor="middle" >how much the item</text>
+<text class="fg-small" x="90" y="138" text-anchor="middle" >matters to people</text>
+<text class="fg-accent-text" x="90" y="164" text-anchor="middle" style="font-size:12px">weight ↑</text>
+<rect class="fg-box" x="167" y="88" width="136" height="92" rx="6"/>
+<text class="fg-text" x="235" y="108" text-anchor="middle" font-weight="700">M — improvability</text>
+<text class="fg-small" x="235" y="126" text-anchor="middle" >how much effort</text>
+<text class="fg-small" x="235" y="138" text-anchor="middle" >can move the item</text>
+<text class="fg-accent-text" x="235" y="164" text-anchor="middle" style="font-size:12px">weight ↑</text>
+<rect class="fg-box" x="312" y="88" width="136" height="92" rx="6"/>
+<text class="fg-text" x="380" y="108" text-anchor="middle" font-weight="700">Σ — variance</text>
+<text class="fg-small" x="380" y="126" text-anchor="middle" >how noisy the item</text>
+<text class="fg-small" x="380" y="138" text-anchor="middle" >is (risk-averse lab, r)</text>
+<text class="fg-text" x="380" y="164" text-anchor="middle" style="font-size:12px">weight ↓</text>
+<text class="fg-text" x="530" y="50" text-anchor="middle" >weight per item</text>
+<line class="fg-line" x1="470" y1="170" x2="590" y2="170"/>
+<rect class="fg-accent" x="474" y="80" width="15" height="90" rx="2"/>
+<rect class="fg-accent" x="493" y="95" width="15" height="75" rx="2"/>
+<rect class="fg-accent" x="512" y="115" width="15" height="55" rx="2"/>
+<rect class="fg-grey" x="531" y="140" width="15" height="30" rx="2"/>
+<rect class="fg-grey" x="550" y="152" width="15" height="18" rx="2"/>
+<rect class="fg-grey" x="569" y="158" width="15" height="12" rx="2"/>
+<text class="fg-small" x="497" y="186" text-anchor="middle" >valued and</text>
+<text class="fg-small" x="497" y="198" text-anchor="middle" >improvable</text>
+<text class="fg-small" x="568" y="186" text-anchor="middle" >noisy</text>
+</svg>
