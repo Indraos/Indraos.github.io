@@ -44,7 +44,7 @@
   contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); M. Kochenderfer and S. Koyejo are senior co-authors."
   tags: ["AI Evaluation", "Aggregation", "Market Design"]
   figure: "figures/benchmark-weights.svg"
-  figure_caption: "The optimal weight of an item rises with its welfare relevance and improvability and falls with its variance; improvability is estimated from the cost of moving an item by pretraining, supervised fine-tuning and reinforcement learning."
+  figure_caption: "The optimal weight of an item rises with its welfare relevance and improvability and falls with its variance. Improvability is estimated from what a 10% improvement costs on the EvoLM 4B suite; the table shows one OLMES item per improvability quantile from the paper's Table 1."
   summary: >-
     A benchmark is reported as a measurement but works as an incentive: once labs optimize
     against it, the weight on each item steers effort. We model benchmark aggregation as a
@@ -131,17 +131,17 @@
   figure: "figures/contextually-private.svg"
   figure_caption: "The corners lemma: when two agents are jointly but not individually pivotal, whoever is asked first is told apart from a profile with the same outcome, so no protocol implementing the rule is contextually private."
   summary: >-
-    Mechanism design usually asks <i>what</i> to implement. This paper asks what a mechanism
-    must <i>learn</i> about participants to do it—and shows the answer is a design choice. A
-    protocol violates contextual privacy when it tells two people apart who would have
-    received the same outcome anyway. Violations happen exactly when agents are
-    collectively, but not individually, pivotal. For auctions the whole question comes down
-    to the first question asked and the order of asking. The main result:
-    <i>ascending-join</i> protocols—run the clock on two bidders at a time, let others join
-    at the current price—are maximally contextually private for Vickrey auctions, while the
-    familiar ascending auction is not. The paper connects auction theory to Helen
-    Nissenbaum's contextual integrity: "information not needed for the outcome" becomes a
-    theorem about protocols.
+    Mechanism design usually asks <i>what</i> to implement and models the mechanism as a
+    one-shot report of types. This paper studies the extensive form instead: a protocol asks
+    participants questions one at a time, and what it learns depends on which question it
+    asks, of whom, and when. A protocol violates contextual privacy when it tells two people
+    apart who would have received the same outcome anyway. Violations are unavoidable
+    exactly when agents are collectively, but not individually, pivotal. Beyond that, the
+    order of questions is a design choice: delaying a question until its answer is needed
+    for the outcome means fewer people are told apart for no reason, so delay improves
+    privacy, and different extensive forms of the same allocation rule can differ sharply in
+    how much they learn. The paper connects auction theory to Helen Nissenbaum's contextual
+    integrity: "information not needed for the outcome" becomes a theorem about protocols.
 
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, S. Koyejo<sup>‡</sup>"
