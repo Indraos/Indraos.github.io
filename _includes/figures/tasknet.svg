@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="tasknet-title">
+<title id="tasknet-title">TaskNet turns worker interviews into task reports, task statements and an occupational inventory that covers more of workers' tasks than O*NET.</title>
+<defs><marker id="tasknet-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect class="fg-box" x="20" y="38" width="100" height="50" rx="6"/>
+<text class="fg-text" x="70.0" y="59" text-anchor="middle" font-weight="700">Incumbent</text>
+<text class="fg-text" x="70.0" y="75" text-anchor="middle" font-weight="700">workers</text>
+<text class="fg-small" x="70.0" y="108" text-anchor="middle" >132 workers,</text>
+<text class="fg-small" x="70.0" y="120" text-anchor="middle" >6 occupations</text>
+<line class="fg-line" x1="122" y1="63" x2="136" y2="63" marker-end="url(#tasknet-arrow)"/>
+<rect class="fg-box" x="138" y="38" width="100" height="50" rx="6"/>
+<text class="fg-text" x="188.0" y="59" text-anchor="middle" font-weight="700">Language-model</text>
+<text class="fg-text" x="188.0" y="75" text-anchor="middle" font-weight="700">interviewer</text>
+<text class="fg-small" x="188.0" y="108" text-anchor="middle" >mixed-initiative</text>
+<text class="fg-small" x="188.0" y="120" text-anchor="middle" >interviews</text>
+<line class="fg-line" x1="240" y1="63" x2="254" y2="63" marker-end="url(#tasknet-arrow)"/>
+<rect class="fg-box" x="256" y="38" width="100" height="50" rx="6"/>
+<text class="fg-text" x="306.0" y="59" text-anchor="middle" font-weight="700">Task</text>
+<text class="fg-text" x="306.0" y="75" text-anchor="middle" font-weight="700">reports</text>
+<text class="fg-small" x="306.0" y="108" text-anchor="middle" >2,726</text>
+<text class="fg-small" x="306.0" y="120" text-anchor="middle" >reports</text>
+<line class="fg-line" x1="358" y1="63" x2="372" y2="63" marker-end="url(#tasknet-arrow)"/>
+<rect class="fg-box" x="374" y="38" width="100" height="50" rx="6"/>
+<text class="fg-text" x="424.0" y="59" text-anchor="middle" font-weight="700">Task</text>
+<text class="fg-text" x="424.0" y="75" text-anchor="middle" font-weight="700">statements</text>
+<text class="fg-small" x="424.0" y="108" text-anchor="middle" >202 statements;</text>
+<text class="fg-small" x="424.0" y="120" text-anchor="middle" >all accepted by O*NET</text>
+<line class="fg-line" x1="476" y1="63" x2="490" y2="63" marker-end="url(#tasknet-arrow)"/>
+<rect class="fg-box" x="492" y="38" width="100" height="50" rx="6"/>
+<text class="fg-text" x="542.0" y="59" text-anchor="middle" font-weight="700">Occupational</text>
+<text class="fg-text" x="542.0" y="75" text-anchor="middle" font-weight="700">inventory</text>
+<text class="fg-small" x="542.0" y="108" text-anchor="middle" >318 validators,</text>
+<text class="fg-small" x="542.0" y="120" text-anchor="middle" >7,923 ratings</text>
+<text class="fg-text" x="20" y="146" text-anchor="start" >share of held-out workers' tasks covered</text>
+<text class="fg-small" x="70" y="171" text-anchor="end" >TaskNet</text>
+<rect class="fg-accent" x="80" y="160" width="267" height="13" rx="2"/>
+<text class="fg-small" x="353" y="171" text-anchor="start" >89%</text>
+<text class="fg-small" x="70" y="189" text-anchor="end" >O*NET</text>
+<rect class="fg-grey" x="80" y="178" width="237" height="13" rx="2"/>
+<text class="fg-small" x="323" y="189" text-anchor="start" >79%</text>
+<text class="fg-small" x="420" y="166" text-anchor="start" >79 tasks missing from the published</text>
+<text class="fg-small" x="420" y="178" text-anchor="start" >O*NET list; AI-exposure estimates</text>
+<text class="fg-small" x="420" y="190" text-anchor="start" >shift in both directions.</text>
+</svg>

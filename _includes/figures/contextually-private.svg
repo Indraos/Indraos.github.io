@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="contextually-private-title">
+<title id="contextually-private-title">The corners lemma: when two agents are jointly but not individually pivotal, whichever agent is asked first is told apart from a same-outcome profile, so every protocol violates contextual privacy.</title>
+<defs><marker id="contextually-private-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect class="fg-soft" x="95" y="70" width="46" height="46" opacity=".9"/>
+<rect class="fg-box" x="95" y="70" width="46" height="46"/>
+<text class="fg-text" x="118.0" y="97.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="141" y="70" width="46" height="46" opacity=".9"/>
+<rect class="fg-box" x="141" y="70" width="46" height="46"/>
+<text class="fg-text" x="164.0" y="97.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="95" y="116" width="46" height="46" opacity=".9"/>
+<rect class="fg-box" x="95" y="116" width="46" height="46"/>
+<text class="fg-text" x="118.0" y="143.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-accent" x="141" y="116" width="46" height="46" opacity=".9"/>
+<rect class="fg-box" x="141" y="116" width="46" height="46"/>
+<text class="fg-text" x="164.0" y="143.0" text-anchor="middle" font-style="italic" style="fill:#fff">y</text>
+<text class="fg-small" x="141" y="40" text-anchor="middle" >agent j reports</text>
+<text class="fg-small" x="118.0" y="56" text-anchor="middle" >θⱼ</text>
+<text class="fg-small" x="164.0" y="56" text-anchor="middle" >θⱼ′</text>
+<text class="fg-small" x="87" y="97.0" text-anchor="end" >θᵢ</text>
+<text class="fg-small" x="87" y="143.0" text-anchor="end" >θᵢ′</text>
+<text class="fg-small" x="65" y="116" text-anchor="middle" transform="rotate(-90 65 116)">agent i</text>
+<text class="fg-small" x="141" y="180" text-anchor="middle" >a corner: outcome y only if</text>
+<text class="fg-small" x="141" y="192" text-anchor="middle" >both i and j report the primed</text>
+<text class="fg-small" x="141" y="204" text-anchor="middle" >type; neither is pivotal alone</text>
+<text class="fg-text" x="276" y="42" text-anchor="middle" font-weight="700">ask i first</text>
+<rect class="fg-soft" x="250" y="56" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="250" y="56" width="26" height="26"/>
+<text class="fg-small" x="263.0" y="72.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="276" y="56" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="276" y="56" width="26" height="26"/>
+<text class="fg-small" x="289.0" y="72.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="250" y="82" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="250" y="82" width="26" height="26"/>
+<text class="fg-small" x="263.0" y="98.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-accent" x="276" y="82" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="276" y="82" width="26" height="26"/>
+<text class="fg-small" x="289.0" y="98.0" text-anchor="middle" font-style="italic" style="fill:#fff">y</text>
+<rect class="fg-accent-line" x="252" y="58" width="22" height="22" stroke-width="2.5"/>
+<rect class="fg-accent-line" x="252" y="84" width="22" height="22" stroke-width="2.5"/>
+<text class="fg-small" x="312" y="70" text-anchor="start" >i answers θᵢ′,</text>
+<text class="fg-small" x="312" y="82" text-anchor="start" >then j answers θⱼ</text>
+<text class="fg-small" x="312" y="98" text-anchor="start" >outcome x</text>
+<text class="fg-small" x="250" y="128" text-anchor="start" >told apart, same outcome:</text>
+<text class="fg-accent-text" x="250" y="140" text-anchor="start" style="font-size:11px" >a contextual privacy violation</text>
+<text class="fg-text" x="456" y="42" text-anchor="middle" font-weight="700">ask j first</text>
+<rect class="fg-soft" x="430" y="56" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="430" y="56" width="26" height="26"/>
+<text class="fg-small" x="443.0" y="72.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="456" y="56" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="456" y="56" width="26" height="26"/>
+<text class="fg-small" x="469.0" y="72.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-soft" x="430" y="82" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="430" y="82" width="26" height="26"/>
+<text class="fg-small" x="443.0" y="98.0" text-anchor="middle" font-style="italic">x</text>
+<rect class="fg-accent" x="456" y="82" width="26" height="26" opacity=".9"/>
+<rect class="fg-box" x="456" y="82" width="26" height="26"/>
+<text class="fg-small" x="469.0" y="98.0" text-anchor="middle" font-style="italic" style="fill:#fff">y</text>
+<rect class="fg-accent-line" x="432" y="58" width="22" height="22" stroke-width="2.5"/>
+<rect class="fg-accent-line" x="458" y="58" width="22" height="22" stroke-width="2.5"/>
+<text class="fg-small" x="492" y="70" text-anchor="start" >j answers θⱼ′,</text>
+<text class="fg-small" x="492" y="82" text-anchor="start" >then i answers θᵢ</text>
+<text class="fg-small" x="492" y="98" text-anchor="start" >outcome x</text>
+<text class="fg-small" x="430" y="128" text-anchor="start" >told apart, same outcome:</text>
+<text class="fg-accent-text" x="430" y="140" text-anchor="start" style="font-size:11px" >a contextual privacy violation</text>
+<line class="fg-dash" x1="250" y1="156" x2="590" y2="156"/>
+<text class="fg-small" x="250" y="174" text-anchor="start" >Corners lemma: someone has to be asked first, so every protocol</text>
+<text class="fg-small" x="250" y="186" text-anchor="start" >implementing a rule with a corner violates contextual privacy.</text>
+<text class="fg-small" x="250" y="198" text-anchor="start" >Corners are exactly where agents are collectively, not individually, pivotal.</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 210" role="img" aria-labelledby="buy-box-title">
+<title id="buy-box-title">Ranges across product categories: how often Amazon wins the Buy Box, how often the Buy Box is the cheapest offer, and how often a worse offer wins.</title>
+<defs><marker id="buy-box-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text class="fg-text" x="250" y="64" text-anchor="end" >Amazon wins the Buy Box</text>
+<text class="fg-small" x="250" y="77" text-anchor="end" >(when it has an offer)</text>
+<rect class="fg-accent" x="383.1" y="52" width="133.4" height="16" rx="3"/>
+<text class="fg-small" x="378.1" y="64" text-anchor="end" >39%</text>
+<text class="fg-small" x="521.5" y="64" text-anchor="start" >85%</text>
+<text class="fg-text" x="250" y="106" text-anchor="end" >Buy Box is the cheapest offer</text>
+<rect class="fg-grey" x="426.6" y="94" width="26.1" height="16" rx="3"/>
+<text class="fg-small" x="421.6" y="106" text-anchor="end" >54%</text>
+<text class="fg-small" x="457.7" y="106" text-anchor="start" >63%</text>
+<text class="fg-text" x="250" y="148" text-anchor="end" >An objectively worse offer wins</text>
+<rect class="fg-grey" x="310.6" y="136" width="29.0" height="16" rx="3"/>
+<text class="fg-small" x="305.6" y="148" text-anchor="end" >14%</text>
+<text class="fg-small" x="344.6" y="148" text-anchor="start" >24%</text>
+<line class="fg-line" x1="270" y1="178" x2="560" y2="178"/>
+<line class="fg-line" x1="270.0" y1="178" x2="270.0" y2="183"/>
+<text class="fg-small" x="270.0" y="196" text-anchor="middle" >0%</text>
+<line class="fg-line" x1="342.5" y1="178" x2="342.5" y2="183"/>
+<text class="fg-small" x="342.5" y="196" text-anchor="middle" >25%</text>
+<line class="fg-line" x1="415.0" y1="178" x2="415.0" y2="183"/>
+<text class="fg-small" x="415.0" y="196" text-anchor="middle" >50%</text>
+<line class="fg-line" x1="487.5" y1="178" x2="487.5" y2="183"/>
+<text class="fg-small" x="487.5" y="196" text-anchor="middle" >75%</text>
+<line class="fg-line" x1="560.0" y1="178" x2="560.0" y2="183"/>
+<text class="fg-small" x="560.0" y="196" text-anchor="middle" >100%</text>
+<text class="fg-text" x="250" y="28" text-anchor="end" >share of product-days, range across categories</text>
+<text class="fg-small" x="415" y="28" text-anchor="middle" >1,000+ products, 2016–2022</text>
+</svg>

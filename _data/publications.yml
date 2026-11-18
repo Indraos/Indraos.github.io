@@ -15,6 +15,13 @@
 #                 venue says forthcoming
 #   open_access   overrides the Open Access marker, which otherwise is set
 #                 when a link points to arXiv, OpenReview, PMLR, SSRN, ...
+# The website shows a collapsible "In brief" summary under an entry that has:
+#   summary         a plain-language summary for readers from a neighbouring
+#                   field (<=150 words; a small HTML subset is allowed)
+#   figure          an SVG in _includes/ (e.g. figures/tasknet.svg), inlined
+#                   so that it follows the colour scheme; see the fg-* classes
+#                   in assets/css/main.css
+#   figure_caption  one sentence under the figure
 - title: "SimulacraBench"
   organizers: "<b>A. Haupt</b>"
   venue: "Conference on Neural Information Processing Systems, Sydney, 2026."
@@ -36,6 +43,19 @@
   important: true
   contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); M. Kochenderfer and S. Koyejo are senior co-authors."
   tags: ["AI Evaluation", "Aggregation", "Market Design"]
+  figure: "figures/benchmark-weights.svg"
+  figure_caption: "The optimal weight of an item rises with its welfare relevance and improvability and falls with its variance. Improvability is estimated from what a 10% improvement costs on the EvoLM 4B suite; the table shows one OLMES item per improvability quantile from the paper's Table 1."
+  summary: >-
+    A benchmark is reported as a measurement but works as an incentive: once labs optimize
+    against it, the weight on each item steers effort. We model benchmark aggregation as a
+    multitask principal–agent problem. The optimal item weights have a closed form,
+    <i>v</i>* = (<i>M</i> + <i>r</i>Σ)<sup>−1</sup><i>Mw</i>—higher for items that matter
+    for welfare (<i>w</i>) and that effort can improve (<i>M</i>), lower for noisy items (Σ)
+    when the lab is risk-averse (<i>r</i>). On the OLMES suite, with welfare weights from
+    workers' own task ratings, all 52 mathematics items are Pareto-dominated by
+    general-knowledge items under a pro-worker welfare definition, and only ~6% of the
+    suite's "automation loading" falls on activities workers want automated. Evaluation
+    designers should publish <i>why</i> each item carries the weight it does.
 
 - title: "Reward Bias Substitution: Single-Axis Bias Mitigations Redirect Optimization Pressure"
   authors: "M. Lamparth, D. Fein, <b>A. Haupt</b>, M. Hussing, M.J. Kochenderfer"
@@ -44,6 +64,17 @@
   pdf: "https://arxiv.org/abs/2605.27996"
   type: "Published"
   tags: ["Preferences"]
+  figure: "figures/reward-bias.svg"
+  figure_caption: "A length penalty lowers the length bias, but the optimization pressure resurfaces as overconfidence (schematic)."
+  summary: >-
+    Fixing one bias in a reward model (length, sycophancy, style) can simply redirect
+    optimization pressure elsewhere. We prove that success, substitution, and overcorrection
+    are indistinguishable under the audit distributions on which mitigations are usually
+    reported—even with an oracle true reward. Empirically, a length penalty under GRPO
+    shifts pressure into overconfidence with lower factual accuracy, and a published
+    length-debiasing operator's bias reappears under best-of-<i>n</i> sampling for three of
+    four state-of-the-art reward models. Prescription: evaluate under the policy-induced
+    distribution and track several biases at once.
 
 - title: "Position: AI Development Should Prioritize Cognitive Security"
   authors: "B. El, S. Su, A. Pappu, P. Yin, J. Heng, E. Heng, R.Z. Wang, <b>A. Haupt</b><sup>†</sup>, J. Zou<sup>†</sup>"
@@ -70,6 +101,20 @@
   type: "Preprint"
   resume: true
   tags: ["Work", "AI Evaluation"]
+  figure: "figures/tasknet.svg"
+  figure_caption: "From worker interviews to an occupational task inventory, with the counts from the six-occupation pilot."
+  summary: >-
+    Every estimate of how AI affects jobs rests on an inventory of what workers actually
+    do—and the public inventory, O*NET, is updated slowly. TaskNet interviews incumbent
+    workers with a mixed-initiative language-model interviewer, standardizes their reports
+    into task statements, and aggregates them into occupational inventories. In six
+    occupations, 132 workers produced 2,726 reports that became 202 task statements; O*NET
+    analysts accepted all of them (versus ~65% of write-in suggestions under the standard
+    process); 318 further incumbents validated them with 7,923 ratings. The inventory covers
+    89% of held-out workers' tasks (O*NET: 79%) and adds 79 tasks missing from the published
+    list. AI-exposure estimates shift in both directions—upward for software developers and
+    lawyers. Built with the National Center for O*NET Development and Mercor; a
+    250-occupation scale-up is in preparation.
 
 - title: "Contextually Private Mechanisms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, Z. Hitzig<sup>‡</sup>"
@@ -82,6 +127,20 @@
   important: true
   contribution: "Equal contribution with Z. Hitzig (50% each); authors in alphabetical order, as is customary in economics. Lead article of the issue."
   tags: ["Privacy", "Market Design"]
+  figure: "figures/contextually-private.svg"
+  figure_caption: "The corners lemma: when two agents are jointly but not individually pivotal, whoever is asked first is told apart from a profile with the same outcome, so no protocol implementing the rule is contextually private."
+  summary: >-
+    Mechanism design usually asks <i>what</i> to implement and models the mechanism as a
+    one-shot report of types. This paper studies the extensive form instead: a protocol asks
+    participants questions one at a time, and what it learns depends on which question it
+    asks, of whom, and when. A protocol violates contextual privacy when it tells two people
+    apart who would have received the same outcome anyway. Violations are unavoidable
+    exactly when agents are collectively, but not individually, pivotal. Beyond that, the
+    order of questions is a design choice: delaying a question until its answer is needed
+    for the outcome means fewer people are told apart for no reason, so delay improves
+    privacy, and different extensive forms of the same allocation rule can differ sharply in
+    how much they learn. The paper connects auction theory to Helen Nissenbaum's contextual
+    integrity: "information not needed for the outcome" becomes a theorem about protocols.
 
 - title: "Machine Learning from Human Preferences"
   authors: "S. Truong<sup>‡</sup>, <b>A. Haupt</b><sup>‡</sup>, S. Koyejo<sup>‡</sup>"
@@ -138,6 +197,15 @@
   type: "Published"
   resume: true
   tags: ["AI Evaluation", "Preferences"]
+  figure: "figures/silicon-philosophers.svg"
+  figure_caption: "Philosophers' positions across questions are dispersed; the models' positions line up, manufacturing consensus where the profession disagrees (schematic)."
+  summary: >-
+    Can a language model stand in for an expert panel? We tested seven models against 277
+    professional philosophers and the PhilPapers survey (<i>N</i> = 1,785). Models reproduce
+    individual positions tolerably, but they over-correlate judgments across questions,
+    manufacturing consensus where the profession disagrees—partly a "specialist effect": the
+    model assumes specialists in a domain share views. For anyone using "silicon samples" as
+    proxies for publics, the heterogeneity collapses exactly where it matters.
 
 - title: "Discussion of \"The ICML 2023 Ranking Experiment\" by Su et al."
   authors: "<b>A. Haupt</b>, S. Koyejo"
@@ -232,6 +300,17 @@
   type: "Published"
   resume: true
   tags: ["AI Evaluation", "Work"]
+  figure: "figures/centaur-evaluations.svg"
+  figure_caption: "A centaur evaluation scores the uplift of a human–AI team over either alone, instead of the AI by itself."
+  summary: >-
+    Standalone benchmarks reward AI for replacing people. Centaur evaluations instead
+    measure what a <i>human–AI team</i> achieves—the uplift over either alone—and thereby
+    make human-centred properties (interpretability, helpfulness, complementarity)
+    first-class objectives rather than afterthoughts. The paper argues that such evaluations
+    are both more demanding and more realistic than current leaderboards, and sets out a
+    research program: who the humans are, how to randomize access, how to score teams. It is
+    the conceptual basis for AlignmentBench (interview-then-predict), SimulacraBench, and
+    the AI-oral-assessment study.
 
 - title: "Convex Markov Games: A New Frontier for Multi-Agent Reinforcement Learning"
   short_title: "Convex Markov Games"
@@ -242,6 +321,17 @@
   type: "Published"
   resume: true
   tags: ["Multi-Agent"]
+  figure: "figures/convex-markov-games.svg"
+  figure_caption: "Preferences over occupancy measures: linear in a Markov game, any convex function in a convex Markov game."
+  summary: >-
+    Multi-agent reinforcement learning assumes rewards add up over time. Many objectives do
+    not: diversity, imitation, fairness, safety. Convex Markov games let players hold
+    general convex preferences over occupancy measures, strictly generalizing Markov games
+    (including infinite horizon). Pure-strategy Nash equilibria exist, and we approximate
+    them by gradient descent on an exploitability bound. In the prisoner's dilemma,
+    "transient imitation" recovers a profile close to human play with higher utility and
+    roughly a thousand-fold lower exploitability; experiments also show fairer coordination
+    and safer robot-warehouse behaviour.
 
 - title: "The Self-Preferencing Prohibition as a Fairness Provision"
   authors: "<b>A. Haupt</b>"
@@ -269,6 +359,16 @@
   type: "Preprint"
   resume: true
   tags: ["Platforms"]
+  figure: "figures/buy-box.svg"
+  figure_caption: "Ranges across product categories in a third-party seller's records, 2016–2022."
+  summary: >-
+    How does a hybrid platform's placement rule—the Buy Box—shape prices, and is Amazon
+    biased toward its own offers? Theory: the consumer-optimal scoring rule is linear in
+    consumer-preference coefficients minus price, and the Reimers–Waldfogel bias test
+    remains valid when prices respond to the rule. Data: a high-volume third-party seller's
+    records for 1,000+ products over 2016–2022. Amazon wins the Buy Box 39–85% of the time
+    by category when it has an offer; the Buy Box is the cheapest offer only 54–63% of the
+    time; an objectively worse offer wins 14–24% of the time.
 
 - title: "Risk Preferences of Learning Algorithms"
   authors: "<b>A. Haupt</b><sup>‡</sup>, A. Narayanan<sup>‡</sup>"
@@ -278,6 +378,16 @@
   type: "Published"
   resume: true
   tags: ["Multi-Agent", "Preferences"]
+  figure: "figures/risk-preferences.svg"
+  figure_caption: "Two actions with the same expected payoff: ε-greedy learning ends up choosing the low-variance one."
+  summary: >-
+    Standard bandit algorithms are not risk-neutral. ε-greedy learning is <i>emergently
+    risk-averse</i>: between two actions with equal expected payoff it picks the
+    lower-variance one with probability approaching one, and transiently even when the
+    riskier action is strictly better on average. In a recommender or marketplace this
+    favours measurable, homogeneous options and produces inequity and homogenization. Two
+    corrections—reweighting data by how often an action was chosen, or optimistic estimates
+    for rarely-chosen actions—restore risk neutrality.
 
 - title: "Formal Contracts Mitigate Social Dilemmas in Multi-Agent Reinforcement Learning"
   short_title: "Formal Contracts Mitigate Social Dilemmas in MARL"
@@ -291,6 +401,15 @@
   important: true
   contribution: "First author; shared first authorship with P. Christoffersen (equal contribution, 50% each of the joint work); D. Hadfield-Menell is the senior co-author."
   tags: ["Multi-Agent", "Market Design"]
+  figure: "figures/formal-contracts.svg"
+  figure_caption: "A contracting stage before the game: agents propose and accept reward transfers, then play."
+  summary: >-
+    Add a contracting stage to a Markov game—agents can voluntarily bind themselves to
+    reward transfers—and, with a rich enough contract space, every subgame-perfect
+    equilibrium of a fully observable Markov game is socially optimal; richer spaces weakly
+    raise welfare in general, including under partial observability. The MOCA algorithm
+    makes this learnable, validated in traffic, pollution, and common-pool-resource
+    environments.
 
 - title: "Steering No-Regret Learners to a Desired Equilibrium"
   authors: "B.H. Zhang, G. Farina, I. Anagnostides, F. Cacciamani, S.M. McAleer, <b>A. Haupt</b>, A. Celli, N. Gatti, V. Conitzer, T. Sandholm"
@@ -308,6 +427,16 @@
   type: "Published"
   resume: true
   tags: ["Market Design"]
+  figure: "figures/certification.svg"
+  figure_caption: "The certifier partitions unobservable quality into priced certificate tiers; sellers choose both their quality and their certificate (schematic)."
+  summary: >-
+    Certification is the market's answer to unobservable quality, from carbon credits to
+    educational tests to AI models. We study a certifier that designs and prices
+    certificates while sellers choose both quality and certificate and prices form
+    competitively. Under single crossing, sellers' certification choices are uniquely pinned
+    down; the revenue-maximizing certifier's problem reduces to monopoly pricing with
+    non-linear valuations, for which we give an FPTAS; and both welfare- and revenue-optimal
+    certificate menus can be arbitrarily large.
 
 - title: "Black-Box Access is Insufficient for Rigorous AI Audits"
   authors: "S. Casper, C. Ezell, C. Siegmann, N. Kolt, T.L. Curtis, B. Bucknall, <b>A. Haupt</b>, K. Wei, J. Scheurer, M. Hobbhahn, et al."

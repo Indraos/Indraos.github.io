@@ -17,4 +17,18 @@
     {% endfor %}
 
     </div>
+    {% if include.paper.summary %}
+    <details class="paper-brief">
+      <summary>In brief</summary>
+      <div class="paper-brief-body">
+        {% if include.paper.figure %}
+        <figure class="paper-figure">
+          {% include {{ include.paper.figure }} %}
+          {% if include.paper.figure_caption %}<figcaption>{{ include.paper.figure_caption }}</figcaption>{% endif %}
+        </figure>
+        {% endif %}
+        <p>{{ include.paper.summary }}</p>
+      </div>
+    </details>
+    {% endif %}
 </div>
