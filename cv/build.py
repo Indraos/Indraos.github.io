@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Generate the CV, resume and list of publications from the website's
-_config.yml and _data/.
+"""Generate the CVs (computer science-style and economics-style), resume
+and list of publications from the website's _config.yml and _data/.
 
 The website is the single source of truth: the header comes from `name`,
 `positions`, `email`, `url`, `social` and `research` in _config.yml; the
 body from _data/ (experiences, honors, service, talks, references,
 publications); and the order of sections from _data/cv.yml. cv.tex,
-resume.tex and publications.tex only pick the document class and include
-what this script writes.
+cv-econ.tex, resume.tex and publications.tex only pick the document class
+and include what this script writes.
+
+The economics-style CV (cv-econ.tex) has the brevity of an economics CV:
+no photo or research statement, journal articles and books apart from
+conference proceedings, and one line per paper with co-authors as "with".
 
 The list of publications follows the Max Planck Research Group calls: the
 publications marked `important` in _data/publications.yml are identified
@@ -18,10 +22,11 @@ flagged, and every entry is linked.
 Nothing written here is committed; the GitHub Pages workflow runs this
 script before compiling. Locally:
 
-    python3 cv/build.py [site directory] && cd cv && latexmk -pdf cv.tex resume.tex publications.tex
+    python3 cv/build.py [site directory] && cd cv && latexmk -pdf cv.tex cv-econ.tex resume.tex publications.tex
 
 Writes into cv/generated/:
-    cv-preamble.tex, cv-body.tex          the CV
+    cv-preamble.tex, cv-body.tex          the computer science-style CV
+    econ-preamble.tex, econ-body.tex      the economics-style CV
     resume-preamble.tex, resume-body.tex  the resume
     publications-preamble.tex, publications-body.tex
                                           the list of publications
@@ -273,6 +278,35 @@ def publine(paper):
             rf"{{{url_tex(paper_url(paper))}}}")
 
 
+def is_journal(paper):
+    """Journal articles and books, as opposed to conference proceedings."""
+    venue = plain(paper["venue"])
+    return "Press" in venue or any(h in venue for h in JOURNAL_HINTS)
+
+
+def with_coauthors(paper):
+    """'with Z. Hitzig and B. Niswonger' for the economics-style CV."""
+    people = [p.strip() for p in plain(paper.get("authors", "")).split(",")]
+    others = [p for p in people if p and "Haupt" not in p and p != "et al."]
+    if not others:
+        return ""
+    if len(others) > 4:
+        return f"with {escape(others[0])} et al."
+    if len(others) > 2:
+        return "with " + escape(", ".join(others[:-1]) + ", and " + others[-1])
+    return "with " + escape(" and ".join(others))
+
+
+def econline(paper):
+    """Economics-style entry: year, full title, co-authors, full outlet."""
+    venue = re.sub(r",?\s*(?:\w+\s)?\d{4}\.?$", "", plain(paper["venue"])).rstrip(". ")
+    venue = re.sub(r"(?<=\d)-(?=\d)", "--", escape(venue))
+    if venue == "Preprint":
+        venue = "Working paper"
+    return (rf"\cvpubline{{{str(paper['date'])[:4]}}}{{{quotes(escape(paper['title']))}}}"
+            rf"{{{venue}}}{{{with_coauthors(paper)}}}{{{url_tex(paper_url(paper))}}}")
+
+
 def bibtex(paper, key):
     people = paper.get("authors") or paper.get("organizers", "")
     authors = [a.strip() for a in plain(people).split(",") if a.strip()]
@@ -330,7 +364,7 @@ def bibtex(paper, key):
 # --------------------------------------------------------------- sections
 
 class Renderer:
-    """Renders one document (mode 'cv', 'resume' or 'publications') from the
+    """Renders one document (mode 'cv', 'econ', 'resume' or 'publications') from the
     site data; `keys` maps a publication's title to its refs.bib key."""
 
     def __init__(self, config, data, mode, keys=None):
@@ -338,6 +372,7 @@ class Renderer:
         self.layout = data["cv"][mode]
         self.resume = mode == "resume"
         self.publist = mode == "publications"
+        self.econ = mode == "econ"
         self.keys = keys or {}
         self.number = 0  # running number of the list of publications
 
@@ -371,6 +406,8 @@ class Renderer:
         else:
             research = escape(strip_markdown_links(c["research"]))
             intro = f"I study {research}."
+        if self.layout.get("intro", True) is False:
+            intro = ""
         out = [r"\makecvheader", (rf"{{\small {intro}}}" if self.resume else intro), ""]
         for section in self.layout["sections"]:
             content = section["content"]
@@ -381,7 +418,8 @@ class Renderer:
                 out.append(getattr(self, content)(section))
             else:
                 groups = content if isinstance(content, list) else [content]
-                out.append(self.experiences(groups, section.get("selected")))
+                out.append(self.experiences(groups, section.get("selected"),
+                                            self.resume or section.get("brief")))
             out.append("")
         return HEADER + "\n".join(out)
 
@@ -400,18 +438,19 @@ class Renderer:
         return text
 
     # experiences ------------------------------------------------------------
-    def experiences(self, groups, selected=False):
+    def experiences(self, groups, selected=False, brief=False):
+        """Entries of the given cv_sections; `brief` uses the resume wording."""
         out = []
         for e in self.data["experiences"]:
             if e.get("cv_section") not in groups:
                 continue
             if selected and not e.get("resume"):
                 continue
-            short = e.get("resume") if self.resume else {}
+            short = e.get("resume") if brief else {}
             short = short if isinstance(short, dict) else {}
             title = short.get("title") or e.get("degree") or e["title"]
             title = escape(plain(str(title).replace("<br>", "; ")))
-            if self.resume:  # compact: resume overrides, and only the resume wording
+            if brief:  # compact: resume overrides, and only the resume wording
                 e = {**e, **short, "description": short.get("description", ""),
                      "cv_details": []}
             else:
@@ -445,6 +484,8 @@ class Renderer:
 
     def references(self, section):
         refs = self.data.get("references", [])
+        if section.get("lead"):  # letter writers of this field first
+            refs = sorted(refs, key=lambda r: r["field"] != section["lead"])
         if self.resume:
             fields = list(dict.fromkeys(r["field"] for r in refs))
             return "\n".join(
@@ -501,16 +542,18 @@ class Renderer:
             types = [tuple(types)]
         for i, kind in enumerate(types):
             kinds = kind if isinstance(kind, tuple) else (kind,)
-            if "Published" in kinds:
+            if "Published" in kinds and not self.econ:
                 note = (r"\eq{} indicates equal contribution or alphabetical author order, \eqsup{} equal supervision."
                         if not self.resume else
                         "With co-authors in parentheses.")
                 out.append(rf"{{\small\color{{muted}}{note}}}\par\vspace{{1ex}}")
             if i and kind in headings:
                 out.append(rf"\cvsubsection{{{escape(headings[kind])}}}")
-            render = publine if self.resume else cvpub
+            render = publine if self.resume else econline if self.econ else cvpub
+            outlet = section.get("outlet")  # "journal" or "proceedings"
             out += [render(p) for p in self.data["publications"] if p["type"] in kinds
-                    and (p.get("resume") or not section.get("selected"))]
+                    and (p.get("resume") or not section.get("selected"))
+                    and (not outlet or is_journal(p) == (outlet == "journal"))]
         return "\n".join(out)
 
 
@@ -562,7 +605,7 @@ def main():
         keys[p["title"]] = bib_key(p, used)
         bib.append(bibtex(p, keys[p["title"]]))
     (OUT / "refs.bib").write_text(HEADER + "\n" + "\n".join(bib))
-    for mode in ("cv", "resume", "publications"):
+    for mode in ("cv", "econ", "resume", "publications"):
         renderer = Renderer(config, data, mode, keys)
         (OUT / f"{mode}-preamble.tex").write_text(renderer.preamble())
         (OUT / f"{mode}-body.tex").write_text(renderer.body())

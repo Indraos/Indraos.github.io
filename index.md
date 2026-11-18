@@ -40,6 +40,6 @@ A full publication list is available as [`pdf`]({{ site.publications }}) and [Bi
 
 ## Vita
 
-Full [Resume]({{ site.resume }}) and [CV]({{ site.cv }}) are available as `pdf`; their [LaTeX source]({{ site.cv_source }}) uses this site's style.
+A [Resume]({{ site.resume }}), a [Computer Science-style CV]({{ site.cv }}) and an [Economics-style CV]({{ site.cv_econ }}) are available as `pdf`; their [LaTeX source]({{ site.cv_source }}) uses this site's style.
 
 {% include vita.html %}

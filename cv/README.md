@@ -1,6 +1,7 @@
-# CV, résumé and list of publications
+# CVs, résumé and list of publications
 
-The CV, résumé and list of publications linked from the website are generated
+The computer science-style CV (`cv.tex`), the economics-style CV
+(`cv-econ.tex`), the résumé and the list of publications linked from the website are generated
 entirely from the site's `../_config.yml` and `../_data/`, styled after the
 site (Lato body, Palatino headings, cardinal `#8C1515` accents, round
 headshot, timeline-style entries). `_config.yml` excludes this folder from
@@ -13,11 +14,19 @@ the site.
 | `_data/experiences.yml` (`cv_section`, `degree`, `cv_description`, `cv_details`, `resume`) | appointments, education, policy, teaching |
 | `_data/honors.yml`, `service.yml`, `talks.yml`, `references.yml` | the corresponding sections |
 | `_data/publications.yml` | publications, preprints, theses, organized events, `refs.bib`, the list of publications |
-| `_data/cv.yml` (`cv`, `resume`, `publications`) | section order, titles, contacts, and which entries the résumé selects |
+| `_data/cv.yml` (`cv`, `econ`, `resume`, `publications`) | section order, titles, contacts, and which entries the résumé selects |
 
 Mark an entry with `resume: true` (publications, honors, service) or a `resume:`
 block of shorter wording (experiences) to put it on the résumé; résumé
 sections with `selected: true` show only those entries.
+
+## Economics-style CV
+
+`cv-econ.tex` has the content and brevity of an economics CV in the same
+style: no photo or research statement; journal articles and books, working
+papers and refereed conference proceedings in separate sections, one line
+per paper with co-authors as "with ..."; policy and teaching in the résumé
+wording; and the economics letter writers first (`econ` in `_data/cv.yml`).
 
 ## List of publications
 
@@ -39,17 +48,17 @@ calls ask for, in the site's style:
 
 ## Building
 
-`cv.tex`, `resume.tex` and `publications.tex` only choose the document class
+`cv.tex`, `cv-econ.tex`, `resume.tex` and `publications.tex` only choose the document class
 and include the generated files. Only sources are committed: on every push to
 `master`, the GitHub Pages workflow (`.github/workflows/pages.yml`) runs
-`build.py`, compiles the three documents, writes `assets/cv/cv.pdf`,
+`build.py`, compiles the four documents, writes `assets/cv/cv.pdf`, `cv-econ.pdf`,
 `resume.pdf`, `publications.pdf` (with `refs.bib`) and
 `cv-latex.zip`, and deploys the site with them. To build locally (needs
 PyYAML, Pillow and TeX Live):
 
 ```sh
-python3 build.py            # writes generated/ (CV, résumé, list of publications, refs.bib, headshot)
-latexmk -pdf cv.tex resume.tex publications.tex
+python3 build.py            # writes generated/ (CVs, résumé, list of publications, refs.bib, headshot)
+latexmk -pdf cv.tex cv-econ.tex resume.tex publications.tex
 ./package.sh                # writes ../assets/cv/cv-latex.zip
 ```
 

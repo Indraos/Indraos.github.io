@@ -43,12 +43,12 @@ jobs:
 
       - name: Compile CV, resume and list of publications
         working-directory: cv
-        run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex resume.tex publications.tex
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex cv-econ.tex resume.tex publications.tex
 
       - name: Place PDFs and LaTeX template in the site
         run: |
           mkdir -p assets/cv
-          cp cv/cv.pdf cv/resume.pdf cv/publications.pdf assets/cv/
+          cp cv/cv.pdf cv/cv-econ.pdf cv/resume.pdf cv/publications.pdf assets/cv/
           cp cv/generated/refs.bib assets/cv/
           cv/package.sh
 
