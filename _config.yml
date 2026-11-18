@@ -30,7 +30,8 @@ social:
 research: "how algorithmic systems represent and are evaluated against diverse human preferences, using methods from [microeconomic theory](https://dl.acm.org/doi/10.1145/3670865.3673593), [structural econometrics](https://papers.ssrn.com/abstract_id=5126918), and [reinforcement learning](https://link.springer.com/article/10.1007/s10458-024-09682-5)"
 
 # Built by the Pages workflow from cv/ (not committed).
-cv: "assets/cv/cv.pdf"
+cv: "assets/cv/cv.pdf"            # computer science-style CV
+cv_econ: "assets/cv/cv-econ.pdf"  # economics-style CV
 resume: "assets/cv/resume.pdf"
 publications: "assets/cv/publications.pdf"
 bibtex: "assets/cv/refs.bib"

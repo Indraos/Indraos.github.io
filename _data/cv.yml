@@ -8,8 +8,13 @@
 # In the list of publications, papers sections are numbered, and a section
 # with `important: true` lists the publications marked `important` with
 # their `contribution` instead.
+# The economics-style CV (`econ`) is brief: `intro: false` drops the research
+# statement, papers take one line each and can be split by `outlet` (journal:
+# journal articles and books; proceedings: the rest), experience sections
+# with `brief: true` use the resume wording, and `lead` puts the letter
+# writers of one field first.
 cv:
-  title: "Curriculum Vitæ"
+  title: "Curriculum Vitæ (Computer Science)"
   contacts: [email, url, google, github, linkedin, twitter]
   sections:
   - {title: "Appointments", content: "appointments"}
@@ -25,6 +30,26 @@ cv:
   type_headings:
     Preprint: "Working Papers and Preprints"
     Thesis: "Theses"
+
+econ:
+  title: "Curriculum Vitæ (Economics)"
+  contacts: [email, url, google]
+  intro: false
+  sections:
+  - {title: "Appointments", content: "appointments"}
+  - {title: "Education", content: "education"}
+  - {title: "References", content: "references", lead: "Economics"}
+  - {title: "Publications", content: "papers", types: ["Published"], outlet: "journal"}
+  - {title: "Working Papers", content: "papers", types: ["Preprint"]}
+  - {title: "Refereed Conference Proceedings", content: "papers", types: ["Published"], outlet: "proceedings"}
+  - {title: "Honors and Fellowships", content: "honors"}
+  - {title: "Policy and Teaching Experience", content: ["policy", "teaching"], brief: true}
+  - title: "Professional Activities"
+    content: "rows"
+    rows:
+    - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
+    - {label: "Organized", content: "events", selected: true}
+    - {label: "Service", content: "service"}
 
 resume:
   title: "Résumé"

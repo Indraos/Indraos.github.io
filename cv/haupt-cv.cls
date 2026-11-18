@@ -116,7 +116,7 @@
 
 % Section headings: Palatino, regular weight, as h2 on the website.
 \renewcommand\section[1]{%
-  \par\gdef\@lastpubyear{}\needspace{\if@cvcompact 3\else 5\fi\baselineskip}%
+  \par\gdef\@lastpubyear{}\Needspace*{\if@cvcompact 3\else 5\fi\baselineskip}%
   \addvspace{\if@cvcompact .8ex\else 2.2ex\fi}%
   {\headingfont\fontsize{\if@cvcompact 13.5\else 15.5\fi}{18}\selectfont #1\par}%
   \nobreak\vspace{\if@cvcompact .35ex\else .8ex\fi}\nobreak}
