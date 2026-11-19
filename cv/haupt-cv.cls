@@ -9,6 +9,8 @@
 %
 % Options:  nophoto   suppress the round headshot in the header
 %           compact   tighter spacing (used for the one-page resume)
+%           econ      economics-style CV: no photo, one grid for every
+%                     section, even space around headings
 % Compiles with pdflatex, lualatex or xelatex (e.g. on Overleaf).
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{haupt-cv}[2026/10/09 CV class matching andyhaupt.com]
@@ -17,6 +19,8 @@
 \newif\if@cvcompact \@cvcompactfalse
 \DeclareOption{nophoto}{\@cvphotofalse}
 \DeclareOption{compact}{\@cvcompacttrue}
+\newif\if@cvecon \@cveconfalse
+\DeclareOption{econ}{\@cvecontrue\@cvphotofalse}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 \LoadClass[10pt,letterpaper]{article}
@@ -115,11 +119,19 @@
   \vspace{\if@cvcompact .6ex\else 1.2ex\fi}}
 
 % Section headings: Palatino, regular weight, as h2 on the website.
+% Entries end with a gap that belongs to the timeline rule; in the
+% economics-style CV a heading takes that gap back, so that the space
+% above a heading is the same after every kind of entry.
+\newlength\cv@lastgap \setlength\cv@lastgap{0pt}
+\newcommand\cv@after[1]{%
+  \par\global\cv@lastgap=#1\relax\if@cvecon\nointerlineskip\fi}
 \renewcommand\section[1]{%
-  \par\gdef\@lastpubyear{}\Needspace*{\if@cvcompact 3\else 5\fi\baselineskip}%
-  \addvspace{\if@cvcompact .8ex\else 2.2ex\fi}%
+  \par\gdef\@lastpubyear{}%
+  \if@cvecon\ifdim\cv@lastgap>\z@\kern-\cv@lastgap\fi\fi\global\cv@lastgap\z@
+  \Needspace*{\if@cvcompact 3\else\if@cvecon 8\else 5\fi\fi\baselineskip}%
+  \addvspace{\if@cvecon 3.1ex\else\if@cvcompact .8ex\else 2.2ex\fi\fi}%
   {\headingfont\fontsize{\if@cvcompact 13.5\else 15.5\fi}{18}\selectfont #1\par}%
-  \nobreak\vspace{\if@cvcompact .35ex\else .8ex\fi}\nobreak}
+  \nobreak\vspace{\if@cvecon 1.3ex\else\if@cvcompact .35ex\else .8ex\fi\fi}\nobreak}
 % \cvsubsection: a lighter heading inside a section (e.g. preprints after
 % publications) that never forces a page break.
 \newcommand\cvsubsection[1]{%
@@ -151,27 +163,45 @@
     inner xsep=4pt,inner ysep=1.6pt,font=\bfseries\small]{\strut\@flagtext};}
 \newcommand\@cvdot{%
   \makebox[0pt]{\raisebox{.42ex}{\tikz\fill[cardinal](0,0)circle(2.1pt);}}}
-\newcommand\cventry[5]{%
+\newcommand\cv@textwidth{\dimexpr\linewidth-\cvdatewidth-.8em-1.2pt-\cvgutter\relax}
+\newcommand\cv@entrygap{\if@cvcompact .35ex\else 1.1ex\fi}
+% \cv@entry{dates}{institution}{url}{head}{details}
+\newcommand\cv@entry[5]{%
   \par\noindent
   \makebox[\cvdatewidth][r]{\raisebox{0pt}[0pt][0pt]{\small\color{muted}#1}}%
   \hspace{.8em}%
   {\color{timeline!45}\vrule width 1.2pt}%
   \@cvdot\hspace{\cvgutter}%
-  \parbox[t]{\dimexpr\linewidth-\cvdatewidth-.8em-1.2pt-\cvgutter\relax}{%
+  \parbox[t]{\cv@textwidth}{%
     \raggedright
-    \ifblank{#2}{}{\cvflag{#2}{#3}\ }\textbf{#4}%
+    \ifblank{#2}{}{\cvflag{#2}{#3}\ }#4%
     \ifblank{#5}{}{\par\vspace{.2ex}{\small #5}}%
-    \par\vspace{\if@cvcompact .35ex\else 1.1ex\fi}}%
-  \par}
+    \par\vspace{\cv@entrygap}}%
+  \cv@after{\cv@entrygap}}
+\newcommand\cventry[5]{\cv@entry{#1}{#2}{#3}{\textbf{#4}}{#5}}
+% \cventryline{dates}{institution}{url}{role}{note}: the note follows the
+% role on the same line (economics-style CV).
+\newcommand\cventryline[5]{%
+  \cv@entry{#1}{#2}{#3}{\textbf{#4}\ifblank{#5}{}{, #5}}{}}
 
-% \cvitem{left label}{text}: plain two-column row (honours, talks, ...)
-\newcommand\cvitem[2]{%
+% \cv@row{left label}{text}{gap}: the two-column row all lists are made of
+\newcommand\cv@row[3]{%
   \par\noindent
   \makebox[\cvdatewidth][r]{\small\color{muted}#1}%
   \hspace{.8em}{\color{timeline!45}\vrule width 1.2pt}\hspace{\cvgutter}%
-  \parbox[t]{\dimexpr\linewidth-\cvdatewidth-.8em-1.2pt-\cvgutter\relax}{%
-    \raggedright #2\par\vspace{\if@cvcompact .15ex\else .6ex\fi}}%
-  \par}
+  \parbox[t]{\cv@textwidth}{\raggedright #2\par\vspace{#3}}%
+  \cv@after{#3}}
+% \cvitem{left label}{text}: plain two-column row (honours, talks, ...)
+\newcommand\cvitem[2]{\cv@row{#1}{#2}{\if@cvcompact .15ex\else .6ex\fi}}
+% \cvlabelitem{label}{text}: a row of several lines under a word label,
+% set apart from the next one (economics-style CV).
+\newcommand\cvlabelitem[2]{\cv@row{#1}{#2}{1.3ex}}
+% \cvnote{text}: a muted remark on the grid, above the entries of a section
+\newcommand\cvnote[1]{\cv@row{}{\leavevmode{\small\color{muted}#1}}{1ex}}
+% \cvyearline{year}{text}: a line of such a row that starts with a year;
+% longer text continues indented past the year.
+\newcommand\cvyearline[2]{\par\hangindent=2.9em\hangafter=1\relax
+  \makebox[2.9em][l]{#1:}#2\par}
 
 % --------------------------------------------------------------- publications
 % \cvpub{title}{authors}{venue}{type}{tags}{buttons}
@@ -225,9 +255,27 @@
   \cvitem{\@shownyear}{\ifblank{#5}{\textbf{#2}}{\href{#5}{\color{ink}\textbf{#2}}},
     \textit{#3}\ifblank{#4}{}{ {\color{muted}(#4)}}}}
 
+% \cvpaper{year}{title}{with}{outlet}{url}: entry of the economics-style CV,
+% as economics CVs write them: title and co-authors, then the journal or
+% status on a line of its own, and space before the next paper. The year is
+% printed only when it changes.
+\newcommand\cvpaper[5]{%
+  \def\@thispubyear{#1}%
+  \ifx\@thispubyear\@lastpubyear\def\@shownyear{}\else\def\@shownyear{#1}\fi
+  \global\let\@lastpubyear\@thispubyear
+  \cv@row{\@shownyear}{%
+    \ifblank{#5}{\textbf{#2}}{\href{#5}{\color{ink}\textbf{#2}}}%
+    \ifblank{#3}{}{ \mbox{\small\color{muted}(#3)}}% moves to a new line whole
+    \ifblank{#4}{}{\par\vspace{-.1ex}{\small\itshape #4}}}{1.7ex}}
+
 % ----------------------------------------------------------------- references
+% \cvrefrow{reference}{reference}: two letter writers side by side on the
+% grid of the other sections (economics-style CV).
+\newcommand\cv@refwidth{.32\linewidth}
+\newcommand\cvrefrow[2]{{\renewcommand\cv@refwidth{.48\linewidth}%
+  \cv@row{}{#1\hfill#2}{2ex}}}
 \newcommand\cvreference[4]{% name, title, institution, email
-  \begin{minipage}[t]{.32\linewidth}\raggedright
+  \begin{minipage}[t]{\cv@refwidth}\raggedright
     \textbf{#1}\par{\small #2\par #3\par
     \href{mailto:#4}{\faEnvelope[regular]\,#4}}
   \end{minipage}}

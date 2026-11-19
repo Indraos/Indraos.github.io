@@ -22,11 +22,23 @@ sections with `selected: true` show only those entries.
 
 ## Economics-style CV
 
-`cv-econ.tex` has the content and brevity of an economics CV in the same
-style: no photo or research statement; journal articles and books, working
-papers and refereed conference proceedings in separate sections, one line
-per paper with co-authors as "with ..."; policy and teaching in the résumé
-wording; and the economics letter writers first (`econ` in `_data/cv.yml`).
+`cv-econ.tex` has the content and brevity of an economics job-market CV in
+the same style (class option `econ`; layout under `econ` in `_data/cv.yml`):
+
+- no photo or research statement; appointments and degrees on one line
+  each where there is nothing more to say;
+- letter writers two to a row, the economics ones first;
+- only the papers marked `econ: true` in `_data/publications.yml` (those an
+  economist can place: economics, statistics and field journals, books,
+  economics working papers, ACM EC and WINE, and the papers marked
+  `important`), with a note pointing to the complete list;
+- journal articles and books, working papers and refereed conference
+  proceedings in separate sections; each paper gives the title and
+  co-authors ("with ..."), then the journal or outlet on a line of its own;
+- policy and teaching in the résumé wording, seminars by year;
+- every section sits on one grid (dates left of the timeline rule), with the
+  same space around every heading. No paper is singled out as a job market
+  paper.
 
 ## List of publications
 
@@ -63,5 +75,5 @@ latexmk -pdf cv.tex cv-econ.tex resume.tex publications.tex
 ```
 
 The class (`haupt-cv.cls`) compiles with pdflatex, lualatex or xelatex, so the
-zip also works on Overleaf. Options: `compact` (one-page résumé spacing) and
-`nophoto`.
+zip also works on Overleaf. Options: `compact` (one-page résumé spacing),
+`nophoto` and `econ` (the economics-style CV's grid and spacing).

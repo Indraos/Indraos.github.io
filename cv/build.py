@@ -11,7 +11,8 @@ and include what this script writes.
 
 The economics-style CV (cv-econ.tex) has the brevity of an economics CV:
 no photo or research statement, journal articles and books apart from
-conference proceedings, and one line per paper with co-authors as "with".
+conference proceedings, and per paper the title and co-authors ("with")
+followed by the outlet on its own line.
 
 The list of publications follows the Max Planck Research Group calls: the
 publications marked `important` in _data/publications.yml are identified
@@ -290,7 +291,7 @@ def with_coauthors(paper):
     others = [p for p in people if p and "Haupt" not in p and p != "et al."]
     if not others:
         return ""
-    if len(others) > 4:
+    if len(others) > 3:
         return f"with {escape(others[0])} et al."
     if len(others) > 2:
         return "with " + escape(", ".join(others[:-1]) + ", and " + others[-1])
@@ -298,13 +299,14 @@ def with_coauthors(paper):
 
 
 def econline(paper):
-    """Economics-style entry: year, full title, co-authors, full outlet."""
+    """Economics-style entry: year, full title and co-authors, and the full
+    outlet on a line of its own."""
     venue = re.sub(r",?\s*(?:\w+\s)?\d{4}\.?$", "", plain(paper["venue"])).rstrip(". ")
     venue = re.sub(r"(?<=\d)-(?=\d)", "--", escape(venue))
-    if venue == "Preprint":
-        venue = "Working paper"
-    return (rf"\cvpubline{{{str(paper['date'])[:4]}}}{{{quotes(escape(paper['title']))}}}"
-            rf"{{{venue}}}{{{with_coauthors(paper)}}}{{{url_tex(paper_url(paper))}}}")
+    if venue == "Preprint":  # a working paper needs no outlet line
+        venue = ""
+    return (rf"\cvpaper{{{str(paper['date'])[:4]}}}{{{quotes(escape(paper['title']))}}}"
+            rf"{{{with_coauthors(paper)}}}{{{venue}}}{{{url_tex(paper_url(paper))}}}")
 
 
 def bibtex(paper, key):
@@ -461,6 +463,13 @@ class Renderer:
                     text += ": " + html_to_latex(e["description"], br="; ")
                 out.append(rf"\cvitem{{{years(e['time'])}}}{{{text}}}")
                 continue
+            if self.econ and plain(e["description"]) == e["place"]:
+                e["description"] = ""  # says nothing the institution does not
+            if self.econ and "<br>" not in e["description"] and not e.get("cv_details"):
+                out.append(rf"\cventryline{{{years(e['time'])}}}{{{escape(e['place'])}}}"
+                           rf"{{{url_tex(e.get('url', ''))}}}{{{title}}}"
+                           rf"{{{html_to_latex(e['description'])}}}")
+                continue
             details = html_to_latex(e["description"])
             if e.get("cv_details"):
                 items = "".join(rf"\item {html_to_latex(d)} " for d in e["cv_details"])
@@ -495,6 +504,9 @@ class Renderer:
                 for f in fields)
         cells = [rf"\cvreference{{{escape(r['name'])}}}{{{escape(r['title'])}}}"
                  rf"{{{escape(r['institution'])}}}{{{escape(r['email'])}}}" for r in refs]
+        if self.econ:  # two per row, on the grid of the other sections
+            return "\n".join(rf"\cvrefrow{{{a}}}{{{b}}}"
+                             for a, b in zip(cells[::2], cells[1::2] + [""]))
         rows = [r"\hfill".join(cells[i:i + 3]) for i in range(0, len(cells), 3)]
         return (r"\begin{minipage}{\linewidth}" + "\n"
                 + "\n\\par\\vspace{2ex}\n".join(rows) + "\n" + r"\end{minipage}")
@@ -503,11 +515,12 @@ class Renderer:
         out = []
         for row in section["rows"]:
             items = row.get("text") or self.summary(row["content"], row.get("selected"))
-            out.append(rf"\cvitem{{{escape(row['label'])}}}{{{items}}}")
+            macro = "cvlabelitem" if self.econ else "cvitem"
+            out.append(rf"\{macro}{{{escape(row['label'])}}}{{{items}}}")
         return "\n".join(out)
 
     def summary(self, content, selected=False):
-        """Honors, service or events as one '; '-joined line for the resume.
+        """Honors, service, events or talks as one row of a `rows` section.
 
         With `selected`, only items marked `resume: true` are listed."""
         if content == "events":
@@ -516,6 +529,9 @@ class Renderer:
             return ", ".join(
                 f"{escape(p.get('short_title') or p['title'])} "
                 f"({escape(short_venue(p))} {str(p['date'])[:4]})" for p in events)
+        if content == "talks":  # one line per year
+            return "".join(rf"\cvyearline{{{years(t['year'])}}}{{{escape(t['venues'])}}}"
+                           for t in self.data.get("talks", []))
         if content == "honors":
             items, when = self.data.get("honors", []), "year"
         elif content == "service":
@@ -529,7 +545,8 @@ class Renderer:
     # papers -----------------------------------------------------------------
     def papers(self, section):
         """Papers of the section's types (with `selected`, only those marked
-        `resume: true`; with `merged`, interleaved by date instead of grouped
+        `resume: true`, or `econ: true` on the economics-style CV; with
+        `merged`, interleaved by date instead of grouped
         by type); the resume uses one line each, the list of publications
         numbers them (a section with `important` lists the publications
         marked `important` with their `contribution` instead)."""
@@ -551,8 +568,11 @@ class Renderer:
                 out.append(rf"\cvsubsection{{{escape(headings[kind])}}}")
             render = publine if self.resume else econline if self.econ else cvpub
             outlet = section.get("outlet")  # "journal" or "proceedings"
+            flag = "econ" if self.econ else "resume"  # what `selected` selects
+            if section.get("note") and not i:  # on the grid, above the entries
+                out.append(rf"\cvnote{{{html_to_latex(section['note'])}}}")
             out += [render(p) for p in self.data["publications"] if p["type"] in kinds
-                    and (p.get("resume") or not section.get("selected"))
+                    and (p.get(flag) or not section.get("selected"))
                     and (not outlet or is_journal(p) == (outlet == "journal"))]
         return "\n".join(out)
 

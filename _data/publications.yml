@@ -4,6 +4,10 @@
 # for host, place and date; link the event page with `html`.
 # `resume: true` lists an entry on the resume, using `short_title` (if given)
 # in place of the full title.
+# `econ: true` lists an entry on the economics-style CV, which shows only the
+# papers an economist can place: economics, statistics and field journals,
+# books, economics working papers, ACM EC and WINE, and the papers marked
+# `important`.
 # The list of publications (cv/publications.tex) also reads:
 #   important     true for the three most important publications, which it
 #                 marks and lists first (Max Planck Research Group calls)
@@ -39,6 +43,7 @@
   pdf: "https://arxiv.org/abs/2605.30916"
   html: "https://openreview.net/forum?id=yF6rmSx7l7"
   type: "Published"
+  econ: true
   resume: true
   important: true
   contribution: "First author; shared first authorship with J. Hartenstein (equal contribution, 50% each of the joint work); M. Kochenderfer and S. Koyejo are senior co-authors."
@@ -99,6 +104,7 @@
   date: 2026-10-25
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670419"
   type: "Preprint"
+  econ: true
   resume: true
   tags: ["Work", "AI Evaluation"]
   figure: "figures/tasknet.svg"
@@ -123,6 +129,7 @@
   pdf: "https://arxiv.org/abs/2112.10812"
   html: "https://www.aeaweb.org/articles?id=10.1257/aer.20240579"
   type: "Published"
+  econ: true
   resume: true
   important: true
   contribution: "Equal contribution with Z. Hitzig (50% each); authors in alphabetical order, as is customary in economics. Lead article of the issue."
@@ -148,6 +155,7 @@
   date: 2026-08-01
   html: "https://mlhp.stanford.edu/"
   type: "Published"
+  econ: true
   resume: true
   tags: ["Preferences"]
 
@@ -212,6 +220,7 @@
   venue: "Journal of the American Statistical Association 121 (554), p. 853-854, 2026."
   date: 2026-06-01
   type: "Published"
+  econ: true
   tags: ["AI Evaluation", "Aggregation"]
 
 - title: "General Preference Reinforcement Learning"
@@ -271,6 +280,7 @@
   date: 2025-10-01
   pdf: "https://arxiv.org/abs/2510.16972"
   type: "Preprint"
+  econ: true
   tags: ["Preferences", "Platforms"]
 
 - title: "Scaling Human Judgment in Community Notes with LLMs"
@@ -339,6 +349,7 @@
   date: 2025-03-01
   pdf: "https://kgi.georgetown.edu/wp-content/uploads/2026/01/The-Self-Preferencing-Prohibition-as-a-Fairness-Provision_Haupt_53.pdf"
   type: "Preprint"
+  econ: true
   status: "Poster, non-archival"
   tags: ["Platforms", "Market Design"]
 
@@ -357,6 +368,7 @@
   date: 2025-01-01
   pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5126918"
   type: "Preprint"
+  econ: true
   resume: true
   tags: ["Platforms"]
   figure: "figures/buy-box.svg"
@@ -376,6 +388,7 @@
   date: 2024-11-01
   pdf: "https://www.sciencedirect.com/science/article/abs/pii/S089982562400143X"
   type: "Published"
+  econ: true
   resume: true
   tags: ["Multi-Agent", "Preferences"]
   figure: "figures/risk-preferences.svg"
@@ -397,6 +410,7 @@
   pdf: "https://link.springer.com/article/10.1007/s10458-024-09682-5"
   code: "https://github.com/Algorithmic-Alignment-Lab/contracts"
   type: "Published"
+  econ: true
   resume: true
   important: true
   contribution: "First author; shared first authorship with P. Christoffersen (equal contribution, 50% each of the joint work); D. Hadfield-Menell is the senior co-author."
@@ -417,6 +431,7 @@
   date: 2024-07-01
   pdf: "https://arxiv.org/abs/2306.05221"
   type: "Published"
+  econ: true
   tags: ["Multi-Agent", "Market Design"]
 
 - title: "Certification Design for a Competitive Market"
@@ -425,6 +440,7 @@
   date: 2024-07-01
   pdf: "https://dl.acm.org/doi/10.1145/3670865.3673593"
   type: "Published"
+  econ: true
   resume: true
   tags: ["Market Design"]
   figure: "figures/certification.svg"
@@ -468,6 +484,7 @@
   date: 2023-09-01
   pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2300222X"
   type: "Published"
+  econ: true
   tags: ["Platforms", "Work"]
 
 - title: "Recommending to Strategic Users"
@@ -476,6 +493,7 @@
   date: 2023-06-01
   pdf: "https://arxiv.org/abs/2302.06559"
   type: "Preprint"
+  econ: true
   status: "Peer-reviewed, non-archival"
   tags: ["Preferences", "Platforms"]
 
@@ -485,6 +503,7 @@
   date: 2023-01-01
   pdf: "https://arxiv.org/abs/2301.13404"
   type: "Preprint"
+  econ: true
   tags: ["Privacy", "Market Design"]
 
 - title: "Technical Perspectives on the EU AI Act"
@@ -517,6 +536,7 @@
   date: 2021-12-01
   pdf: "https://dl.acm.org/doi/10.1007/978-3-030-94676-0_3"
   type: "Published"
+  econ: true
   tags: ["Market Design"]
 
 - title: "Multi-Agent Influence Diagrams and Commitment"
