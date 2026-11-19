@@ -1,7 +1,7 @@
 # Layout of the CV, resume and list of publications built by cv/build.py.
 # Section `content` is a cv_section of _data/experiences.yml, or one of:
 # references, honors, service, talks, papers (with `types`), rows (one-line
-# summaries of honors, service or events); papers sections can set
+# summaries of honors, service, events or talks); papers sections can set
 # `merged: true` to interleave their types by date. A section or row with
 # `selected: true` lists only the entries marked `resume` (experiences,
 # papers, honors, service); otherwise every entry of the category is shown.
@@ -9,10 +9,12 @@
 # with `important: true` lists the publications marked `important` with
 # their `contribution` instead.
 # The economics-style CV (`econ`) is brief: `intro: false` drops the research
-# statement, papers take one line each and can be split by `outlet` (journal:
-# journal articles and books; proceedings: the rest), experience sections
-# with `brief: true` use the resume wording, and `lead` puts the letter
-# writers of one field first.
+# statement, papers give title and co-authors and then the outlet on its own
+# line, and can be split by `outlet` (journal: journal articles and books;
+# proceedings: the rest), experience sections with `brief: true` use the
+# resume wording, and `lead` puts the letter writers of one field first. Its
+# papers sections with `selected: true` list only the papers marked
+# `econ: true` in _data/publications.yml, and `note` puts a line above them.
 cv:
   title: "Curriculum Vitæ (Computer Science)"
   contacts: [email, url, google, github, linkedin, twitter]
@@ -39,15 +41,20 @@ econ:
   - {title: "Appointments", content: "appointments"}
   - {title: "Education", content: "education"}
   - {title: "References", content: "references", lead: "Economics"}
-  - {title: "Publications", content: "papers", types: ["Published"], outlet: "journal"}
-  - {title: "Working Papers", content: "papers", types: ["Preprint"]}
-  - {title: "Refereed Conference Proceedings", content: "papers", types: ["Published"], outlet: "proceedings"}
+  - title: "Publications"
+    content: "papers"
+    types: ["Published"]
+    outlet: "journal"
+    selected: true
+    note: "Selected papers; the complete list is at <a href=\"https://andyhaupt.com\">andyhaupt.com</a>."
+  - {title: "Working Papers", content: "papers", types: ["Preprint"], selected: true}
+  - {title: "Refereed Conference Proceedings", content: "papers", types: ["Published"], outlet: "proceedings", selected: true}
   - {title: "Honors and Fellowships", content: "honors"}
   - {title: "Policy and Teaching Experience", content: ["policy", "teaching"], brief: true}
   - title: "Professional Activities"
     content: "rows"
     rows:
-    - {label: "Talks", text: "NYU, CMU, Harvard Kennedy School, Lindau, Microsoft Research, Google DeepMind, HBS"}
+    - {label: "Seminars", content: "talks"}
     - {label: "Organized", content: "events", selected: true}
     - {label: "Service", content: "service"}
 
